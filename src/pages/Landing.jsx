@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/Landing.css";
 
 const Landing = () => {
   return (
-    <>
-      <main></main>
-    </>
+    <div className="main-container section-padding">
+      <h1>asdfds</h1>
+    </div>
   );
 };
 
