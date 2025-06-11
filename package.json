@@ -8,6 +8,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "express": "^5.1.0",
+    "ignore-styles": "^5.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.2",
@@ -18,8 +19,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "node dist/server.js",
-    "dev": "nodemon server/server.js --exec babel-node",
-    "dev1": "nodemon --watch server --exec \"npm run build && node dist/server.js\""
+    "dev": "nodemon --watch . --ext js,json,css,mjs,cjs server --exec \"npm run build && node dist/server.js\""
   },
   "eslintConfig": {
     "extends": [
