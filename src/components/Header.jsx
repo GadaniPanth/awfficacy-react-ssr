@@ -49,9 +49,27 @@ const Header = () => (
               <p>Careers</p>
             </Link>
           </li>
-          <li>
+          <li className="relative">
             <div className="dropdown link-font-size">
               <p>Group Companies</p>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+            <div className="dropdown-container">
+              <div className="link-font-size dropdown-item">
+                <Link href="/awfficacy-global">
+                  <p>Awfficacy Global</p>
+                </Link>
+              </div>
+              <div className="link-font-size dropdown-item">
+                <Link href="/awfficacy-capital">
+                  <p>Awfficacy Capital</p>
+                </Link>
+              </div>
+              <div className="link-font-size dropdown-item">
+                <Link href="/scaleAx">
+                  <p>ScaleAx</p>
+                </Link>
+              </div>
             </div>
           </li>
         </ul>
