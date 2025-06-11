@@ -5,9 +5,18 @@ h2 {
 .awfficacy_blue_box {
     background: #00338C;
     border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
 }
 
-.awfficacy_blue_box_heading h1 {
-    padding: 8.75rem 4rem;
-    
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+}
+
+.section-2-left {
+    border: 1px solid #FEBF00;
+    padding: 2.5rem 4rem;
 }
