@@ -4,6 +4,7 @@ import { renderToString } from "react-dom/server";
 import App from "../src/App.jsx";
 import fs from "fs";
 import path from "path";
+import { StaticRouter } from "react-router-dom/server";
 
 const app = express();
 const PORT = 3000;
@@ -11,7 +12,11 @@ const PORT = 3000;
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  const appHtml = renderToString(<App />);
+  const appHtml = renderToString(
+    <StaticRouter location={req.url}>
+      <App />
+    </StaticRouter>
+  );
   const htmlTemplate = fs.readFileSync(
     path.resolve("public/index.html"),
     "utf8"

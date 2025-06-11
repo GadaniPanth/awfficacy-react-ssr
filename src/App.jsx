@@ -1,14 +1,24 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Landing from "./pages/Landing";
+import Home from "./pages/Home";
+import "./App.css";
 
 const App = () => {
-  useEffect(async () => {
-    const res = await fetch(
-      "http://192.168.1.24/Panth/php-codeigniter-3/index.php/users"
-    );
-    console.log(await res.json());
-  }, []);
-
-  return <h1>Hello from React SSR!</h1>;
+  return (
+    <div>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
