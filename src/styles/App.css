@@ -692,7 +692,7 @@ button:focus-visible {
     font-size: var(--link-font-size);
 }
 
-.brillex-button {
+.awfficacy-button {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -703,8 +703,8 @@ button:focus-visible {
     justify-content: center;
 }
 
-.brillex-button p,
-.brillex-button span {
+.awfficacy-button p,
+.awfficacy-button span {
     line-height: 1 !important;
 }
 
@@ -871,7 +871,7 @@ button:focus-visible {
 
 
 
-.form-control-brillex {
+.form-control-awfficacy {
     padding: 1rem 2rem 1rem 3.5rem;
     border: 1px solid var(--highlight-color);
     resize: none;
@@ -885,7 +885,7 @@ button:focus-visible {
     border-radius: 0.5rem;
 }
 
-.form-control-brillex.form-control-brillex-search {
+.form-control-awfficacy.form-control-awfficacy-search {
     padding: 1rem 3.5rem 1rem 2rem;
 }
 
@@ -903,7 +903,7 @@ button:focus-visible {
     right: 1rem;
 }
 
-.form-control-brillex:focus,
-.form-control-brillex:focus-visible {
+.form-control-awfficacy:focus,
+.form-control-awfficacy:focus-visible {
     border-color: var(--primary-color);
 }
