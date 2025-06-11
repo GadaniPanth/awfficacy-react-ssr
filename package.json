@@ -18,7 +18,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch server --exec \"npm run build && node dist/server.js\""
+    "dev": "nodemon server/server.js --exec babel-node",
+    "dev1": "nodemon --watch server --exec \"npm run build && node dist/server.js\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.27.4",
+    "@babel/node": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",

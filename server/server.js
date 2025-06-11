@@ -1,10 +1,10 @@
 import express from "express";
 import React from "react";
 import { renderToString } from "react-dom/server";
-import App from "../src/App.jsx";
+import App from "../src/App";
 import fs from "fs";
 import path from "path";
-import { StaticRouter } from "react-router-dom/server";
+import { StaticRouter } from "react-router";
 
 const app = express();
 const PORT = 3000;
