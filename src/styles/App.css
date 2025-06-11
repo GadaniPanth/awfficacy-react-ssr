@@ -1,18 +1,52 @@
-.navbar-wrapper {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
-    padding: 0.5rem;
-    gap: 3.5rem;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-/* 
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  gap: 3.5rem;
+  width: 100%;
+  height: 123.24px;
+}
+
 .navbar {
   list-style: none;
   display: flex;
   gap: 3.375rem;
 }
 
+.head_div .img_div {
+  width: 61.44px;
+  height: 28;
+}
+
+.head_div .learn_more p {
+  border-bottom: solid 1px #ffffff;
+}
+
+.head_div * {
+  color: #ffffff;
+}
+
+.head_div {
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background: #00338c;
+  padding: 18px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
 a {
   text-decoration: none;
   color: inherit;
@@ -168,37 +202,37 @@ a {
  */
 
 :root {
-    /* colors */
-    --primary-color: #333333;
-    --secondary-color: #0baea9;
-    --white-color: #ffffff;
-    --pure-black-color: #231f1f;
-    --highlight-color: #e1e4e8;
-    --background-smoke: #fafbfc;
-    --background-gray: #f5f5f5;
-    --secondary-highlight-color: #0366d6;
-    /* font-sizes */
-    --banner-title-font-size: 4.5rem;
-    --section-title-font-size: 2.375rem;
-    --section-subtitle-font-size: 2rem;
-    --paragraph-font-size: 1.5rem;
-    --content-font-size: 1.15rem;
-    --link-font-size: 1rem;
-    /* font-families */
-    --light-font-family: "Poppins-Light";
-    --regular-font-family: "Poppins-Regular";
-    --medium-font-family: "Poppins-Medium";
-    --semibold-font-family: "Poppins-SemiBold";
-    --bold-font-family: "Poppins-Bold";
-    --black-font-family: "Poppins-Black";
-    /* other */
-    --common-transition: all 0.6s ease;
-    --web-border-radius: 0.625rem;
-    --mobile-border-radius: 0.6rem;
-    --common-gap-size: 1rem;
-    --small-gap-size: 1.5rem;
-    --medium-gap-size: 3rem;
-    --big-gap-size: 6rem;
+  /* colors */
+  --primary-color: #333333;
+  --secondary-color: #0baea9;
+  --white-color: #ffffff;
+  --pure-black-color: #231f1f;
+  --highlight-color: #e1e4e8;
+  --background-smoke: #fafbfc;
+  --background-gray: #f5f5f5;
+  --secondary-highlight-color: #0366d6;
+  /* font-sizes */
+  --banner-title-font-size: 4.5rem;
+  --section-title-font-size: 2.375rem;
+  --section-subtitle-font-size: 2rem;
+  --paragraph-font-size: 1.5rem;
+  --content-font-size: 1.15rem;
+  --link-font-size: 1.125rem;
+  /* font-families */
+  --light-font-family: "Poppins-Light";
+  --regular-font-family: "Poppins-Regular";
+  --medium-font-family: "Poppins-Medium";
+  --semibold-font-family: "Poppins-SemiBold";
+  --bold-font-family: "Poppins-Bold";
+  --black-font-family: "Poppins-Black";
+  /* other */
+  --common-transition: all 0.6s ease;
+  --web-border-radius: 0.625rem;
+  --mobile-border-radius: 0.6rem;
+  --common-gap-size: 1rem;
+  --small-gap-size: 1.5rem;
+  --medium-gap-size: 3rem;
+  --big-gap-size: 6rem;
 }
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
@@ -908,4 +942,22 @@ button:focus-visible {
 .form-control-awfficacy:focus,
 .form-control-awfficacy:focus-visible {
     border-color: var(--primary-color);
+}
+
+.contact-button {
+  /* width: 156px;
+  height: 45px; */
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: solid 1px #000000;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.arrow-svg {
+  width: 18px;
 }
