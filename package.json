@@ -19,7 +19,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch . --ext js,json,css,mjs,cjs server --exec \"npm run build && node dist/server.js\""
+    "dev": "nodemon --watch . --ext js,json,css,mjs,cjs,jsx server --exec \"npm run build && node dist/server.js\""
   },
   "eslintConfig": {
     "extends": [
