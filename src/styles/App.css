@@ -1,6 +1,7 @@
 a {
-  background-color: aqua;
+    background-color: aqua;
 }
+
 /* 
 nav {
   display: flex;
@@ -604,6 +605,11 @@ button:focus-visible {
 .font_24 {
     font-size: 24px;
 }
+
+.font_56 {
+    font-size: 56px;
+}
+
 .font_80 {
     font-size: 80px;
 }

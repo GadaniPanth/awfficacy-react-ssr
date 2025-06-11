@@ -1,3 +1,13 @@
-h2{
+h2 {
     font-size: 20px;
+}
+
+.awfficacy_blue_box {
+    background: #00338C;
+    border-radius: 1.5rem;
+}
+
+.awfficacy_blue_box_heading h1 {
+    padding: 8.75rem 4rem;
+    
 }
