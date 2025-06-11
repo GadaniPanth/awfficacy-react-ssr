@@ -1,0 +1,12 @@
+a {
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+}

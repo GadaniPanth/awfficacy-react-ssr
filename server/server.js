@@ -1,3 +1,8 @@
+require("ignore-styles");
+require("@babel/register")({
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+});
+
 import express from "express";
 import React from "react";
 import { renderToString } from "react-dom/server";

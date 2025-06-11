@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
-import "./App.css";
+import "./styles/App.css";
 
 const App = () => {
   return (
