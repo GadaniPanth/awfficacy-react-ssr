@@ -112,7 +112,7 @@ const Landing = () => {
             </div>
             <div className="section-2-heading_list inner-flex gap_spacing">
               <h2 className="font_32 fw_700">Investment Banking</h2>
-              <div class="grid-three">
+              <div className="grid-three">
                 <div className="inner-flex">
                   <div className="inner-flex">
                     <p className="fw_bold font_24">
@@ -125,7 +125,7 @@ const Landing = () => {
                     <p className="fw_400 font_24">(iii) IPO readiness</p>
                   </div>
                 </div>
-                <div class="inner-flex">
+                <div className="inner-flex">
                   <div className="state_paragraph">
                     <p className="fw_bold font_24">b. Deal Management</p>
                     <p className="fw_400 font_24">(i) Fundraising advisory </p>

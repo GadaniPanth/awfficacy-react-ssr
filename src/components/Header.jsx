@@ -36,8 +36,8 @@ const Header = () => {
               setIsMobNavOpen(!isMobNavOpen);
             }}
           >
-            <div class="container">
-              <div class={`toggle ${isMobNavOpen ? "active" : ""}`}>
+            <div className="container">
+              <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -83,7 +83,7 @@ const Header = () => {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 <p>Group Companies</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   keyboard_arrow_down
                 </span>
               </div>
@@ -157,7 +157,7 @@ const Header = () => {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 <p>Group Companies</p>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                   keyboard_arrow_down
                 </span>
               </div>

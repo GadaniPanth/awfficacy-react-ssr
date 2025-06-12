@@ -299,4 +299,8 @@ header {
   .navbar-mob {
     width: 100% !important;
   }
+
+  .head_div {
+    background: red;
+  }
 }
