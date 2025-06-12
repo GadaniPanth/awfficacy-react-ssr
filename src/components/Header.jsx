@@ -50,7 +50,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="link-font-size">
-                <Link to="/what-we-do">
+                <Link to="/What_we_do">
                   <p>What we do</p>
                 </Link>
               </li>
@@ -128,7 +128,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="link-font-size">
-                  <Link to="/what-we-do">
+                  <Link to="/What_we_do">
                     <p>What we do</p>
                   </Link>
                 </li>
