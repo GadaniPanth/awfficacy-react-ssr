@@ -132,7 +132,7 @@ const Landing = () => {
                     <p className="fw_400 font_24">
                       (ii) Transactional advisory
                     </p>
-                  {/* </div> */}
+                  </div>
                 </div>
                 <p className="fw_bold font_24">c. Mutual Fund advisory</p>
               </div>
@@ -141,6 +141,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
