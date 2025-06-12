@@ -113,7 +113,7 @@ header {
 .navbar-mob {
   display: none;
   flex-direction: column;
-  max-width: 0;
+  /* max-width: 0; */
   width: 30%;
   height: 100vh;
   position: fixed;
@@ -124,7 +124,7 @@ header {
 }
 
 .navbar-mob.nav-active {
-  max-width: 100%;
+  /* max-width: 100%; */
   right: 0%;
   transition: var(--common-transition);
 }
@@ -297,10 +297,6 @@ header {
 
 @media only screen and (max-width: 680px) {
   .navbar-mob {
-    width: 100% !important;
-  }
-
-  .head_div {
-    background: red;
+    width: 100%;
   }
 }
