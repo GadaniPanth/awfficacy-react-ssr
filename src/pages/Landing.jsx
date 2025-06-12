@@ -23,10 +23,10 @@ const Landing = () => {
         <div className="grid-two">
           <div className="section-2-left">
             <div className="section-2-img-details flex-row">
-              <img src="./Awfficacy Logo 1.svg" alt="" />
-                <button>
-                    <p>Know More</p>
-                </button>
+              <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
+              <button>
+                <p>Know More</p>
+              </button>
             </div>
           </div>
           <div className="section-2-right">
