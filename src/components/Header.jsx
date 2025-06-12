@@ -7,14 +7,6 @@ const Header = () => {
 
   const [isMobNavOpen, setIsMobNavOpen] = useState(false);
 
-  useEffect(() => {
-    if (isDropdownOpen) {
-      document.body.style.overflowX = "hidden";
-    } else {
-      document.body.style.overflowX = "auto";
-    }
-  }, [isMobNavOpen]);
-
   return (
     <>
       <header>
@@ -26,7 +18,7 @@ const Header = () => {
             <p>We are an Allinial Global network member</p>
           </div>
           <div className="learn_more link-font-size">
-            <Link href="/learn-more">
+            <Link to="/learn-more">
               <p>Learn More</p>
             </Link>
           </div>
@@ -47,7 +39,7 @@ const Header = () => {
         </div>
         <nav className="navbar-wrapper navbar-horizontal">
           <div className="nav-logo">
-            <Link href="/">
+            <Link to="/">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -90,17 +82,17 @@ const Header = () => {
               {isDropdownOpen && (
                 <div className="dropdown-container">
                   <div className="link-font-size dropdown-item">
-                    <Link href="/awfficacy-global">
+                    <Link to="/awfficacy-global">
                       <p>Awfficacy Global</p>
                     </Link>
                   </div>
                   <div className="link-font-size dropdown-item">
-                    <Link href="/awfficacy-capital">
+                    <Link to="/awfficacy-capital">
                       <p>Awfficacy Capital</p>
                     </Link>
                   </div>
                   <div className="link-font-size dropdown-item">
-                    <Link href="/scaleAx">
+                    <Link to="/scaleAx">
                       <p>ScaleAx</p>
                     </Link>
                   </div>
@@ -109,7 +101,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link href="/contact">
+            <Link to="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">
@@ -121,7 +113,7 @@ const Header = () => {
         </nav>
         <nav className={`navbar-mob ${isMobNavOpen ? "nav-active" : ""}`}>
           <div className="nav-logo">
-            <Link href="/">
+            <Link to="/">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -167,17 +159,17 @@ const Header = () => {
                 }`}
               >
                 <div className="link-font-size dropdown-item">
-                  <Link href="/awfficacy-global">
+                  <Link to="/awfficacy-global">
                     <p>Awfficacy Global</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link href="/awfficacy-capital">
+                  <Link to="/awfficacy-capital">
                     <p>Awfficacy Capital</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link href="/scaleAx">
+                  <Link to="/scaleAx">
                     <p>ScaleAx</p>
                   </Link>
                 </div>
@@ -185,7 +177,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link href="/contact">
+            <Link to="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">

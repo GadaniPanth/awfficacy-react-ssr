@@ -27,7 +27,7 @@ const Landing = () => {
               <div className="section-2-img-details flex-row j-c-sb alc">
                 <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
                 <div className="btn-know_icon">
-                  <Link href="/">
+                  <Link to="/">
                     <div className="btn-know flex-row alc">
                       <p className="font_24 fw_bold"> Know More</p>
                       <div className="arrow-svg">
@@ -67,7 +67,7 @@ const Landing = () => {
               <div className="section-2-img-details flex-row j-c-sb alc">
                 <img src="./global.svg" alt="global" />;
                 <div className="btn-know_icon">
-                  <Link href="/">
+                  <Link to="/">
                     <div className="btn-know flex-row alc">
                       <p className="font_24 fw_bold"> Know More</p>
                       <div className="arrow-svg">
@@ -100,7 +100,7 @@ const Landing = () => {
             <div className="section-2-img-details flex-row j-c-sb alc">
               <img src="./images/AWF cap.svg" alt="Awfficacy Logo" />
               <div className="btn-know_icon">
-                <Link href="/">
+                <Link to="/">
                   <div className="btn-know flex-row alc">
                     <p className="font_24 fw_bold"> Know More</p>
                     <div className="arrow-svg">
