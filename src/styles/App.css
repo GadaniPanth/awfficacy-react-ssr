@@ -954,7 +954,7 @@ button:focus-visible {
   }
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1075px) {
   :root {
     --link-font-size: 1.125rem;
   }

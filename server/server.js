@@ -16,7 +16,7 @@ const PORT = 3000;
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/*", (req, res) => {
   const appHtml = renderToString(
     <StaticRouter location={req.url}>
       <App />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [isMobNavOpen, setIsMobNavOpen] = useState(false);
 
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <nav className="navbar-wrapper navbar-horizontal">
           <div className="nav-logo">
-            <Link href="/">
+            <Link href="">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -79,25 +79,27 @@ const Header = () => {
                   keyboard_arrow_down
                 </span>
               </div>
-              {isDropdownOpen && (
-                <div className="dropdown-container">
-                  <div className="link-font-size dropdown-item">
-                    <Link href="/awfficacy-global">
-                      <p>Awfficacy Global</p>
-                    </Link>
-                  </div>
-                  <div className="link-font-size dropdown-item">
-                    <Link href="/awfficacy-capital">
-                      <p>Awfficacy Capital</p>
-                    </Link>
-                  </div>
-                  <div className="link-font-size dropdown-item">
-                    <Link href="/scaleAx">
-                      <p>ScaleAx</p>
-                    </Link>
-                  </div>
+              <div
+                className={`dropdown-container ${
+                  isDropdownOpen ? "dropdown-active" : ""
+                }`}
+              >
+                <div className="link-font-size dropdown-item">
+                  <Link to="/awfficacy-global">
+                    <p>Awfficacy Global</p>
+                  </Link>
                 </div>
-              )}
+                <div className="link-font-size dropdown-item">
+                  <Link to="/awfficacy-capital">
+                    <p>Awfficacy Capital</p>
+                  </Link>
+                </div>
+                <div className="link-font-size dropdown-item">
+                  <Link to="/scaleAx">
+                    <p>ScaleAx</p>
+                  </Link>
+                </div>
+              </div>
             </li>
           </ul>
           <div className="btn">
