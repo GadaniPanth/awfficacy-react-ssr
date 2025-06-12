@@ -18,7 +18,7 @@ const Header = () => {
             <p>We are an Allinial Global network member</p>
           </div>
           <div className="learn_more link-font-size">
-            <Link to="/learn-more">
+            <Link href="/learn-more">
               <p>Learn More</p>
             </Link>
           </div>
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <nav className="navbar-wrapper navbar-horizontal">
           <div className="nav-logo">
-            <Link to="">
+            <Link href="">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -103,7 +103,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link to="/contact">
+            <Link href="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">
@@ -115,7 +115,7 @@ const Header = () => {
         </nav>
         <nav className={`navbar-mob ${isMobNavOpen ? "nav-active" : ""}`}>
           <div className="nav-logo">
-            <Link to="/">
+            <Link href="/">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -161,17 +161,17 @@ const Header = () => {
                 }`}
               >
                 <div className="link-font-size dropdown-item">
-                  <Link to="/awfficacy-global">
+                  <Link href="/awfficacy-global">
                     <p>Awfficacy Global</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link to="/awfficacy-capital">
+                  <Link href="/awfficacy-capital">
                     <p>Awfficacy Capital</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link to="/scaleAx">
+                  <Link href="/scaleAx">
                     <p>ScaleAx</p>
                   </Link>
                 </div>
@@ -179,7 +179,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link to="/contact">
+            <Link href="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">

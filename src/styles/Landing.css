@@ -55,7 +55,7 @@ h2 {
 }
 
 .gap_spacing {
-    gap: 2.25rem !important;
+    gap: 2.25rem ;
 }
 
 /* Section 3  */
@@ -67,24 +67,115 @@ h2 {
     gap: 1rem;
 }
 
-@media only screen and (max-width: 1680) {}
-
-@media only screen and (max-width: 1440) {
-    .section-padding-4rem {
-        padding: 3rem 0;
+@media only screen and (max-width: 1680px) {
+    html {
+        font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 1366) {}
+@media only screen and (max-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
 
-@media only screen and (max-width: 1152) {}
+    .section-padding-4rem {
+        padding: 3rem 0 ;
+    }
 
-@media only screen and (max-width: 1024) {}
+    .section-1 {
+        padding-top: 14rem !important;
+    }
 
-@media only screen and (max-width: 991) {}
+}
 
-@media only screen and (max-width: 767) {}
+@media only screen and (max-width: 1366px) {
+    html {
+        font-size: 13px;
+    }
 
-@media only screen and (max-width: 600) {}
+    .font_56 {
+        font-size: 42px ;
+    }
 
-@media only screen and (max-width: 325) {}
+    .section-2-left,
+    .section-2-right {
+        padding: 1.5rem 2rem ;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    html {
+        font-size: 12px;
+    }
+
+    .font_56 {
+        font-size: 30px ;
+    }
+
+    .font_32 {
+        font-size: 29px ;
+    }
+
+    .font_24 {
+        font-size: 20px ;
+    }
+
+    .gap_spacing {
+        gap: 1rem ;
+    }
+
+    .section-padding-4rem {
+        padding: 2rem 0 ;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 11px;
+    }
+
+    .font_32 {
+        font-size: 26px ;
+    }
+
+    .grid-two {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem ;
+    }
+
+    .section-1 {
+        padding-top: 14rem !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /* html {
+        font-size: 15px;
+    } */
+
+    .awfficacy_blue_box_heading,
+    .awfficacy_blue_box_img {
+        flex-basis: 50%;
+    }
+
+    .grid-two {
+        grid-template-columns: repeat(1, 1fr) ;
+        gap: 4rem ;
+    }
+
+    .grid-three {
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .grid-three {
+        grid-template-columns: 100% ;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 325px) {}
