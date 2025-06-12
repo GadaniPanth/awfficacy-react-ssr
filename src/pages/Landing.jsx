@@ -47,7 +47,7 @@ const Landing = () => {
                       a. Central government schemes
                     </p>
                     <p className="fw_400 font_24">
-                      (i) Production Linked Incentive (PLI) schemes{" "}
+                      (i) Production Linked Incentive (PLI) schemes
                     </p>
                     <p className="fw_400 font_24">
                       (ii) Other Central government schemes
@@ -65,7 +65,7 @@ const Landing = () => {
           <div className="section-2-right">
             <div className="inner-flex gap_spacing">
               <div className="section-2-img-details flex-row j-c-sb alc">
-                <img src="./global.svg" alt="global" />;
+                <img src="./global.svg" alt="global" />
                 <div className="btn-know_icon">
                   <Link href="/">
                     <div className="btn-know flex-row alc">
@@ -126,13 +126,13 @@ const Landing = () => {
                   </div>
                 </div>
                 <div class="inner-flex">
-                  <div className="state_paragraph">
+                  {/* <div className="state_paragraph"> */}
                     <p className="fw_bold font_24">b. Deal Management</p>
                     <p className="fw_400 font_24">(i) Fundraising advisory </p>
                     <p className="fw_400 font_24">
                       (ii) Transactional advisory
                     </p>
-                  </div>
+                  {/* </div> */}
                 </div>
                 <p className="fw_bold font_24">c. Mutual Fund advisory</p>
               </div>
