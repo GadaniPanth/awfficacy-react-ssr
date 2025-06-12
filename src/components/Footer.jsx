@@ -114,10 +114,10 @@ const Footer = () => {
                       <p>Hit the below to find any new update.</p>
                     </div>
                     <div className="connections flex-row g18">
-                      <Link to={""}>
+                      <Link to={"https://www.facebook.com/awfficacy/"}>
                         <img src="./images/fb.svg" alt="Facebook" />
                       </Link>
-                      <Link to={""}>
+                      <Link to={"https://www.instagram.com/awfficacy/?hl=en"}>
                         <img src="./images/ins.svg" alt="Instagram" />
                       </Link>
                     </div>
