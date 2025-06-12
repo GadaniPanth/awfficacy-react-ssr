@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <nav className="navbar-wrapper navbar-horizontal">
           <div className="nav-logo">
-            <Link to="/">
+            <Link to="">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -79,25 +79,27 @@ const Header = () => {
                   keyboard_arrow_down
                 </span>
               </div>
-              {isDropdownOpen && (
-                <div className="dropdown-container">
-                  <div className="link-font-size dropdown-item">
-                    <Link to="/awfficacy-global">
-                      <p>Awfficacy Global</p>
-                    </Link>
-                  </div>
-                  <div className="link-font-size dropdown-item">
-                    <Link to="/awfficacy-capital">
-                      <p>Awfficacy Capital</p>
-                    </Link>
-                  </div>
-                  <div className="link-font-size dropdown-item">
-                    <Link to="/scaleAx">
-                      <p>ScaleAx</p>
-                    </Link>
-                  </div>
+              <div
+                className={`dropdown-container ${
+                  isDropdownOpen ? "dropdown-active" : ""
+                }`}
+              >
+                <div className="link-font-size dropdown-item">
+                  <Link to="/awfficacy-global">
+                    <p>Awfficacy Global</p>
+                  </Link>
                 </div>
-              )}
+                <div className="link-font-size dropdown-item">
+                  <Link to="/awfficacy-capital">
+                    <p>Awfficacy Capital</p>
+                  </Link>
+                </div>
+                <div className="link-font-size dropdown-item">
+                  <Link to="/scaleAx">
+                    <p>ScaleAx</p>
+                  </Link>
+                </div>
+              </div>
             </li>
           </ul>
           <div className="btn">
