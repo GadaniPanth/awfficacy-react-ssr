@@ -20,7 +20,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="section-2 main-container section-padding-4rem">
+      <div className="section-2 main-container section-padding-4rem pt0">
         <div className="grid-two">
           <div className="section-2-left">
             <div className="inner-flex gap_spacing">
@@ -94,7 +94,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="section-3 main-container section-padding-4rem">
+      <div className="section-3 main-container section-padding-4rem pt0">
         <div className="section-2-left">
           <div className="inner-flex gap_spacing">
             <div className="section-2-img-details flex-row j-c-sb alc">

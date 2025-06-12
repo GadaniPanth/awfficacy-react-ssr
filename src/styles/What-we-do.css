@@ -2,6 +2,25 @@
     padding-top: 15rem !important;
 }
 
-.yellow-color{
+.yellow-color {
     color: #FEBF00;
+}
+
+
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+}
+
+.leftside {
+    padding: 5rem 4rem;
+    border-radius: 1rem;
+    border: 1px solid #00338C;
+}
+
+.rightside {
+    padding: 1.5rem;
+    border: 1px solid #FEBF00;
+    border-radius: 1rem;
 }
