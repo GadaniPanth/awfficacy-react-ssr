@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
+import What_we_do from "./pages/What-we-do";
 import "./styles/App.css";
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
-          {/* <Route path="/What_we_do" element={<What_we_do />} /> */}
+          <Route path="/what-we-do" element={<What_we_do />} />
         </Routes>
       </main>
       <Footer />
