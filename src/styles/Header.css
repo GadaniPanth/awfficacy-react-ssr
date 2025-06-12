@@ -1,3 +1,8 @@
+hr {
+  margin: 0 auto;
+  padding: 0;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -6,12 +11,18 @@ header {
   z-index: 9990;
 }
 
+.navbar-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .navbar-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
-  gap: 3.5rem;
+  /* gap: 3.5rem; */
   width: 100%;
   height: 123.24px;
   background-color: #ffffff;
@@ -48,6 +59,12 @@ header {
   align-items: center;
 }
 
+.navbar .link-font-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar .dropdown {
   display: flex;
   align-items: center;
@@ -82,5 +99,98 @@ header {
   /* background-color: #ffffff; */
 }
 
-@media only screen and (max-width: 1440px) {
+.navbar-mob {
+  display: none;
+  flex-direction: column;
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.navbar-mob .navbar {
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: start;
+  align-items: start;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  font-size: 16px;
+}
+
+.navbar-mob .contact-button {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.navbar-mob .dropdown-container {
+  position: relative;
+  top: 0;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-mob .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navbar-mob .link-font-size {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navbar-mob .dropdown-container .dropdown-item {
+  width: 100%;
+  /* height: 67px; */
+  gap: 10px;
+  padding: 24px 0;
+}
+
+.dropdown-container {
+  transition: var(--common-transition);
+}
+
+.navbar-mob .nav-logo {
+  border-bottom: solid 1px #ebe7e7;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1366px) {
+  .navbar {
+    gap: 2.275rem;
+  }
+
+  .navbar-wrapper {
+    padding: 0 3.25rem;
+  }
+}
+
+@media only screen and (max-width: 1152px) {
+  .navbar {
+    gap: 1.7rem;
+  }
+
+  .navbar-wrapper {
+    padding: 0 2rem;
+  }
+
+  .contact-button {
+    padding: 14px 20px !important;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .navbar-horizontal {
+    display: none;
+  }
+
+  .navbar-mob {
+    display: flex;
+  }
 }

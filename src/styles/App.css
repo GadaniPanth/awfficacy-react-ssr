@@ -911,3 +911,15 @@ button:focus-visible {
 .arrow-svg {
   width: 18px;
 }
+
+@media only screen and (max-width: 1440px) {
+  :root {
+    --link-font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  :root {
+    --link-font-size: 1.125rem;
+  }
+}
