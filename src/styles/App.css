@@ -185,6 +185,10 @@ a {
   --big-gap-size: 6rem;
 }
 
+.light-font-family {
+  font-family: var(--light-font-family);
+}
+
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 4px;

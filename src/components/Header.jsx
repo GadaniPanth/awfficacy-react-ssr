@@ -15,10 +15,12 @@ const Header = () => {
             <img src="./images/allinial_logo.png" alt="Allinial Logo" />
           </div>
           <div className="link-font-size">
-            <p>We are an Allinial Global network member</p>
+            <p className="light-font-family">
+              We are an Allinial Global network member
+            </p>
           </div>
           <div className="learn_more link-font-size">
-            <Link href="/learn-more">
+            <Link to="/learn-more">
               <p>Learn More</p>
             </Link>
           </div>
@@ -39,7 +41,7 @@ const Header = () => {
         </div>
         <nav className="navbar-wrapper navbar-horizontal">
           <div className="nav-logo">
-            <Link href="">
+            <Link to="/">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -76,7 +78,7 @@ const Header = () => {
               >
                 <p>Group Companies</p>
                 <span className="material-symbols-outlined">
-                  keyboard_arrow_down
+                  {isDropdownOpen ? "keyboard_arrow_up" : "keyboard_arrow_down"}
                 </span>
               </div>
               <div
@@ -85,17 +87,17 @@ const Header = () => {
                 }`}
               >
                 <div className="link-font-size dropdown-item">
-                  <Link to="/awfficacy-global">
+                  <Link to="https://www.awfficacyglobal.com/" target="_blank">
                     <p>Awfficacy Global</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link to="/awfficacy-capital">
+                  <Link to="https://www.awfficacy.capital/" target="_blank">
                     <p>Awfficacy Capital</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link to="/scaleAx">
+                  <Link to="https://www.scaleax.com/" target="_blank">
                     <p>ScaleAx</p>
                   </Link>
                 </div>
@@ -103,7 +105,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link href="/contact">
+            <Link to="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">
@@ -115,7 +117,7 @@ const Header = () => {
         </nav>
         <nav className={`navbar-mob ${isMobNavOpen ? "nav-active" : ""}`}>
           <div className="nav-logo">
-            <Link href="/">
+            <Link to="/">
               <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
             </Link>
           </div>
@@ -161,17 +163,17 @@ const Header = () => {
                 }`}
               >
                 <div className="link-font-size dropdown-item">
-                  <Link href="/awfficacy-global">
+                  <Link to="/awfficacy-global">
                     <p>Awfficacy Global</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link href="/awfficacy-capital">
+                  <Link to="/awfficacy-capital">
                     <p>Awfficacy Capital</p>
                   </Link>
                 </div>
                 <div className="link-font-size dropdown-item">
-                  <Link href="/scaleAx">
+                  <Link to="/scaleAx">
                     <p>ScaleAx</p>
                   </Link>
                 </div>
@@ -179,7 +181,7 @@ const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Link href="/contact">
+            <Link to="/contact">
               <div className="contact-button">
                 Contact Us
                 <div className="arrow-svg">
