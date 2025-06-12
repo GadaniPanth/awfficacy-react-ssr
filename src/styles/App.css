@@ -945,4 +945,8 @@ button:focus-visible {
   :root {
     --link-font-size: 1.125rem;
   }
+
+  header hr {
+    display: none;
+  }
 }
