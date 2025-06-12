@@ -36,6 +36,7 @@ h2 {
     padding-top: 15rem !important;
 }
 
+
 .btn {
     padding: 12px 24px;
     border-radius: 8px;
@@ -55,7 +56,7 @@ h2 {
 }
 
 .gap_spacing {
-    gap: 2.25rem ;
+    gap: 2.25rem;
 }
 
 /* Section 3  */
@@ -79,7 +80,7 @@ h2 {
     }
 
     .section-padding-4rem {
-        padding: 3rem 0 ;
+        padding: 3rem 0;
     }
 
     .section-1 {
@@ -94,12 +95,12 @@ h2 {
     }
 
     .font_56 {
-        font-size: 42px ;
+        font-size: 42px;
     }
 
     .section-2-left,
     .section-2-right {
-        padding: 1.5rem 2rem ;
+        padding: 1.5rem 2rem;
     }
 }
 
@@ -109,23 +110,23 @@ h2 {
     }
 
     .font_56 {
-        font-size: 30px ;
+        font-size: 30px;
     }
 
     .font_32 {
-        font-size: 29px ;
+        font-size: 29px;
     }
 
     .font_24 {
-        font-size: 20px ;
+        font-size: 20px;
     }
 
     .gap_spacing {
-        gap: 1rem ;
+        gap: 1rem;
     }
 
     .section-padding-4rem {
-        padding: 2rem 0 ;
+        padding: 2rem 0;
     }
 }
 
@@ -135,12 +136,12 @@ h2 {
     }
 
     .font_32 {
-        font-size: 26px ;
+        font-size: 26px;
     }
 
     .grid-two {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.8rem ;
+        gap: 1.8rem;
     }
 
     .section-1 {
@@ -159,19 +160,19 @@ h2 {
     }
 
     .grid-two {
-        grid-template-columns: repeat(1, 1fr) ;
-        gap: 4rem ;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
     }
 
     .grid-three {
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .grid-three {
-        grid-template-columns: 100% ;
+        grid-template-columns: 100%;
         gap: 1rem;
     }
 }
