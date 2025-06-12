@@ -595,12 +595,36 @@ button:focus-visible {
   font-size: 24px;
 }
 
+.font_32 {
+  font-size: 32px;
+}
+
 .font_56 {
   font-size: 56px;
 }
 
 .font_80 {
   font-size: 80px;
+}
+
+.fw_bold {
+  font-weight: bold;
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+.fw_500 {
+  font-weight: 500;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+.fw_700 {
+  font-weight: 700;
 }
 
 .material-symbols-outlined {
@@ -911,7 +935,6 @@ button:focus-visible {
 .arrow-svg {
   width: 18px;
 }
-
 @media only screen and (max-width: 1440px) {
   :root {
     --link-font-size: 0.9rem;
