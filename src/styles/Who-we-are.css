@@ -1,0 +1,11 @@
+.whoWeAre-wrapper .blue-box {
+  padding: 54px 64px;
+}
+
+.whoWeAre-wrapper .section-2 .head h1 {
+  font-size: calc(var(--section-title-font-size) + 1rem);
+}
+
+.whoWeAre-wrapper .section-2 .body p {
+  font-size: var(--paragraph-font-size);
+}

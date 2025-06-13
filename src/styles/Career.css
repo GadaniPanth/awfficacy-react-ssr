@@ -1,4 +1,4 @@
-.whoWeAre-wrapper .section-1 .content {
+.career-wrapper .section-1 .content {
   background-color: #00338c;
   /* justify-content: center; */
   /* height: 95%; */
@@ -7,55 +7,55 @@
   border-radius: 24px;
 }
 
-.whoWeAre-wrapper .section-1 h1 {
+.career-wrapper .section-1 h1 {
   font-size: 3.5rem;
 }
 
-.whoWeAre-wrapper .section-1 p {
+.career-wrapper .section-1 p {
   color: #ffffff;
   font-size: var(--paragraph-font-size);
 }
 
-.whoWeAre-wrapper .section-2 {
+.career-wrapper .section-2 {
 }
 
-.whoWeAre-wrapper .inner-flex {
+.career-wrapper .inner-flex {
   border-radius: 24px;
   border: solid 1px #00338c;
   padding: 40px 48px;
   gap: calc(var(--big-gap-size) - 2rem);
 }
 
-.whoWeAre-wrapper .head h1 {
+.career-wrapper .head h1 {
   font-size: var(--section-subtitle-font-size);
 }
 
-.whoWeAre-wrapper .section-2 .positions .bag-img {
+.career-wrapper .section-2 .positions .bag-img {
   width: 64px;
   margin: 0 auto;
 }
 
-.whoWeAre-wrapper .section-2 .positions .text p {
+.career-wrapper .section-2 .positions .text p {
   font-size: 1.75rem;
   color: #777777;
 }
 
-.whoWeAre-wrapper .section-2 .bottom_div p {
+.career-wrapper .section-2 .bottom_div p {
   color: #ffffff;
 }
-.whoWeAre-wrapper .section-2 .bottom_div {
+.career-wrapper .section-2 .bottom_div {
   background-color: #00338c;
 }
-.whoWeAre-wrapper .text_div {
+.career-wrapper .text_div {
   padding: 24px 0;
   border-radius: 12px;
 }
 
-.whoWeAre-wrapper .text_div p {
+.career-wrapper .text_div p {
   font-size: var(--paragraph-font-size);
 }
 
-.whoWeAre-wrapper .section-3 .head {
+.career-wrapper .section-3 .head {
   display: block;
   padding-top: 40px 48px;
 }
@@ -81,27 +81,27 @@
   width: 100%;
 }
 
-.whoWeAre-wrapper .box img {
+.career-wrapper .box img {
   border-radius: 24px;
 }
 
-.whoWeAre-wrapper .swiper_wrapper {
+.career-wrapper .swiper_wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0 82px;
 }
-.whoWeAre-wrapper .swiper-slide:active {
+.career-wrapper .swiper-slide:active {
   cursor: grabbing;
 }
 
-.whoWeAre-wrapper .swiper-slide {
+.career-wrapper .swiper-slide {
   cursor: grab;
   width: 100% !important;
   height: unset !important;
 }
 
-.whoWeAre-wrapper .custom-prev,
-.whoWeAre-wrapper .custom-next {
+.career-wrapper .custom-prev,
+.career-wrapper .custom-next {
   border: solid 1px #00338c;
   padding: 24px;
   position: absolute;
@@ -111,128 +111,128 @@
   user-select: none;
 }
 
-.whoWeAre-wrapper .custom-prev::after,
-.whoWeAre-wrapper .custom-next::after {
+.career-wrapper .custom-prev::after,
+.career-wrapper .custom-next::after {
   display: none;
 }
 
-.whoWeAre-wrapper .custom-prev {
+.career-wrapper .custom-prev {
   left: 0 !important;
 }
 
-.whoWeAre-wrapper .custom-next {
+.career-wrapper .custom-next {
   left: unset !important;
   right: 0 !important;
 }
 
 @media only screen and (max-width: 1024px) {
-  .whoWeAre-wrapper .section-1 h1 {
+  .career-wrapper .section-1 h1 {
     font-size: 2.8rem;
   }
 
-  .whoWeAre-wrapper .section-2 .positions .bag-img {
+  .career-wrapper .section-2 .positions .bag-img {
     width: 50px;
   }
 
-  .whoWeAre-wrapper .section-2 .positions .text p {
+  .career-wrapper .section-2 .positions .text p {
     font-size: 1.4rem;
   }
 
-  .whoWeAre-wrapper .inner-flex {
+  .career-wrapper .inner-flex {
     gap: calc(var(--big-gap-size) - 5rem);
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .whoWeAre-wrapper .section-1 h1 {
+  .career-wrapper .section-1 h1 {
     font-size: 2.5rem;
   }
 
-  .whoWeAre-wrapper .text_div {
+  .career-wrapper .text_div {
     padding: 24px 10px;
   }
 
-  .whoWeAre-wrapper .custom-prev,
-  .whoWeAre-wrapper .custom-next {
+  .career-wrapper .custom-prev,
+  .career-wrapper .custom-next {
     top: unset !important;
     bottom: 0 !important;
   }
 
-  .whoWeAre-wrapper .custom-prev {
+  .career-wrapper .custom-prev {
     left: 40% !important;
   }
-  .whoWeAre-wrapper .custom-next {
+  .career-wrapper .custom-next {
     right: 40% !important;
   }
 
-  .whoWeAre-wrapper .swiper_wrapper {
+  .career-wrapper .swiper_wrapper {
     padding: 0;
     padding-bottom: 62px;
     margin: 0 auto;
   }
 
-  .whoWeAre-wrapper .swiper_wrapper {
+  .career-wrapper .swiper_wrapper {
     width: 100%;
   }
 
-  .whoWeAre-wrapper .swiper-slide {
+  .career-wrapper .swiper-slide {
     width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .whoWeAre-wrapper .inner-flex {
+  .career-wrapper .inner-flex {
     padding: 40px 12px;
   }
 
-  .whoWeAre-wrapper .section-1 .content {
+  .career-wrapper .section-1 .content {
     padding: 50px 25px;
   }
 
-  .whoWeAre-wrapper .inner-flex {
+  .career-wrapper .inner-flex {
     gap: calc(var(--big-gap-size) - 4rem);
   }
 
-  .whoWeAre-wrapper .custom-prev {
+  .career-wrapper .custom-prev {
     left: 38% !important;
   }
 
-  .whoWeAre-wrapper .custom-next {
+  .career-wrapper .custom-next {
     right: 38% !important;
   }
 }
 
 @media only screen and (max-width: 486px) {
-  .whoWeAre-wrapper .custom-prev {
+  .career-wrapper .custom-prev {
     left: 30% !important;
   }
-  .whoWeAre-wrapper .custom-next {
+  .career-wrapper .custom-next {
     right: 30% !important;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .whoWeAre-wrapper .section-1 .content {
+  .career-wrapper .section-1 .content {
     padding: 25px 11px;
   }
 
-  .whoWeAre-wrapper .section-2 .inner-flex {
+  .career-wrapper .section-2 .inner-flex {
     padding: 40px 7px;
   }
 
-  .whoWeAre-wrapper .section-2 .inner-flex {
+  .career-wrapper .section-2 .inner-flex {
     gap: calc(var(--big-gap-size) - 3rem);
   }
 
-  .whoWeAre-wrapper .inner-flex-medium {
+  .career-wrapper .inner-flex-medium {
     gap: 1.5rem !important;
   }
 
-  .whoWeAre-wrapper .inner-flex {
+  .career-wrapper .inner-flex {
     gap: calc(var(--big-gap-size) - 5.3rem);
   }
 
-  .whoWeAre-wrapper .box img {
+  .career-wrapper .box img {
     border-radius: 16px;
     height: 170px;
   }

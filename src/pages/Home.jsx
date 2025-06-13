@@ -339,7 +339,7 @@ const Home = () => {
             </p>
           </div>
           <div className="contact-btn">
-            <Link to="/about">
+            <Link to="/contact">
               <div className="button button-style-blue">
                 <p>Contact Us</p>
                 <div className="arrow-svg">

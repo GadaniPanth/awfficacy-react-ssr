@@ -32,7 +32,7 @@ const Career = () => {
 
   return (
     <>
-      <div className="whoWeAre-wrapper">
+      <div className="career-wrapper">
         <div className="section-1 main-container section-padding-4rem">
           <div className="content inner-flex inner-flex-medium">
             <div className="head">
@@ -119,7 +119,7 @@ const Career = () => {
                     <SwiperSlide className="box">
                       <div>
                         <img
-                          src="./images/who_we_are/who-we-are.png "
+                          src="./images/career/career.png "
                           alt="Life at Awfficacy"
                         />
                       </div>
@@ -127,7 +127,7 @@ const Career = () => {
                     <SwiperSlide className="box">
                       <div>
                         <img
-                          src="./images/who_we_are/who-we-are.png "
+                          src="./images/career/career.png "
                           alt="Life at Awfficacy"
                         />
                       </div>
