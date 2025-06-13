@@ -9,20 +9,6 @@ const Header = () => {
 
   return (
     <>
-      <div
-        className="menu_btn"
-        onClick={() => {
-          setIsMobNavOpen(!isMobNavOpen);
-        }}
-      >
-        <div className="container">
-          <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
       <header>
         <div className="head_div">
           <div className="img_div">
@@ -141,11 +127,61 @@ const Header = () => {
               </Link>
             </div>
           </nav>
-          <nav className={`navbar-mob ${isMobNavOpen ? "nav-active" : ""}`}>
+          <div className="mob-header">
             <div className="nav-logo">
               <Link to="/">
                 <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
               </Link>
+            </div>
+            <div
+              className="menu_btn"
+              onClick={() => {
+                setIsMobNavOpen(true);
+              }}
+            >
+              <div className="container">
+                <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav className={`navbar-mob ${isMobNavOpen ? "nav-active" : ""}`}>
+            <div
+              className="menu_btn"
+              onClick={() => {
+                setIsMobNavOpen(false);
+              }}
+            >
+              <div className="container">
+                <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div className="nav-logo">
+              <Link to="/">
+                <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
+              </Link>
+            </div>
+            <div className="head_div">
+              <div className="img_div">
+                <img src="./images/allinial_logo.png" alt="Allinial Logo" />
+              </div>
+              <div className="link-font-size">
+                <p className="light-font-family">
+                  We are an Allinial Global network member
+                </p>
+              </div>
+              <div className="learn_more link-font-size">
+                <Link to="/learn-more">
+                  <p>Learn More</p>
+                </Link>
+              </div>
             </div>
             <ul className="navbar">
               <li className="link-font-size">
@@ -173,7 +209,10 @@ const Header = () => {
                   <p>Careers</p>
                 </Link>
               </li>
-              <li className="relative" style={{ width: "100%" }}>
+              <li
+                className="relative"
+                style={{ width: "100%", background: "#FFFFFF" }}
+              >
                 <div
                   className="dropdown link-font-size"
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}

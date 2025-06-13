@@ -1,3 +1,7 @@
+#root {
+  overflow-x: hidden;
+}
+
 /* 
 a {
   text-decoration: none;
@@ -933,7 +937,7 @@ button:focus-visible {
 /* CSS STarts here */
 
 .header-wrapper {
-  position: fixed;
+  /* position: fixed; */
   /* background-color: var(--background-smoke); */
   transition: var(--common-transition);
   top: 3rem;
@@ -1170,11 +1174,11 @@ button:focus-visible {
   }
 
   :root {
-    --link-font-size: 0.925rem;
+    --link-font-size: 1.1rem;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 680px) {
   .hidden-xs {
     display: none !important;
   }
@@ -1183,12 +1187,10 @@ button:focus-visible {
     width: 100%;
     margin: 0;
   }
+}
 
-  .inner-flex.inner-18-gap {
-    gap: 0.725rem !important;
-  }
-
-  :root {
-    --link-font-size: 1.2rem;
+@media only screen and (max-width: 540px) {
+  .section-1 {
+    padding-top: 8rem !important;
   }
 }
