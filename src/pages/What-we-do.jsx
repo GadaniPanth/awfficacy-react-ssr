@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/What-we-do.css";
 
 const What_we_do = () => {
-
     const statePolicies = [
         {
             name: "Maharashtra",
@@ -64,45 +63,352 @@ const What_we_do = () => {
     const tabData = [
         {
             tab_id: "1",
-            tab_sub_title: "Make in India Advisory",
             // tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
             tab_title: "Pharmaceuticals",
             // tab_pdf: "assets/pdfs/sectors/pharmaceuticals.pdf",
             tab_content_details:
-                "Major segments of Indian Pharmaceutical Industry include generic drugs, OTC medicines, bulk drugs, vaccines, contract research & manufacturing, biosimilars and biologics. India is a global leader in the supply of DPT, BCG, and Measles vaccines.",
+                "Major segments of Indian Pharmaceutical Industry include generic drugs, OTC medicines, bulk drugs, vaccines, contract research & manufacturing, biosimilars and biologics. India is a global leader in the supply of DPT, BCG, and Measles vaccines. India is one of the biggest suppliers of low-cost vaccines in the world.",
             tab_content_details2: [
                 {
                     text: "<span>Ministry - </span>Department of Pharmaceuticals",
                 },
                 {
                     text: "<span>Incentive Outlay - </span>INR 6940 cr for Bulk Drugs, INR 3,420 for Medical Devices, INR 15,000 for pharmaceutical manufacturing",
-                },
+                }
             ],
             tab_counter: [
-                { number: "3.3", text: "Total FDI Inflows" },
-                { number: "23.5", text: "Exports of Pharmaceuticals" },
-                { number: "21.22", text: "FDI (Apr 2021-Dec 2022)" },
+                { number: "3.3", text: "% Total FDI Inflows" },
+                { number: "23.5", text: "US$- Exports of Pharmaceuticals " },
+                { number: "21.22", text: "US$- FDI (Apr 2021-Dec 2022)" }
             ],
             // expert_img: "assets/images/home/expert.png",
             expert_title: "Sector Expert",
+            expert_name: "Expert's Name"
+        },
+        {
+            tab_id: "4",
+            // tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            tab_title: "Speciality steel",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            // tab_pdf: "assets/pdfs/sectors/steel.pdf",
+            tab_content_details: "i. The Indian steel industry is a major contributor to the country's manufacturing output. It is the second-largest producer of crude steel in the world, with a production of 133.596 MT in FY22. The growth of the Indian steel industry has been driven by the domestic availability of raw materials such as iron ore and cost-effective labor. The Indian steel industry is modern, with state-of-the-art steel mills. It has always strived for continuous modernization of older plants and up-gradation to higher energy efficiency levels.",
+            tab_content_details2: [
+                {
+                    text: "<span>Ministry - </span> Ministry of Steel"
+                },
+                {
+                    text: "<span>Incentive Outlay - </span> INR 6322 cr"
+                }
+            ],
+            tab_counter: [
+                { number: "102.5", text: "Million tonnes (FY21) - Total Crude Steel Production" },
+                { number: "94.7", text: "million tonnes (FY21) - Consumption of Finished Steel" },
+                { number: "77.2", text: "Kgs (FY22) - Per Capita Consumption of Steel" },
+                { number: "13.5", text: "US$ million tonnes - Finished Steel Export" }
+            ],
+            // expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name"
+        },
+        {
+            tab_id: "5",
+            // tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            tab_title: "Drone & Drone Components",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            // tab_pdf: "assets/pdfs/sectors/drones.pdf",
+            tab_content_details: "The county is all set to welcome the future of aerial technology, where unmanned aircraft are revolutionizing industries and opening up new possibilities. India, with its rich history of innovation and technological prowess, is emerging as a global hub for drones. In this section, we delve into the exciting world of the Indian drone industry, exploring its growth, potential, and the government initiatives propelling it forward.",
+            tab_content_details2: [
+                {
+                    text: "<span>Ministry</span>- Ministry of Civil Aviation"
+                },
+                {
+                    text: "<span>Incentive Outlay</span>- INR 120 cr"
+                }
+            ],
+            tab_counter: [
+                { number: "60", text: "cr - Annual Sales Turnover" },
+                { number: "900", text: "cr INR (FY24)-Projected Annual Sales Turnover" }
+            ],
+            // expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name"
+        },
+        {
+            tab_id: "8",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "High Efficiency solar PV Modules",
+            tab_pdf: "assets/pdfs/sectors/high-solar-modules.pdf",
+            tab_content_details: "India has set ambitious goals for its energy transition, aiming to achieve 500 GW of non-fossil fuel-based electricity installed capacity by 2030. This would ensure that clean, non-fossil fuel sources make up 50% of the country's energy mix. The generation of electricity from renewable sources such as solar, wind, hydro, and biopower has witnessed significant growth, increasing from 193.5 billion units in 2013-14 to 306.3 billion units in 2020-21, with a compound annual growth rate (CAGR) of 6.8%.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of New and Renewable Energy",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 4,500 cr (Tranche I), INR 19,500 cr (Tranche II)",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 11 (Tranche II)",
+                // },
+            ],
+            tab_counter: [{
+                number: "1000",
+                text: "+GW - Renewable energy potential in India"
+            },
+
+            {
+                number: "160 ",
+                text: "GW - Installed renewable energy capacity (as of May 2022)"
+            },
+
+            {
+                number: "40",
+                text: "% Share in total installed capacity"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
             expert_name: "Expert's Name",
-        }
+        },
+
+        {
+            tab_id: "9",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "Telecom & Networking",
+            tab_pdf: "assets/pdfs/sectors/telecom.pdf",
+            tab_content_details: "India's telecommunications market has experienced remarkable growth, becoming the world's second largest with an impressive subscriber base of 1,170.38 million as of December 2022. The government's visionary policies have played a vital role in this progress, providing easy market access to advanced telecom equipment and establishing a fair regulatory framework. With affordable prices and increased connectivity, telecom services have become accessible to all, contributing to India's economic development.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of Telecommunication",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 12,195 Cr",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 31",
+                // },
+            ],
+            tab_counter: [{
+                number: "231",
+                text: "% - Internet Connections Growth (2014-2021)"
+            },
+
+            {
+                number: "4 ",
+                text: "Mn- Total employment"
+            },
+
+            {
+                number: "10",
+                text: "Mn - Active 5G Devices in India"
+            },
+
+            {
+                number: "100",
+                text: "No. of Smart Cities"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        },
+
+        {
+            tab_id: "10",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "Textile & Apparel",
+            tab_pdf: "assets/pdfs/sectors/textiles.pdf",
+            tab_content_details: "India's apparel and textile industry contributes around 2% to the country's GDP and represents 7% of industry output. It is the 3rd largest exporter globally, with textile, apparel, and handicrafts accounting for 11.4% of total exports in 2020-21. India is a major producer of cotton, jute, silk, and hand-woven fabric, employing around 45 million people directly and supporting 100 million in allied industries.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of Textiles",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 10,683 Cr",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 64",
+                // },
+            ],
+            tab_counter: [{
+                number: "28",
+                text: "Trained Artisan"
+            },
+
+            {
+                number: "168",
+                text: "Energy Intensive Textile Units"
+            },
+
+            {
+                number: "31",
+                text: "Functional Textile Parks"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        },
+
+        {
+            tab_id: "11",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "Auto & Auto components ",
+            tab_pdf: "assets/pdfs/sectors/automobile.pdf",
+            tab_content_details: "The Indian auto component industry has achieved remarkable growth in the fiscal year 2021-22, with its highest-ever turnover of $6.5 billion, reflecting a significant 23% increase. This growth can be attributed to the increasing presence of global automobile Original Equipment Manufacturers (OEMs) in India, which has led to a substantial localization of their components within the country.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of Heavy Industries and Public Enterprises",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 25,938 Cr",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 115",
+                // },
+            ],
+            tab_counter: [{
+                number: "2.3",
+                text: "Share in India's GDP"
+            },
+
+            {
+                number: "5",
+                text: "Mn- Employment Generated"
+            },
+
+            {
+                number: "6",
+                text: "% - CAGR (over 6 years)"
+            },
+
+            {
+                number: "13.3",
+                text: "$ Bn - Auto Component Export"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        },
+
+        {
+            tab_id: "12",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "White Goods",
+            tab_pdf: "assets/pdfs/sectors/white-goods.pdf",
+            tab_content_details: "The white goods industry consists of air conditioners, refrigerators, washing machines and dryers, dishwashers, and LED Lights. The White Goods industry in India reached USD 13.6 Bn in FY21. Out of this, the largest market share is comprised of Air Conditioners, Refrigerators and LED products.  The White Goods market is estimated to cross USD 21 Bn by 2025 expanding at a CAGR of 11%. Domestic manufacturing contributes nearly USD 4.6 Bn on an average to this industry.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of Commerce & Industry (Department for Promotion of Industry and Internal Trade)",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 6238 Crores",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 57",
+                // },
+            ],
+            tab_counter: [{
+                number: "100",
+                text: "% - FDI Permitted"
+            },
+
+            {
+                number: "13.6",
+                text: "US$ Bn - Industry Size"
+            },
+
+            {
+                number: "21",
+                text: "US$ Bn - Estimated Market Size"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        },
+
+        {
+            tab_id: "13",
+            tab_sub_title: " Make in India Advisory",
+            tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            active_img: "images/what_we_do/rotate_active.svg",
+            inactive_img: "images/what_we_do/rotate.svg",
+            tab_title: "Food Processing",
+            tab_pdf: "assets/pdfs/sectors/food-processing-industries.pdf",
+            tab_content_details: "India's food processing sector is a burgeoning industry that presents attractive investment opportunities. The government, through the Ministry of Food Processing Industries (MoFPI), is actively promoting growth and development in this sector. Initiatives such as the Pradhan Mantri Kisan Sampada Yojana (PMKSY) focus on building modern infrastructure and efficient supply chains from farm to retail.",
+            tab_content_details2: [{
+                text: "<span>Ministry</span>- Ministry of Food Processing Industries",
+            },
+            {
+                text: "<span>Incentive Outlay</span>- INR 10,900 Cr",
+            },
+                // {
+                // 	text: "<span>Approved</span>- 150",
+                // },
+            ],
+            tab_counter: [{
+                number: "18.8",
+                text: "% share of GVA of agriculture and allied sector to total economy"
+            },
+
+            {
+                number: "12.32",
+                text: "%- Share in total employment"
+            },
+
+            {
+                number: "10.4",
+                text: "% - Share in India's exports"
+            },
+
+            {
+                number: "136",
+                text: "% - Cropping intensity"
+            }
+
+            ],
+            expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        },
+
     ];
 
-
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [angle, setAngle] = useState(0);
 
     const tab = tabData[currentIndex];
 
-
     const goPrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? tabData.length - 1 : prev - 1));
     };
 
     const goNext = () => {
-        setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === tabData.length - 1 ? 0 : prev + 1));
     };
 
+    const rotateRight = () => setAngle(prev => prev + 30);
+    const rotateLeft = () => setAngle(prev => prev - 30);
     return (
         <>
             <div className="awfficacy_wrapper">
@@ -169,98 +475,31 @@ const What_we_do = () => {
                         </p>
                     </div>
                 </div>
-                <div className="section-5 main-container section-padding-4rem pt0 relative">
+                <div className="section-5 main-container section-padding-4rem pt0 relative ovrflow-hidden">
                     <div className="inner_padding border_blue">
                         <div className="grid_60_40">
-                            {/* <div className="inner-flex inner-flex-medium">
-                                <div className="flex-row alc sec-5-img-heading inner-flex-common">
-                                    <img src="images/what_we_do/medicine 1.svg" alt="medicine" />
-                                    <h1 className="font_36 black-color fw_700">
-                                        Pharmaceuticals
-                                    </h1>
-                                </div>
-                                <p className="black-color font_24 fw_400">
-                                    Major segments of Indian Pharmaceutical Industry include
-                                    generic drugs, OTC medicines, bulk drugs, vaccines, contact
-                                    research & manufacturing, biosimilars and biologics. India is
-                                    a global leader in the supply of DPT, BCG and Measles
-                                    vaccines. India is one of the biggest suppliers of low-cost
-                                    vaccines in the world.
-                                </p>
-                                <div className="grid-three">
-                                    <div className="grid_box_1 border_blue">
-                                        <div className="inner-flex inner-flex-common ">
-                                            <h1 className="font_28 black-color border-bottom-1rem">
-                                                3.3%
-                                            </h1>
-                                            <p className="font_24 black-color">Total FDI Inflows</p>
-                                        </div>
-                                    </div>
-                                    <div className="grid_box_1 border_yellow">
-                                        <div className="inner-flex inner-flex-common ">
-                                            <h1 className="font_28 black-color border-bottom-1rem">
-                                                23.5 USD
-                                            </h1>
-                                            <p className="font_24 black-color">
-                                                Exports of pharmaceuticals{" "}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="grid_box_1 border_blue">
-                                        <div className="inner-flex inner-flex-common ">
-                                            <h1 className="font_28 black-color border-bottom-1rem">
-                                                21.22 USD
-                                            </h1>
-                                            <p className="font_24 black-color">
-                                                FDI (Apr 2-21 - Dec 2023)
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex-row als">
-                                    <span className="material-symbols-outlined blue-color">
-                                        arrow_right_alt
-                                    </span>
-                                    <h2 className="font_24 ">
-                                        Ministry - Department of Pharmaceuticals
-                                    </h2>
-                                </div>
-                                <div className="flex-row als">
-                                    <span className="material-symbols-outlined blue-color">
-                                        arrow_right_alt
-                                    </span>
-                                    <h2 className="font_24">
-                                        Incentive Outlay - INR 6,940 cr for Bulk Drugs, INR 3,420
-                                        for Medical Devices, INR 15,000 for pharmaceutical
-                                        manufacturing
-                                    </h2>
-                                </div>
-                                <div className="btn-2">
-                                    <a href="/what-we-do" data-discover="true">
-                                        <div className="know_more_btn">
-                                            Know More
-                                            <div className="arrow-svg">
-                                                <img src="images/what_we_do/blueArrow.svg" alt="" />
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div> */}
-
                             <div className="innner-flex">
                                 <div className="inner-flex inner-flex-medium">
                                     <div className="flex-row alc sec-5-img-heading inner-flex-common">
-                                        <img src="images/what_we_do/medicine 1.svg" alt="medicine" />
-                                        <h1 className="font_36 black-color fw_700">{tab.tab_title}</h1>
+                                        <img
+                                            src="images/what_we_do/medicine 1.svg"
+                                            alt="medicine"
+                                        />
+                                        <h1 className="font_36 black-color fw_700">
+                                            {tab.tab_title}
+                                        </h1>
                                     </div>
 
-                                    <p className="black-color font_24 fw_400">{tab.tab_content_details}</p>
+                                    <p className="black-color font_24 fw_400">
+                                        {tab.tab_content_details}
+                                    </p>
 
                                     <div className="grid-three">
                                         {tab.tab_counter.map((counter, index) => (
                                             <div
                                                 key={index}
-                                                className={`grid_box_1 ${index === 1 ? "border_yellow" : "border_blue"}`}
+                                                className={`grid_box_1 ${index === 1 ? "border_yellow" : "border_blue"
+                                                    }`}
                                             >
                                                 <div className="inner-flex inner-flex-common">
                                                     <h1 className="font_28 black-color border-bottom-1rem">
@@ -275,13 +514,22 @@ const What_we_do = () => {
 
                                     {tab.tab_content_details2.map((info, idx) => (
                                         <div className="flex-row als" key={idx}>
-                                            <span className="material-symbols-outlined blue-color font_30">arrow_right_alt</span>
-                                            <h2 className="font_24" dangerouslySetInnerHTML={{ __html: info.text }}></h2>
+                                            <span className="material-symbols-outlined blue-color font_30">
+                                                arrow_right_alt
+                                            </span>
+                                            <h2
+                                                className="font_24"
+                                                dangerouslySetInnerHTML={{ __html: info.text }}
+                                            ></h2>
                                         </div>
                                     ))}
 
                                     <div className="btn-2">
-                                        <a href={tab.tab_pdf} target="_blank" rel="noopener noreferrer">
+                                        <a
+                                            href={tab.tab_pdf}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <div className="know_more_btn">
                                                 Know More
                                                 <div className="arrow-svg">
@@ -297,12 +545,45 @@ const What_we_do = () => {
                                         <div className="pharma-vector-images1">
                                             <div className="relative">
                                                 <div className="pharma-vector-img1">
-                                                    <div className="circle-vector-img relative">
-                                                        <img src="images/what_we_do/round-shape.png" alt="round-shape" />
+                                                    <div className="circle-vector-img relative" id="box" style={{
+                                                        transform: `rotate(${angle}deg)`,
+                                                        transition: 'transform 0.3s ease',
+                                                    }}>
+                                                        <img
+                                                            src="images/what_we_do/round-shape.png"
+                                                            alt="round-shape"
+                                                        />
                                                         <div className="main-position">
-                                                            <div className="tab_main_div" id={`tab-id-${tab.tab_id}`}>
-                                                                {/* You can put extra content here if needed */}
-                                                            </div>
+                                                            {tabData.map((item, index) => (
+                                                                <div
+                                                                    key={item.tab_id}
+                                                                    className="tab_main_div"
+                                                                    id={`tab-id-${item.tab_id}`}
+                                                                    onClick={() => setCurrentIndex(index)}
+                                                                >
+                                                                    <div className="vectorImgDiv">
+                                                                        <img
+                                                                            src={currentIndex === index ? item.active_img : item.inactive_img}
+                                                                            alt=""
+                                                                            className={currentIndex === index ? "active_img_tab" : "border-vector-img"}
+                                                                        />
+                                                                        <div className="tabs-title-text tabs_text">
+                                                                            <h3 className={currentIndex === index ? "white-color" : "black-color"}>{item.tab_title}</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+
+                                                    </div>
+                                                    <div className="buttons_postition">
+                                                        <div className="button_tabs">
+                                                            <button id="rotateRight" className="up_button" onClick={rotateRight}>
+                                                                <img src="images/what_we_do/blue-up-arrow.svg" alt="" />
+                                                            </button>
+                                                            <button id="rotateLeft" className="down_button" onClick={rotateLeft}>
+                                                                <img src="images/what_we_do/blue-down-arrow.svg" alt="" />
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>

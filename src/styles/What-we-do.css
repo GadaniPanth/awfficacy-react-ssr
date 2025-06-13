@@ -221,7 +221,7 @@
 
 .rotate-section {
     position: absolute;
-    right: 0%;
+    right: -3.5%;
     top: 0;
     width: 53%;
     transform: translate(46%, 10%);
@@ -234,4 +234,211 @@
 
 .flex-row h2 span {
     font-weight: 700;
+}
+
+.shape-vectore,
+.border-vector-img,
+.active_img_tab {
+    width: 90%;
+}
+
+.tab_main_div:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(-5%, -21%) rotateZ(-1deg);
+}
+
+.tab_main_div:nth-child(1) .tabs_text {
+    width: fit-content;
+    transform: translate(-50%, -50%) rotateZ(-5deg);
+    position: absolute;
+    top: 44%;
+    left: 36%;
+}
+
+.tab_main_div:nth-child(2) {
+    position: absolute;
+    top: 31%;
+    left: 4%;
+    width: fit-content;
+    z-index: 1;
+    transform: translate(-12%, -39%) rotateZ(40deg);
+}
+
+.tab_main_div:nth-child(2) .tabs_text {
+    width: fit-content;
+    transform: translate(-50%, -50%) rotateZ(-6deg);
+    position: absolute;
+    top: 46%;
+    left: 39%;
+}
+
+
+.tab_main_div:nth-child(3) {
+    position: absolute;
+    top: 9%;
+    left: 40%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(-50%, -9%) rotateZ(80deg);
+}
+
+.tab_main_div:nth-child(3) .tabs_text {
+    width: fit-content;
+    transform: translate(-50%, -50%) rotateZ(-5deg);
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.tab_main_div:nth-child(4) {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(-30%, -49%) rotateZ(120deg);
+}
+
+.tab_main_div:nth-child(4) .tabs_text {
+    width: 80%;
+    transform: translate(-50%, -50%) rotateZ(357deg);
+    position: absolute;
+    top: 47%;
+    left: 46%;
+}
+
+.tab_main_div:nth-child(5) {
+    position: absolute;
+    top: 26%;
+    right: -11%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(-21%, 0%) rotateZ(156deg);
+}
+
+.tab_main_div:nth-child(5) .tabs_text {
+    position: absolute;
+    width: 70%;
+    top: 44%;
+    right: 53%;
+    z-index: 2;
+    transform: translate(47%, -50%) rotateZ(354deg);
+}
+
+.tab_main_div:nth-child(6) {
+    position: absolute;
+    top: 43%;
+    right: 21%;
+    width: fit-content;
+    z-index: 2;
+    z-index: 2;
+    transform: translate(60%, 18%) rotateZ(193deg);
+}
+
+.tab_main_div:nth-child(6) .tabs_text {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateZ(356deg);
+    position: absolute;
+    bottom: 37%;
+    left: 44%;
+}
+
+.tab_main_div:nth-child(7) {
+    position: absolute;
+    top: 60%;
+    right: 7%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(5%, 21%) rotateZ(232deg);
+}
+
+.tab_main_div:nth-child(7) .tabs_text {
+    width: 60%;
+    transform: translate(-50%, -50%) rotateZ(355deg);
+    position: absolute;
+    top: 46%;
+    left: 40%;
+}
+
+.tab_main_div:nth-child(8) {
+    position: absolute;
+    bottom: 4%;
+    right: 33%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(13%, -3%) rotateZ(275deg);
+}
+
+.tab_main_div:nth-child(8) .tabs_text {
+    width: 70%;
+    transform: translate(-50%, -50%) rotateZ(356deg);
+    position: absolute;
+    top: 42%;
+    left: 43%;
+}
+
+.tab_main_div:nth-child(9) {
+    position: absolute;
+    bottom: 13%;
+
+    right: 53%;
+    width: fit-content;
+    z-index: 2;
+    transform: translate(11%, 3%) rotateZ(317deg);
+}
+
+.tab_main_div:nth-child(9) .tabs_text {
+    width: 68%;
+    transform: translate(-50%, -50%) rotateZ(355deg);
+    position: absolute;
+    top: 45%;
+    left: 44%;
+}
+
+.tabs_text {
+    z-index: 99;
+}
+
+.ovrflow-hidden {
+    overflow: hidden;
+}
+
+.button_tabs button {
+    background: transparent;
+    border: none;
+}
+
+.down_button {
+    width: 3.5rem;
+}
+
+.button_tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buttons_postition {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.up_button,
+.down_button {
+    width: 35px;
+}
+
+.tabs-title-text h3 {
+    font-family: var(--bold-font-family);
+    color: var(--black-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
 }
