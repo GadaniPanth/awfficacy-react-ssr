@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [isMobNavOpen, setIsMobNavOpen] = useState(false);
-
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path;
+  // console.log(isActive("/home"));
   return (
     <>
       <header>
@@ -33,27 +36,47 @@ const Header = () => {
               </Link>
             </div>
             <ul className="navbar">
-              <li className="link-font-size">
+              <li
+                className={`link-font-size ${
+                  isActive("/home") ? "active-nav" : ""
+                }`}
+              >
                 <Link to="/home">
                   <p>Home</p>
                 </Link>
               </li>
-              <li className="link-font-size">
+              <li
+                className={`link-font-size ${
+                  isActive("/who-we-are") ? "active-nav" : ""
+                }`}
+              >
                 <Link to="/who-we-are">
                   <p>Who we are</p>
                 </Link>
               </li>
-              <li className="link-font-size">
+              <li
+                className={`link-font-size ${
+                  isActive("/what-we-do") ? "active-nav" : ""
+                }`}
+              >
                 <Link to="/what-we-do">
                   <p>What we do</p>
                 </Link>
               </li>
-              <li className="link-font-size">
+              <li
+                className={`link-font-size ${
+                  isActive("/clientele") ? "active-nav" : ""
+                }`}
+              >
                 <Link to="/clientele">
                   <p>Clientele</p>
                 </Link>
               </li>
-              <li className="link-font-size">
+              <li
+                className={`link-font-size ${
+                  isActive("/careers") ? "active-nav" : ""
+                }`}
+              >
                 <Link to="/careers">
                   <p>Careers</p>
                 </Link>

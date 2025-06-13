@@ -1200,6 +1200,10 @@ button:focus-visible {
   width: 100%;
 }
 
+.navbar .link-font-size.active-nav p::after {
+  width: 100%;
+}
+
 .section-1 {
   margin-top: 12rem !important;
 }

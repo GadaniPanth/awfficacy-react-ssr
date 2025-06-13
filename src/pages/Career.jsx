@@ -103,7 +103,7 @@ const Career = () => {
               {isClient && Swiper && SwiperSlide ? (
                 <>
                   <div className="swiper-button-prev custom-prev">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                       keyboard_arrow_left
                     </span>
                   </div>
@@ -134,7 +134,7 @@ const Career = () => {
                     </SwiperSlide>
                   </Swiper>
                   <div className="swiper-button-next custom-next">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                       keyboard_arrow_right
                     </span>
                   </div>

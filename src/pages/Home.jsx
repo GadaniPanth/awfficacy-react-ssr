@@ -209,7 +209,7 @@ const Home = () => {
             {isClient && Swiper && SwiperSlide ? (
               <>
                 <div className="swiper-button-prev custom-prev">
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     keyboard_arrow_left
                   </span>
                 </div>
@@ -233,7 +233,7 @@ const Home = () => {
                   })}
                 </Swiper>
                 <div className="swiper-button-next custom-next">
-                  <span class="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     keyboard_arrow_right
                   </span>
                 </div>
