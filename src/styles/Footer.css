@@ -217,10 +217,9 @@
 
   .footer .upper_div {
     margin-bottom: 2.4rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    row-gap: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
     place-items: unset;
   }
 
@@ -271,9 +270,33 @@
     flex-direction: column;
   }
 
+  .footer .bg-img {
+    overflow: hidden;
+  }
   .footer .bg-img img {
     width: 78%;
     rotate: -45deg;
     height: 96%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer .company .flex-row {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .footer {
+    padding: 45px 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer .company .flex-row {
+    justify-content: center;
+  }
+
+  .footer .company .company_logo {
+    width: 9.45rem;
   }
 }

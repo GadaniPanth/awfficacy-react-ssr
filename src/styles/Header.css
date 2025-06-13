@@ -323,8 +323,27 @@ header {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .navbar-mob {
+    width: 53%;
+  }
+
+  .navbar-mob .dropdown-container {
+    width: 90%;
+  }
+
+  .head_div {
+    gap: 11.9px;
+    justify-content: start;
+  }
+}
+
 @media only screen and (max-width: 680px) {
   .navbar-mob {
     width: 100%;
+  }
+  .head_div {
+    gap: 11.9px;
+    justify-content: start;
   }
 }

@@ -1173,3 +1173,22 @@ button:focus-visible {
     --link-font-size: 0.925rem;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .inner-flex.inner-18-gap {
+    gap: 0.725rem !important;
+  }
+
+  :root {
+    --link-font-size: 1.2rem;
+  }
+}
