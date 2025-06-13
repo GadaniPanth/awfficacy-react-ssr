@@ -624,6 +624,10 @@ button:focus-visible {
   gap: var(--medium-gap-size) !important;
 }
 
+.inner-flex.inner-flex-4rem {
+  gap: 4rem !important;
+}
+
 .inner-flex.inner-flex-big {
   gap: var(--big-gap-size) !important;
 }
@@ -1194,6 +1198,10 @@ button:focus-visible {
 .navbar .link-font-size p:hover::after,
 .head_div .learn_more p:hover::after {
   width: 100%;
+}
+
+.section-1 {
+  margin-top: 10rem !important;
 }
 
 @media only screen and (max-width: 1440px) {

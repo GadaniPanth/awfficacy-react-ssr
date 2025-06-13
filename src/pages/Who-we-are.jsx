@@ -42,7 +42,7 @@ const Who_we_are = () => {
                 <p>No Current openings</p>
               </div>
             </div>
-            <div className="bottom_div">
+            <div className="bottom_div text_div">
               <p>
                 If you can't find any relevant positions, write to{" "}
                 <Link
@@ -55,6 +55,21 @@ const Who_we_are = () => {
                 with your resume and position
                 <br className="hidden-xs" /> you'd be interested in - and we'll
                 reach out if our needs align with your profile!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="section-3 main-container section-padding-4rem pt0 text-center">
+          <div className="inner-flex">
+            <div className="head">
+              <h1>Life at Awfficacy</h1>
+            </div>
+            <div className="text_div">
+              <p>
+                Our workplace thrives on a vibrant culture of collaboration,
+                creativity, and continuous learning. From coffee mixers to
+                team-building activities, there's never a dull moment at
+                Awfficacy group.
               </p>
             </div>
           </div>

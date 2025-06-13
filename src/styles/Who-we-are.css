@@ -19,14 +19,14 @@
 .whoWeAre-wrapper .section-2 {
 }
 
-.whoWeAre-wrapper .section-2 .inner-flex {
+.whoWeAre-wrapper .inner-flex {
   border-radius: 24px;
   border: solid 1px #00338c;
   padding: 40px 48px;
   gap: calc(var(--big-gap-size) - 2rem);
 }
 
-.whoWeAre-wrapper .section-2 .head h1 {
+.whoWeAre-wrapper .head h1 {
   font-size: var(--section-subtitle-font-size);
 }
 
@@ -40,14 +40,24 @@
   color: #777777;
 }
 
+.whoWeAre-wrapper .section-2 .bottom_div p {
+  color: #ffffff;
+}
 .whoWeAre-wrapper .section-2 .bottom_div {
   background-color: #00338c;
+}
+.whoWeAre-wrapper .text_div {
   padding: 24px 0;
   border-radius: 12px;
 }
-.whoWeAre-wrapper .section-2 .bottom_div p {
+
+.whoWeAre-wrapper .text_div p {
   font-size: var(--paragraph-font-size);
-  color: #ffffff;
+}
+
+.whoWeAre-wrapper .section-3 .head {
+  display: block;
+  padding-top: 40px 48px;
 }
 
 .email p {
@@ -90,7 +100,7 @@
     font-size: 2.5rem;
   }
 
-  .whoWeAre-wrapper .section-2 .bottom_div {
+  .whoWeAre-wrapper .text_div {
     padding: 24px 10px;
   }
 }

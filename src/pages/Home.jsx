@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Landing.css";
 import { Link } from "react-router";
 import "../styles/Home.css";
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// import { Navigation } from "swiper/modules";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +13,46 @@ import "../styles/Home.css";
 // import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 
+let Swiper = null;
+let SwiperSlide = null;
+
+// if (typeof window !== "undefined") {
+//   // These imports will only be done on the client
+//   const swiper = require("swiper/react");
+//   Swiper = swiper.Swiper;
+//   SwiperSlide = swiper.SwiperSlide;
+// }
+
 const Home = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  const imgList = Array.from(
+    { length: 89 },
+    (_, i) => `./images/clients/client_logo_${i + 1}.svg`
+  );
+
+  useEffect(() => {
+    const loadSwiper = async () => {
+      const swiper = await import("swiper/react");
+      const SwiperCore = await import("swiper");
+
+      // Import Swiper modules
+      const { Navigation, Pagination, Autoplay } = await import(
+        "swiper/modules"
+      );
+
+      // Register the modules
+      SwiperCore.default.use([Navigation, Pagination, Autoplay]);
+
+      Swiper = swiper.Swiper;
+      SwiperSlide = swiper.SwiperSlide;
+
+      setIsClient(true); // trigger render
+    };
+
+    loadSwiper();
+  }, []);
+
   return (
     <div className="home_wrapper">
       <div className="section-1 main-container section-padding-4rem">
@@ -161,38 +201,46 @@ const Home = () => {
         </div>
       </div>
       <div className="section-4 main-container section-padding-4rem pt0">
-        <div className="gold-box relative">
+        <div className="gold-box relative inner-flex inner-flex-medium">
           <div className="head text-center gold-text">
             <h1>Our Clientele</h1>
           </div>
-          <div className="swiper_wrapper">
-            {/* <Swiper
-              spaceBetween={50}
-              slidesPerView={4}
-              // onSlideChange={() => console.log('slide change')}
-              // onSwiper={(swiper) => console.log(swiper)}
-            >
-              <SwiperSlide className="box blue-box">
-                <div className="logo">
-                  <img src="./images/amul_logo.svg" alt="" />
+          <div className="swiper_wrapper relative">
+            {isClient && Swiper && SwiperSlide ? (
+              <>
+                <div className="swiper-button-prev custom-prev">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_left
+                  </span>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide className="box blue-box">
-                <div className="logo">
-                  <img src="./images/amul_logo.svg" alt="" />
+                <Swiper
+                  spaceBetween={64}
+                  slidesPerView={4}
+                  loop
+                  navigation={{
+                    prevEl: ".custom-prev",
+                    nextEl: ".custom-next",
+                  }}
+                >
+                  {imgList.map((img, i) => {
+                    return (
+                      <SwiperSlide key={i} className="box blue-box">
+                        <div className="logo">
+                          <img src={img} alt="Clientele" />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+                <div className="swiper-button-next custom-next">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_right
+                  </span>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide className="box blue-box">
-                <div className="logo">
-                  <img src="./images/amul_logo.svg" alt="" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="box blue-box">
-                <div className="logo">
-                  <img src="./images/amul_logo.svg" alt="" />
-                </div>
-              </SwiperSlide>
-            </Swiper> */}
+              </>
+            ) : (
+              <div>Loading...</div>
+            )}
           </div>
         </div>
       </div>

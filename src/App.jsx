@@ -8,6 +8,12 @@ import What_we_do from "./pages/What-we-do";
 import "./styles/App.css";
 import Who_we_are from "./pages/Who-we-are";
 
+if (typeof window !== "undefined") {
+  require("swiper/css");
+  require("swiper/css/navigation");
+  require("swiper/css/pagination");
+}
+
 const App = () => {
   return (
     <div>
