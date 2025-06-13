@@ -177,7 +177,7 @@ a {
   --section-subtitle-font-size: 2rem;
   --paragraph-font-size: 1.5rem;
   --content-font-size: 1.15rem;
-  --link-font-size: 1.125rem;   
+  --link-font-size: 1.125rem;
   --rem-font-size: 1rem;
   /* font-families */
   --light-font-family: "Lato-Light";
@@ -1230,7 +1230,7 @@ button:focus-visible {
     display: none;
   }
   .section-1 {
-    padding-top: 11rem !important;
+    padding-top: 2rem !important;
   }
 }
 
@@ -1293,7 +1293,12 @@ button:focus-visible {
 @media only screen and (max-width: 540px) {
   .section-1 {
     /* padding-top: 8rem !important; */
-    padding-top: 6rem !important;
+    /* padding-top: 6rem !important; */
+    padding-top: 0rem !important;
+  }
+
+  .section-1 {
+    margin-top: 7rem !important;
   }
 
   .blue-box {
@@ -1329,5 +1334,9 @@ button:focus-visible {
   .main-container {
     width: 100%;
     /* margin: 0; */
+  }
+
+  .section-1 {
+    margin-top: 5rem !important;
   }
 }
