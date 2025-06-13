@@ -212,12 +212,12 @@ header {
 }
 
 .mob-header {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 10px 100px;
   position: fixed;
-  top: 65px;
+  top: 63px;
   left: 0;
   background: #ffffff;
   /* z-index: 999; */
@@ -340,6 +340,10 @@ header {
   .menu_btn {
     display: block;
   }
+
+  .mob-header {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -391,7 +395,7 @@ header {
     gap: 11.9px;
     flex-wrap: wrap;
     height: fit-content;
-    justify-content: start;
+    justify-content: center;
   }
 }
 
@@ -416,7 +420,7 @@ header {
   }
 
   .navbar-mob .head_div p {
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
   }
 
   .navbar-mob .head_div .img_div {
@@ -429,6 +433,11 @@ header {
   }
 }
 
+@media only screen and (max-width: 486px) {
+  .navbar-mob .head_div p {
+    font-size: 0.8rem !important;
+  }
+}
 @media only screen and (max-width: 375px) {
   .mob-header .nav-logo {
     width: 170px;

@@ -1,4 +1,4 @@
-#root {
+main {
   overflow-x: hidden;
 }
 
@@ -937,7 +937,7 @@ button:focus-visible {
 /* CSS STarts here */
 
 .header-wrapper {
-  /* position: fixed; */
+  position: fixed;
   /* background-color: var(--background-smoke); */
   transition: var(--common-transition);
   top: 3rem;
