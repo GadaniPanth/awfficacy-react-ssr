@@ -1,3 +1,7 @@
+main {
+  overflow-x: hidden;
+}
+
 /* 
 a {
   text-decoration: none;
@@ -1100,6 +1104,34 @@ button:focus-visible {
   color: #000000;
 }
 
+.navbar-mob .contact-button * {
+  color: #ffffff !important;
+}
+
+.navbar-mob .contact-button {
+  width: fit-content;
+
+  /* width: 156px;
+  height: 45px; */
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: solid 1px #000000;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: var(--common-transition);
+}
+
+.navbar-mob .contact-button:hover {
+  background-color: transparent;
+}
+
+.navbar-mob .contact-button:hover * {
+  color: #000000 !important;
+}
+
 .arrow-svg {
   width: 18px;
 }
@@ -1127,10 +1159,43 @@ button:focus-visible {
   header hr {
     display: none;
   }
+  .section-1 {
+    padding-top: 6rem !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .hidden-xs {
     display: none !important;
+  }
+
+  .main-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .inner-flex.inner-18-gap {
+    gap: 0.725rem !important;
+  }
+
+  :root {
+    --link-font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .section-1 {
+    padding-top: 8rem !important;
   }
 }
