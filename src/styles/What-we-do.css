@@ -1,9 +1,13 @@
 .section-1 {
-    padding-top: 15rem !important;
+    margin-top: 10rem;
 }
 
 .yellow-color {
     color: #FEBF00;
+}
+
+.blue-color {
+    color: #00338C;
 }
 
 .heading_img {
@@ -125,6 +129,11 @@
     padding: 2rem 0;
 }
 
+.border-bottom-1rem {
+    border-bottom: 1px solid #002565;
+    padding-bottom: 1rem;
+}
+
 .border-bottom-mini {
     border-bottom: 1px solid #CBCBCB;
     padding: 2rem 0;
@@ -190,4 +199,39 @@
     background: transparent;
     height: 40px;
     width: 40px;
+}
+
+
+
+/* section 5 */
+
+.sec-5-img-heading img {
+    width: 54px;
+}
+
+.grid_60_40 {
+    display: grid;
+    grid-template-columns: calc(67% - 3rem) calc(33% - 3rem);
+    gap: 6rem;
+}
+
+.grid_box_1 {
+    padding: 2.25rem;
+}
+
+.rotate-section {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    width: 53%;
+    transform: translate(46%, 10%);
+    z-index: 9;
+}
+
+.pharma-vector-img1 {
+    width: 74%;
+}
+
+.flex-row h2 span {
+    font-weight: 700;
 }

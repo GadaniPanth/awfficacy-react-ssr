@@ -33,7 +33,7 @@ h2 {
 }
 
 .section-1 {
-    padding-top: 15rem !important;
+    margin-top: 10rem;
 }
 
 
@@ -80,12 +80,12 @@ h2 {
     }
 
     .section-padding-4rem {
-        padding: 3rem 0;
+        padding: 3rem 0 !important;
     }
 
-    .section-1 {
-        padding-top: 14rem !important;
-    }
+    /* .section-1 {
+        margin-top: 10rem !important;
+    } */
 
 }
 
@@ -95,12 +95,12 @@ h2 {
     }
 
     .font_56 {
-        font-size: 42px;
+        font-size: 42px !important;
     }
 
     .section-2-left,
     .section-2-right {
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 2rem !important;
     }
 }
 
@@ -109,24 +109,38 @@ h2 {
         font-size: 12px;
     }
 
+    .awfficacy_blue_box_heading,
+    .awfficacy_blue_box_img {
+        flex-basis: 50%;
+    }
+
+
+    .section-1 {
+        margin-top: 12rem !important;
+    }
+
     .font_56 {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     .font_32 {
-        font-size: 29px;
+        font-size: 29px !important;
     }
 
     .font_24 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .gap_spacing {
-        gap: 1rem;
+        gap: 1rem !important;
     }
 
     .section-padding-4rem {
-        padding: 2rem 0;
+        padding: 2rem 0 !important;
+    }
+
+    .section-2-img-details img {
+        width: 190px;
     }
 }
 
@@ -136,16 +150,16 @@ h2 {
     }
 
     .font_32 {
-        font-size: 26px;
+        font-size: 26px !important;
     }
 
     .grid-two {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.8rem;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.8rem !important;
     }
 
     .section-1 {
-        padding-top: 14rem !important;
+        margin-top: 6rem !important;
     }
 }
 
@@ -154,29 +168,46 @@ h2 {
         font-size: 15px;
     } */
 
-    .awfficacy_blue_box_heading,
-    .awfficacy_blue_box_img {
-        flex-basis: 50%;
-    }
 
     .grid-two {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
         gap: 4rem;
     }
 
     .grid-three {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .grid-three {
-        grid-template-columns: 100%;
+        grid-template-columns: 100% !important;
         gap: 1rem;
+    }
+
+    .awfficacy_blue_box {
+        background: #00338C;
+        border-radius: 1.5rem;
+        display: flex;
+        padding: 1rem 1.5rem !important;
+        flex-direction: column;
+        gap: 3rem;
     }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+    .font_24 {
+        font-size: 15px !important;
+    }
+
+    .section-2-img-details {
+        padding-bottom: 1.25rem;
+    }
+
+    
+
+}
 
 @media only screen and (max-width: 325px) {}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/What-we-do.css";
 
 const What_we_do = () => {
+
     const statePolicies = [
         {
             name: "Maharashtra",
@@ -55,13 +56,44 @@ const What_we_do = () => {
     ];
     const slides = [
         "Analyze the client's business to identify various available government incentive schemes.",
-        "Evaluate the client’s eligibility for specific government programs.",
+        "Evaluate the client's eligibility for specific government programs.",
         "Prepare and compile the required documentation for application.",
         "Assist in submitting government applications and tracking progress.",
         "Ensure compliance with incentive program requirements.",
     ];
+    const tabData = [
+        {
+            tab_id: "1",
+            tab_sub_title: "Make in India Advisory",
+            // tab_vectorImg: "assets/images/home/round-shape/mainVector.svg",
+            tab_title: "Pharmaceuticals",
+            // tab_pdf: "assets/pdfs/sectors/pharmaceuticals.pdf",
+            tab_content_details:
+                "Major segments of Indian Pharmaceutical Industry include generic drugs, OTC medicines, bulk drugs, vaccines, contract research & manufacturing, biosimilars and biologics. India is a global leader in the supply of DPT, BCG, and Measles vaccines.",
+            tab_content_details2: [
+                {
+                    text: "<span>Ministry - </span>Department of Pharmaceuticals",
+                },
+                {
+                    text: "<span>Incentive Outlay - </span>INR 6940 cr for Bulk Drugs, INR 3,420 for Medical Devices, INR 15,000 for pharmaceutical manufacturing",
+                },
+            ],
+            tab_counter: [
+                { number: "3.3", text: "Total FDI Inflows" },
+                { number: "23.5", text: "Exports of Pharmaceuticals" },
+                { number: "21.22", text: "FDI (Apr 2021-Dec 2022)" },
+            ],
+            // expert_img: "assets/images/home/expert.png",
+            expert_title: "Sector Expert",
+            expert_name: "Expert's Name",
+        }
+    ];
+
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const tab = tabData[currentIndex];
+
 
     const goPrev = () => {
         setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -70,7 +102,6 @@ const What_we_do = () => {
     const goNext = () => {
         setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     };
-
 
     return (
         <>
@@ -138,8 +169,150 @@ const What_we_do = () => {
                         </p>
                     </div>
                 </div>
-                <div className="section-5 main-container section-padding-4rem pt0">
-                    Pending ........................
+                <div className="section-5 main-container section-padding-4rem pt0 relative">
+                    <div className="inner_padding border_blue">
+                        <div className="grid_60_40">
+                            {/* <div className="inner-flex inner-flex-medium">
+                                <div className="flex-row alc sec-5-img-heading inner-flex-common">
+                                    <img src="images/what_we_do/medicine 1.svg" alt="medicine" />
+                                    <h1 className="font_36 black-color fw_700">
+                                        Pharmaceuticals
+                                    </h1>
+                                </div>
+                                <p className="black-color font_24 fw_400">
+                                    Major segments of Indian Pharmaceutical Industry include
+                                    generic drugs, OTC medicines, bulk drugs, vaccines, contact
+                                    research & manufacturing, biosimilars and biologics. India is
+                                    a global leader in the supply of DPT, BCG and Measles
+                                    vaccines. India is one of the biggest suppliers of low-cost
+                                    vaccines in the world.
+                                </p>
+                                <div className="grid-three">
+                                    <div className="grid_box_1 border_blue">
+                                        <div className="inner-flex inner-flex-common ">
+                                            <h1 className="font_28 black-color border-bottom-1rem">
+                                                3.3%
+                                            </h1>
+                                            <p className="font_24 black-color">Total FDI Inflows</p>
+                                        </div>
+                                    </div>
+                                    <div className="grid_box_1 border_yellow">
+                                        <div className="inner-flex inner-flex-common ">
+                                            <h1 className="font_28 black-color border-bottom-1rem">
+                                                23.5 USD
+                                            </h1>
+                                            <p className="font_24 black-color">
+                                                Exports of pharmaceuticals{" "}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="grid_box_1 border_blue">
+                                        <div className="inner-flex inner-flex-common ">
+                                            <h1 className="font_28 black-color border-bottom-1rem">
+                                                21.22 USD
+                                            </h1>
+                                            <p className="font_24 black-color">
+                                                FDI (Apr 2-21 - Dec 2023)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex-row als">
+                                    <span className="material-symbols-outlined blue-color">
+                                        arrow_right_alt
+                                    </span>
+                                    <h2 className="font_24 ">
+                                        Ministry - Department of Pharmaceuticals
+                                    </h2>
+                                </div>
+                                <div className="flex-row als">
+                                    <span className="material-symbols-outlined blue-color">
+                                        arrow_right_alt
+                                    </span>
+                                    <h2 className="font_24">
+                                        Incentive Outlay - INR 6,940 cr for Bulk Drugs, INR 3,420
+                                        for Medical Devices, INR 15,000 for pharmaceutical
+                                        manufacturing
+                                    </h2>
+                                </div>
+                                <div className="btn-2">
+                                    <a href="/what-we-do" data-discover="true">
+                                        <div className="know_more_btn">
+                                            Know More
+                                            <div className="arrow-svg">
+                                                <img src="images/what_we_do/blueArrow.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> */}
+
+                            <div className="innner-flex">
+                                <div className="inner-flex inner-flex-medium">
+                                    <div className="flex-row alc sec-5-img-heading inner-flex-common">
+                                        <img src="images/what_we_do/medicine 1.svg" alt="medicine" />
+                                        <h1 className="font_36 black-color fw_700">{tab.tab_title}</h1>
+                                    </div>
+
+                                    <p className="black-color font_24 fw_400">{tab.tab_content_details}</p>
+
+                                    <div className="grid-three">
+                                        {tab.tab_counter.map((counter, index) => (
+                                            <div
+                                                key={index}
+                                                className={`grid_box_1 ${index === 1 ? "border_yellow" : "border_blue"}`}
+                                            >
+                                                <div className="inner-flex inner-flex-common">
+                                                    <h1 className="font_28 black-color border-bottom-1rem">
+                                                        {counter.number}
+                                                        {counter.text.includes("USD") ? " USD" : ""}
+                                                    </h1>
+                                                    <p className="font_24 black-color">{counter.text}</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {tab.tab_content_details2.map((info, idx) => (
+                                        <div className="flex-row als" key={idx}>
+                                            <span className="material-symbols-outlined blue-color font_30">arrow_right_alt</span>
+                                            <h2 className="font_24" dangerouslySetInnerHTML={{ __html: info.text }}></h2>
+                                        </div>
+                                    ))}
+
+                                    <div className="btn-2">
+                                        <a href={tab.tab_pdf} target="_blank" rel="noopener noreferrer">
+                                            <div className="know_more_btn">
+                                                Know More
+                                                <div className="arrow-svg">
+                                                    <img src="images/what_we_do/blueArrow.svg" alt="" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="rotate-section">
+                                    <div className="relative">
+                                        <div className="pharma-vector-images1">
+                                            <div className="relative">
+                                                <div className="pharma-vector-img1">
+                                                    <div className="circle-vector-img relative">
+                                                        <img src="images/what_we_do/round-shape.png" alt="round-shape" />
+                                                        <div className="main-position">
+                                                            <div className="tab_main_div" id={`tab-id-${tab.tab_id}`}>
+                                                                {/* You can put extra content here if needed */}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="section-6 main-container section-padding-4rem pt0">
                     <div className="awfficacy_blue_box alc j-c-sb">
@@ -358,7 +531,6 @@ const What_we_do = () => {
                                             </div>
                                         </div>
                                         <p className="slide-content">{slides[currentIndex]}</p>
-
                                     </div>
                                     <div className="slide-controls">
                                         <div className="nav-buttons">
@@ -375,7 +547,7 @@ const What_we_do = () => {
                                         </div>
                                     </div>
                                 </div>
-                                     <div className="border-bottom-mini"></div>
+                                <div className="border-bottom-mini"></div>
                                 <div className="slide-card flex-row als j-c-sb">
                                     <div className="slide-header inner-flex inner-flex-common">
                                         <h2 className="font_32 black-color fw_700">
@@ -398,7 +570,6 @@ const What_we_do = () => {
                                             </div>
                                         </div>
                                         <p className="slide-content">{slides[currentIndex]}</p>
-
                                     </div>
                                     <div className="slide-controls">
                                         <div className="nav-buttons">
@@ -415,7 +586,7 @@ const What_we_do = () => {
                                         </div>
                                     </div>
                                 </div>
-                                     <div className="border-bottom-mini"></div>
+                                <div className="border-bottom-mini"></div>
                                 <div className="slide-card flex-row als j-c-sb">
                                     <div className="slide-header inner-flex inner-flex-common">
                                         <h2 className="font_32 black-color fw_700">
@@ -438,7 +609,6 @@ const What_we_do = () => {
                                             </div>
                                         </div>
                                         <p className="slide-content">{slides[currentIndex]}</p>
-
                                     </div>
                                     <div className="slide-controls">
                                         <div className="nav-buttons">
