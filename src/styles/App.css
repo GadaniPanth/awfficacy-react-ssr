@@ -153,21 +153,24 @@ a {
 
 :root {
   /* colors */
-  --primary-color: #333333;
+  --primary-color: #000000;
   --secondary-color: #0baea9;
   --white-color: #ffffff;
+  --blue-color: #00338c;
   --pure-black-color: #231f1f;
   --highlight-color: #e1e4e8;
   --background-smoke: #fafbfc;
   --background-gray: #f5f5f5;
   --secondary-highlight-color: #0366d6;
+  --gold-color: #febf00;
   /* font-sizes */
   --banner-title-font-size: 4.5rem;
-  --section-title-font-size: 2.375rem;
+  --section-title-font-size: 2.5rem;
   --section-subtitle-font-size: 2rem;
   --paragraph-font-size: 1.5rem;
   --content-font-size: 1.15rem;
   --link-font-size: 1.125rem;
+  --rem-font-size: 1rem;
   /* font-families */
   --light-font-family: "Lato-Light";
   --regular-font-family: "Lato-Regular";
@@ -183,6 +186,65 @@ a {
   --small-gap-size: 1.5rem;
   --medium-gap-size: 3rem;
   --big-gap-size: 6rem;
+  --gap-18-size: 1.125rem;
+  --grid-42-gap-size: 2.625rem;
+  --grid-36-gap-size: 2.25rem;
+  --grid-61-gap-size: 3.813rem;
+}
+
+.gold-box {
+  border: 1px solid #febf00;
+  padding: 2.5rem 4rem;
+  border-radius: 1rem;
+}
+
+.blue-box {
+  border: 1px solid #00338c;
+  padding: 2.5rem 4rem;
+  border-radius: 1rem;
+}
+
+.gold-text,
+.gold-text * {
+  color: var(--gold-color) !important;
+}
+
+.hr-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+}
+
+.hr-div hr {
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+}
+
+.g42 {
+  gap: var(--grid-42-gap-size) !important;
+}
+
+.g36 {
+  gap: var(--grid-36-gap-size) !important;
+}
+
+.g18 {
+  gap: var(--gap-18-size) !important;
+}
+
+.g61 {
+  gap: var(--grid-61-gap-size) !important;
+}
+
+.grid-r-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.light-font-family {
+  font-family: var(--light-font-family);
 }
 
 /* Custom scrollbar for Webkit browsers (Chrome, Safari) */
@@ -411,7 +473,7 @@ img {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .p0 {
@@ -500,6 +562,10 @@ button:focus-visible {
   display: block !important;
 }
 
+.hidden-xs {
+  display: block !important;
+}
+
 .inner-flex {
   display: flex;
   flex-direction: column;
@@ -512,6 +578,10 @@ button:focus-visible {
 
 .j-c-sb {
   justify-content: space-between;
+}
+
+.j-c-c {
+  justify-content: center;
 }
 
 .flex-row {
@@ -553,6 +623,10 @@ button:focus-visible {
 
 .inner-flex.inner-flex-big {
   gap: var(--big-gap-size) !important;
+}
+
+.inner-flex.inner-18-gap {
+  gap: var(--gap-18-size);
 }
 
 .big-gap {
@@ -757,6 +831,7 @@ button:focus-visible {
   background-color: var(--primary-color);
 }
 
+.button-style-primary *,
 .button-style-primary span,
 .button-style-primary p {
   color: var(--white-color);
@@ -770,6 +845,7 @@ button:focus-visible {
   transition: var(--common-transition);
 }
 
+.button-style-primary:hover *,
 .button-style-primary:hover span,
 .button-style-primary:hover p {
   color: var(--primary-color);
@@ -781,6 +857,7 @@ button:focus-visible {
   background-color: var(--secondary-color);
 }
 
+.button-style-secondary *,
 .button-style-secondary span,
 .button-style-secondary p {
   color: var(--white-color);
@@ -794,6 +871,7 @@ button:focus-visible {
   transition: var(--common-transition);
 }
 
+.button-style-secondary:hover *,
 .button-style-secondary:hover span,
 .button-style-secondary:hover p {
   color: var(--secondary-color);
@@ -805,6 +883,7 @@ button:focus-visible {
   background-color: var(--white-color);
 }
 
+.button-style-white *,
 .button-style-white span,
 .button-style-white p {
   color: var(--primary-color);
@@ -818,23 +897,50 @@ button:focus-visible {
   transition: var(--common-transition);
 }
 
+.button-style-white:hover *,
 .button-style-white:hover span,
 .button-style-white:hover p {
   color: var(--white-color);
   transition: var(--common-transition);
 }
 
+.button-style-blue {
+  border: 1px solid var(--blue-color);
+  background-color: var(--blue-color);
+}
+
+.button-style-blue *,
+.button-style-blue span,
+.button-style-blue p {
+  color: var(--white-color);
+  transition: var(--common-transition);
+  font-size: 1.15rem;
+}
+
+.button-style-blue:hover {
+  border: 1px solid var(--blue-color);
+  background-color: transparent;
+  transition: var(--common-transition);
+}
+
+.button-style-blue:hover *,
+.button-style-blue:hover span,
+.button-style-blue:hover p {
+  color: var(--blue-color);
+  transition: var(--common-transition);
+}
+
 /* CSS STarts here */
 
 .header-wrapper {
-  position: sticky;
-  background-color: var(--background-smoke);
+  position: fixed;
+  /* background-color: var(--background-smoke); */
   transition: var(--common-transition);
-  top: 0rem;
+  top: 3rem;
   border-bottom: 0px solid var(--primary-color);
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   z-index: 99999;
 }
 
@@ -945,13 +1051,15 @@ button:focus-visible {
   border-color: var(--primary-color);
 }
 
-.contact-button {
-  /* width: 156px;
+.button {
+  width: fit-content;
+  /* 
+  width: 156px;
   height: 45px; */
   padding: 12px 24px;
   border-radius: 8px;
-  border: solid 1px #000000;
-  background-color: #000000;
+  /* border: solid 1px #000000; */
+  /* background-color: #000000; */
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -959,8 +1067,45 @@ button:focus-visible {
   justify-content: center;
 }
 
+.contact-button * {
+  color: #ffffff;
+}
+
+.contact-button {
+  width: fit-content;
+
+  /* width: 156px;
+  height: 45px; */
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: solid 1px #000000;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: var(--common-transition);
+}
+
+.contact-button:hover {
+  background-color: transparent;
+}
+
+.contact-button:hover * {
+  color: #000000;
+}
+
 .arrow-svg {
   width: 18px;
+}
+
+.arrow-svg img {
+  color: inherit;
+}
+
+.grid-c-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -976,5 +1121,11 @@ button:focus-visible {
 
   header hr {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
   }
 }
