@@ -185,27 +185,52 @@ const Header = () => {
             </div>
             <ul className="navbar">
               <li className="link-font-size">
-                <Link to="/home">
+                <Link
+                  to="/home"
+                  onClick={() => {
+                    setIsMobNavOpen(false);
+                  }}
+                >
                   <p>Home</p>
                 </Link>
               </li>
               <li className="link-font-size">
-                <Link to="/who-we-are">
+                <Link
+                  to="/who-we-are"
+                  onClick={() => {
+                    setIsMobNavOpen(false);
+                  }}
+                >
                   <p>Who we are</p>
                 </Link>
               </li>
               <li className="link-font-size">
-                <Link to="/what-we-do">
+                <Link
+                  to="/what-we-do"
+                  onClick={() => {
+                    setIsMobNavOpen(false);
+                  }}
+                >
                   <p>What we do</p>
                 </Link>
               </li>
               <li className="link-font-size">
-                <Link to="/clientele">
+                <Link
+                  to="/clientele"
+                  onClick={() => {
+                    setIsMobNavOpen(false);
+                  }}
+                >
                   <p>Clientele</p>
                 </Link>
               </li>
               <li className="link-font-size">
-                <Link to="/careers">
+                <Link
+                  to="/careers"
+                  onClick={() => {
+                    setIsMobNavOpen(false);
+                  }}
+                >
                   <p>Careers</p>
                 </Link>
               </li>
@@ -228,17 +253,32 @@ const Header = () => {
                   }`}
                 >
                   <div className="link-font-size dropdown-item">
-                    <Link to="/awfficacy-global">
+                    <Link
+                      to="https://www.awfficacyglobal.com/"
+                      onClick={() => {
+                        setIsMobNavOpen(false);
+                      }}
+                    >
                       <p>Awfficacy Global</p>
                     </Link>
                   </div>
                   <div className="link-font-size dropdown-item">
-                    <Link to="/awfficacy-capital">
+                    <Link
+                      to="https://www.awfficacy.capital/"
+                      onClick={() => {
+                        setIsMobNavOpen(false);
+                      }}
+                    >
                       <p>Awfficacy Capital</p>
                     </Link>
                   </div>
                   <div className="link-font-size dropdown-item">
-                    <Link to="/scaleAx">
+                    <Link
+                      to="https://www.scaleax.com/"
+                      onClick={() => {
+                        setIsMobNavOpen(false);
+                      }}
+                    >
                       <p>ScaleAx</p>
                     </Link>
                   </div>
@@ -246,7 +286,12 @@ const Header = () => {
               </li>
             </ul>
             <div className="btn">
-              <Link to="/contact">
+              <Link
+                to="/contact"
+                onClick={() => {
+                  setIsMobNavOpen(false);
+                }}
+              >
                 <div className="contact-button">
                   <p>Contact Us</p>
                   <div className="arrow-svg">

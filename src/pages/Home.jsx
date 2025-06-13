@@ -14,7 +14,7 @@ import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div className="awfficacy_wrapper">
+    <div className="home_wrapper">
       <div className="section-1 main-container section-padding-4rem">
         <div className="relative">
           <div className="awfficacy_blue_box alc j-c-sb">
@@ -200,7 +200,7 @@ const Home = () => {
         <div className="grid-c-1-1 g42">
           <div className="leftside hr-div">
             <div className="head">
-              <h1 className="gold-text">
+              <h1 className="gold-text" style={{ zIndex: 1 }}>
                 Explore our group <br className="hidden-xs" />
                 Companies
               </h1>
@@ -219,56 +219,59 @@ const Home = () => {
           </div>
           <div className="right-side">
             <div className="grid-r-1-1 g61">
-              <div className="right-upper-div hr-div j-c-c">
-                <div className="head">
-                  <img
-                    src="./images/home/global_logo.svg"
-                    alt="Awfficacy Global"
-                  />
-                </div>
-                <hr />
-                <div className="body flex-row j-c-sb alc">
-                  <Link to="https://www.awfficacyglobal.com/" target="_blank">
-                    Learn More
-                  </Link>
-                  <div className="arrow-svg">
-                    <img src="./images/arrow_blue.svg" alt="arrow" />
+              <Link to="https://www.awfficacyglobal.com/" target="_blank">
+                <div className="right-upper-div hr-div j-c-c">
+                  <div className="head">
+                    <img
+                      src="./images/home/global_logo.svg"
+                      alt="Awfficacy Global"
+                    />
+                  </div>
+                  <hr />
+                  <div className="body flex-row j-c-sb alc link-font-size">
+                    <p>Learn More</p>
+                    <div className="arrow-svg">
+                      <img src="./images/arrow_blue.svg" alt="arrow" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
               <div className="right-bottom-div">
                 <div className="grid-c-1-1 g36">
-                  <div className="block hr-div j-c-c">
-                    <div className="head">
-                      <img
-                        src="./images/home/capital_logo.svg"
-                        alt="Awfficacy Capital"
-                      />
-                    </div>
-                    <hr />
-                    <div className="body flex-row j-c-sb alc">
-                      <Link to="https://www.awfficacy.capital/" target="_blank">
-                        Learn More
-                      </Link>
-                      <div className="arrow-svg">
-                        <img src="./images/arrow_blue.svg" alt="arrow" />
+                  <Link to="https://www.awfficacy.capital/" target="_blank">
+                    <div className="block hr-div j-c-c">
+                      <div className="head">
+                        <img
+                          src="./images/home/capital_logo.svg"
+                          alt="Awfficacy Capital"
+                        />
+                      </div>
+                      <hr />
+                      <div className="body flex-row j-c-sb alc link-font-size">
+                        <p>Learn More</p>
+                        <div className="arrow-svg">
+                          <img src="./images/arrow_blue.svg" alt="arrow" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="block hr-div j-c-c">
-                    <div className="head">
-                      <img src="./images/home/scaleax_logo.svg" alt="ScaleAx" />
-                    </div>
-                    <hr />
-                    <div className="body flex-row j-c-sb alc">
-                      <Link to="https://www.scaleax.com/v" target="_blank">
-                        Learn More
-                      </Link>
-                      <div className="arrow-svg">
-                        <img src="./images/arrow_blue.svg" alt="arrow" />
+                  </Link>
+                  <Link to="https://www.scaleax.com/v" target="_blank">
+                    <div className="block hr-div j-c-c">
+                      <div className="head">
+                        <img
+                          src="./images/home/scaleax_logo.svg"
+                          alt="ScaleAx"
+                        />
+                      </div>
+                      <hr />
+                      <div className="body flex-row j-c-sb alc link-font-size">
+                        <p>Learn More</p>
+                        <div className="arrow-svg">
+                          <img src="./images/arrow_blue.svg" alt="arrow" />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
