@@ -214,8 +214,8 @@ const Home = () => {
                   </span>
                 </div>
                 <Swiper
-                  spaceBetween={64}
-                  slidesPerView={4}
+                  spaceBetween={30}
+                  slidesPerView="auto"
                   loop
                   navigation={{
                     prevEl: ".custom-prev",
