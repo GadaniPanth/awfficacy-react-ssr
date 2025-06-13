@@ -1,0 +1,54 @@
+
+const statePolicies = [
+    {
+        name: "Maharashtra",
+        image: "/images/maharashtra.png",
+        policies: [
+            "Package Incentive Scheme 2019–2023",
+            "Maharashtra State Export Promotion Policy–2023",
+            "Maharashtra New Industrial Policy 2019–2024",
+            "Maharashtra Aerospace & Defense Policy 2018–2023",
+            "Any Other Scheme"
+        ]
+    },
+    {
+        name: "Uttar Pradesh",
+        image: "/images/uttar_pradesh.png",
+        policies: [
+            "Uttar Pradesh Industrial Investment & Promotion Policy 2022",
+            "Uttar Pradesh Food Processing Industry Policy 2023",
+            "Any Other Scheme"
+        ]
+    },
+    {
+        name: "Jammu & Kashmir",
+        image: "/images/jammu_kashmir.png",
+        policies: [
+            "Jammu and Kashmir Industrial Policy 2021–30",
+            "Jammu and Kashmir IT / ITES Policy 2020–30",
+            "Jammu and Kashmir Industrial Land Allotment Policy 2021",
+            "Any Other Scheme"
+        ]
+    },
+    {
+        name: "Tamil Nadu",
+        image: "/images/tamil_nadu.png",
+        policies: [
+            "Tamil Nadu Industrial Policy 2022",
+            "Tamil Nadu Aerospace and Defence Industrial Policy 2022",
+            "Tamil Nadu Electric Vehicle Policy 2023",
+            "Any Other Scheme"
+        ]
+    },
+    {
+        name: "Karnataka",
+        image: "/images/karnataka.png",
+        policies: [
+            "Karnataka Industrial Policy 2020–25",
+            "Karnataka State Electric Vehicle & Energy Storage Policy (Upcoming 2023)",
+            "Any Other Scheme"
+        ]
+    }
+];
+
+export default statePolicies;

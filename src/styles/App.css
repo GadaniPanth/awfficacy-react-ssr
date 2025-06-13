@@ -449,6 +449,10 @@ img {
   padding: 4rem 0;
 }
 
+.section-padding-bottom {
+  padding-bottom: 4rem;
+}
+
 .footer-padding {
   padding: 5rem 0;
 }
@@ -536,16 +540,19 @@ button:focus-visible {
   gap: 0.25rem;
 }
 
-.inner-flex.inner-flex-medium {
-  gap: var(--medium-gap-size);
+.inner-flex.inner-flex-common {
+  gap: var(--common-gap-size) !important;
 }
 
 .flex-row.inner-flex-medium {
-  gap: var(--medium-gap-size);
+  gap: var(--medium-gap-size) !important;
+}
+.inner-flex.inner-flex-medium {
+  gap: var(--medium-gap-size) !important;
 }
 
 .inner-flex.inner-flex-big {
-  gap: var(--big-gap-size);
+  gap: var(--big-gap-size) !important;
 }
 
 .big-gap {
@@ -571,6 +578,10 @@ button:focus-visible {
 
 .black-color {
   color: var(--pure-black-color) !important;
+}
+
+.gray-color {
+  color: #464646 !important;
 }
 
 .highlight-color {
@@ -605,6 +616,10 @@ button:focus-visible {
 
 .font_32 {
   font-size: 32px;
+}
+
+.font_36 {
+  font-size: 36px;
 }
 
 .font_40 {
