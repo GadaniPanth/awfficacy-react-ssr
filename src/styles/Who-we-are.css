@@ -1,0 +1,124 @@
+.whoWeAre-wrapper .section-1 .content {
+  background-color: #00338c;
+  /* justify-content: center; */
+  /* height: 95%; */
+  /* padding: 0 4rem; */
+  padding: 54px 64px;
+  border-radius: 24px;
+}
+
+.whoWeAre-wrapper .section-1 h1 {
+  font-size: 3.5rem;
+}
+
+.whoWeAre-wrapper .section-1 p {
+  color: #ffffff;
+  font-size: var(--paragraph-font-size);
+}
+
+.whoWeAre-wrapper .section-2 {
+}
+
+.whoWeAre-wrapper .section-2 .inner-flex {
+  border-radius: 24px;
+  border: solid 1px #00338c;
+  padding: 40px 48px;
+  gap: calc(var(--big-gap-size) - 2rem);
+}
+
+.whoWeAre-wrapper .section-2 .head h1 {
+  font-size: var(--section-subtitle-font-size);
+}
+
+.whoWeAre-wrapper .section-2 .positions .bag-img {
+  width: 64px;
+  margin: 0 auto;
+}
+
+.whoWeAre-wrapper .section-2 .positions .text p {
+  font-size: 1.75rem;
+  color: #777777;
+}
+
+.whoWeAre-wrapper .section-2 .bottom_div {
+  background-color: #00338c;
+  padding: 24px 0;
+  border-radius: 12px;
+}
+.whoWeAre-wrapper .section-2 .bottom_div p {
+  font-size: var(--paragraph-font-size);
+  color: #ffffff;
+}
+
+.email p {
+  position: relative;
+  display: inline-block;
+}
+
+.email p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #ffffff;
+  height: 1px;
+  left: 0;
+  transition: var(--common-transition);
+}
+
+.email:hover p::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .whoWeAre-wrapper .section-1 h1 {
+    font-size: 2.8rem;
+  }
+
+  .whoWeAre-wrapper .section-2 .positions .bag-img {
+    width: 50px;
+  }
+
+  .whoWeAre-wrapper .section-2 .positions .text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .whoWeAre-wrapper .section-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .whoWeAre-wrapper .section-2 .bottom_div {
+    padding: 24px 10px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .whoWeAre-wrapper .section-2 .inner-flex {
+    padding: 40px 12px;
+  }
+
+  .whoWeAre-wrapper .section-1 .content {
+    padding: 50px 25px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .whoWeAre-wrapper .section-1 .content {
+    padding: 25px 11px;
+  }
+
+  .whoWeAre-wrapper .section-2 .inner-flex {
+    padding: 40px 7px;
+  }
+
+  .whoWeAre-wrapper .section-2 .inner-flex {
+    gap: calc(var(--big-gap-size) - 3rem);
+  }
+
+  .whoWeAre-wrapper .inner-flex-medium {
+    gap: 1.5rem !important;
+  }
+}

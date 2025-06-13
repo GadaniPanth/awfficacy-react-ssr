@@ -300,6 +300,10 @@ header {
   transition-delay: 0.4s;
 }
 
+.navbar-mob .btn {
+  justify-content: left;
+}
+
 @media only screen and (max-width: 1366px) {
   .navbar {
     gap: 2.275rem;
@@ -346,7 +350,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .navbar-mob {
     width: 53%;
   }
@@ -382,6 +386,7 @@ header {
     align-items: start;
     padding: 0 2rem; */
     margin: 0.7rem 0;
+    margin-bottom: 3rem;
     /* font-size: 16px;
     z-index: 9990; */
   }
