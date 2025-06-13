@@ -36,6 +36,10 @@ h2 {
     margin-top: 10rem;
 }
 
+.blue_box_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 .btn {
     padding: 12px 24px;
@@ -48,6 +52,39 @@ h2 {
     gap: 10px;
     justify-content: center;
 
+}
+
+
+.blue_box_1:hover .blue_box_img_1 img:first-child {
+    transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_1 img:last-child {
+    transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_2 img:first-child {
+    transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .blue_box_img_2 img:last-child {
+    transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .blue_box_img_3 img:first-child {
+    transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_3 img:last-child {
+    transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .unit_flex_sec .child_seven {
+    transform: rotate(180deg);
+}
+
+.blue_box_1:hover .unit_flex_sec .child_eight {
+    transform: translateX(-200%);
 }
 
 .btn-know {
@@ -206,7 +243,7 @@ h2 {
         padding-bottom: 1.25rem;
     }
 
-    
+
 
 }
 

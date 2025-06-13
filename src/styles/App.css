@@ -647,6 +647,9 @@ button:focus-visible {
 .flex-row.inner-flex-common {
   gap: var(--common-gap-size) !important;
 }
+.g0{
+  gap: 0px !important;
+}
 
 .inner-flex.inner-flex-center {
   text-align: center;

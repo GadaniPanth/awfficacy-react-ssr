@@ -10,12 +10,26 @@ const Landing = () => {
           <div className="awfficacy_blue_box alc j-c-sb">
             <div className="awfficacy_blue_box_heading">
               <h1 className="font_56 white-color fw_700">
-                Building awesome office <br className="hidden-xs"/>
+                Building awesome office <br className="hidden-xs" />
                 with efficacy
               </h1>
             </div>
             <div className="awfficacy_blue_box_img">
-              <img src="./landingPage.svg" alt="" />
+              {/* <img src="./landingPage.svg" alt="" /> */}
+              <div className="blue_box_1">
+                <div className="inner-flex g0 blue_box_img_1">
+                  <img src="images/Yellow_box.png" alt="Yellow" />
+                  <img src="images/blue_right.png" alt="blue_right" />
+                </div>
+                <div className="inner-flex g0 blue_box_img_2">
+                  <img src="images/circle.png" alt="Circle" />
+                  <img src="images/blue.png" alt="blue" />
+                </div>
+                <div className="inner-flex g0 blue_box_img_3">
+                  <img src="images/blue_left.png" alt="blue_left" />
+                  <img src="images/blue_down.png" alt="blue" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
