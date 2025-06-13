@@ -10,7 +10,7 @@ const Landing = () => {
           <div className="awfficacy_blue_box alc j-c-sb">
             <div className="awfficacy_blue_box_heading">
               <h1 className="font_56 white-color fw_700">
-                Building awesome office <br />
+                Building awesome office <br className="hidden-xs"/>
                 with efficacy
               </h1>
             </div>
@@ -126,7 +126,7 @@ const Landing = () => {
                   </div>
                 </div>
                 <div className="inner-flex">
-                  <div className="state_paragraph">
+                  <div className="state_paragraph inner-flex">
                     <p className="fw_bold font_24">b. Deal Management</p>
                     <p className="fw_400 font_24">(i) Fundraising advisory </p>
                     <p className="fw_400 font_24">

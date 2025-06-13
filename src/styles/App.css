@@ -619,6 +619,7 @@ button:focus-visible {
 .flex-row.inner-flex-medium {
   gap: var(--medium-gap-size) !important;
 }
+
 .inner-flex.inner-flex-medium {
   gap: var(--medium-gap-size) !important;
 }
@@ -639,8 +640,8 @@ button:focus-visible {
   gap: 10rem;
 }
 
-.inner-flex.inner-flex-common {
-  gap: var(--common-gap-size);
+.flex-row.inner-flex-common {
+  gap: var(--common-gap-size) !important;
 }
 
 .inner-flex.inner-flex-center {
@@ -688,6 +689,10 @@ button:focus-visible {
 
 .font_28 {
   font-size: 28px;
+}
+
+.font_30 {
+  font-size: 30px;
 }
 
 .font_32 {
