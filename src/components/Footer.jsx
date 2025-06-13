@@ -14,7 +14,12 @@ const Footer = () => {
             <div className="content-wrapper">
               <div className="upper_div flex-row j-c-sb als">
                 <div className="logo">
-                  <img src="./images/AWF_white_logo.svg" alt="Awfficacy Logo" />
+                  <Link to={"/"}>
+                    <img
+                      src="./images/AWF_white_logo.svg"
+                      alt="Awfficacy Logo"
+                    />
+                  </Link>
                 </div>
                 <div className="resources">
                   <div className="sec-head">

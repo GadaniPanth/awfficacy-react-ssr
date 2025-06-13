@@ -147,6 +147,7 @@ header {
   right: -100%;
   background-color: #ffffff;
   transition: var(--common-transition);
+  z-index: 9990;
 }
 
 .navbar-mob.nav-active {
@@ -163,6 +164,7 @@ header {
   padding: 0 2rem;
   margin: 2rem 0;
   font-size: 16px;
+  z-index: 9990;
 }
 
 .navbar-mob .contact-button {
@@ -211,7 +213,7 @@ header {
   position: fixed;
   top: 1rem;
   right: 2rem;
-  z-index: 9991;
+  z-index: 9999;
   width: 30px;
   height: 30px;
   display: none;

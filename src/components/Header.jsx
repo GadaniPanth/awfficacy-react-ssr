@@ -9,6 +9,20 @@ const Header = () => {
 
   return (
     <>
+      <div
+        className="menu_btn"
+        onClick={() => {
+          setIsMobNavOpen(!isMobNavOpen);
+        }}
+      >
+        <div className="container">
+          <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
       <header>
         <div className="head_div">
           <div className="img_div">
@@ -23,20 +37,6 @@ const Header = () => {
             <Link to="/learn-more">
               <p>Learn More</p>
             </Link>
-          </div>
-          <div
-            className="menu_btn"
-            onClick={() => {
-              setIsMobNavOpen(!isMobNavOpen);
-            }}
-          >
-            <div className="container">
-              <div className={`toggle ${isMobNavOpen ? "active" : ""}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
           </div>
         </div>
         <div className="header-wrapper">
@@ -209,7 +209,7 @@ const Header = () => {
             <div className="btn">
               <Link to="/contact">
                 <div className="contact-button">
-                  Contact Us
+                  <p>Contact Us</p>
                   <div className="arrow-svg">
                     <img src="./images/arrow.svg" alt="" />
                   </div>
