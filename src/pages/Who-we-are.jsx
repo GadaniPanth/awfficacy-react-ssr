@@ -40,6 +40,9 @@ const Who_we_are = () => {
             </div>
           </div>
         </div>
+        <div className="section-2 main-container section-padding-4rem pt0">
+          <div className="gold-box"></div>
+        </div>
       </div>
     </>
   );

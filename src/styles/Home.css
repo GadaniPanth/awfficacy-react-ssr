@@ -256,6 +256,12 @@
   cursor: unset;
 }
 
+.custom-prev *,
+.custom-next * {
+  color: #00338c;
+  transition: var(--common-transition);
+}
+
 .custom-prev,
 .custom-next {
   border: solid 1px #00338c;
@@ -263,8 +269,18 @@
   position: absolute;
   top: 50% !important;
   /* transform: translateY(-50%) !important; */
-  color: #00338c;
   user-select: none;
+  transition: var(--common-transition);
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: #00338c;
+}
+
+.custom-prev:hover *,
+.custom-next:hover * {
+  color: #ffffff;
 }
 
 .custom-prev::after,
