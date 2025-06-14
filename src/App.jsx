@@ -6,6 +6,7 @@ import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import Who_we_are from "./pages/Who-we-are";
 import What_we_do from "./pages/What-we-do";
+import Clientele from "./pages/Clientele";
 import Contact_us from "./pages/Contact-Us";
 import "./styles/App.css";
 import Career from "./pages/Career";
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/what-we-do" element={<What_we_do />} />
           <Route path="/contact" element={<Contact_us />} />
           <Route path="/careers" element={<Career />} />
+          <Route path="/clientele" element={<Clientele />} />
         </Routes>
       </main>
       <Footer />
