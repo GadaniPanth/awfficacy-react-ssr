@@ -442,3 +442,210 @@
     text-overflow: ellipsis;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 1680px) {
+    .grid-gujarat {
+        border: 1px solid #00338C;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .tab_main_div:nth-child(1) {
+        top: 50%;
+        left: -16%;
+    }
+
+    .tab_main_div:nth-child(2) {
+        top: 27%;
+        left: -4%;
+        transform: translate(-14%, -38%) rotateZ(45deg);
+    }
+
+    .tab_main_div:nth-child(3) {
+        top: 1%;
+        left: 39%;
+        transform: translate(-50%, -9%) rotateZ(80deg);
+    }
+
+    .tab_main_div:nth-child(4) {
+        top: 12%;
+        left: 46%;
+        transform: translate(-13%, -49%) rotateZ(120deg);
+    }
+
+    .tab_main_div:nth-child(5) {
+        top: 21%;
+        right: -26%;
+        transform: translate(-15%, 0%) rotateZ(163deg);
+    }
+
+    .tab_main_div:nth-child(6) {
+        top: 44%;
+        right: 16%;
+        transform: translate(64%, 21%) rotateZ(202deg);
+    }
+
+    .tab_main_div:nth-child(7) {
+        top: 65%;
+        right: 4%;
+        transform: translate(10%, 24%) rotateZ(245deg);
+    }
+
+    .tab_main_div:nth-child(8) {
+        bottom: -5%;
+        right: 30%;
+        transform: translate(13%, -3%) rotateZ(275deg);
+    }
+
+    .tab_main_div:nth-child(9) {
+        bottom: 14%;
+        right: 57%;
+        transform: translate(7%, 7%) rotateZ(319deg);
+    }
+
+    .grid_box_1 {
+        padding: 1.25rem;
+    }
+
+    .font_28 {
+        font-size: 26px;
+    }
+
+    .rotate-section {
+        right: -3.5%;
+        top: 0;
+        width: 53%;
+        transform: translate(46%, 30%);
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+
+    .grid-two {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.8rem;
+    }
+
+    .awfficacy_blue_box_heading,
+    .awfficacy_blue_box_img {
+        flex-basis: unset;
+    }
+
+    .grid-three {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .grid-gujarat {
+        padding: 1rem;
+    }
+
+    .tab_main_div:nth-child(1) {
+        transform: translate(-22%, -21%) rotateZ(-1deg);
+    }
+
+    .tab_main_div:nth-child(2) {
+        top: 18%;
+        left: -20%;
+        transform: translate(-9%, -31%) rotateZ(40deg);
+    }
+
+    .tab_main_div:nth-child(3) {
+        transform: translate(-51%, -26%) rotateZ(80deg);
+    }
+
+    .tab_main_div:nth-child(4) {
+        top: 12%;
+        left: 46%;
+        transform: translate(-5%, -57%) rotateZ(120deg);
+    }
+
+    .tab_main_div:nth-child(5) {
+        top: 21%;
+        right: -26%;
+        transform: translate(9%, 0%) rotateZ(169deg);
+    }
+
+    .tab_main_div:nth-child(7) {
+        top: 71%;
+        right: -3%;
+        transform: translate(14%, 24%) rotateZ(245deg);
+    }
+
+    .tab_main_div:nth-child(8) {
+        bottom: -7%;
+        right: 38%;
+        transform: translate(17%, -3%) rotateZ(289deg);
+    }
+
+    .tab_main_div:nth-child(9) {
+        bottom: 14%;
+        right: 50%;
+        transform: translate(-11%, 46%) rotateZ(318deg);
+    }
+
+    .button_tabs {
+        gap: 0.5rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1075px) {
+
+    .rotate-section {
+        right: -3.5%;
+        top: 0;
+        width: 53%;
+        transform: translate(47%, 62%);
+    }
+
+    .font_28 {
+        font-size: 26px;
+    }
+
+    .ellipse img {
+        width: 40px;
+    }
+
+    .other_poiticies:nth-child(even) {
+        padding: 2rem 2.5rem;
+    }
+
+    .other_poiticies:nth-child(odd) {
+        padding: 2rem 2.5rem;
+    }
+
+    .section-padding-4rem .awfficacy_blue_box {
+        align-items: start;
+    }
+
+    .border-bottom-mini {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .leftside {
+        padding: 2rem 2rem;
+    }
+
+    .awfficacy_blue_box {
+        padding: 2rem 32px 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 680px) {}
+
+@media only screen and (max-width: 540px) {}
+
+@media only screen and (max-width: 486px) {}
+
+@media only screen and (max-width: 375px) {}
