@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Career.css";
+// import "../styles/Career.css";
 import { Link } from "react-router";
 
 let Swiper = null;
@@ -36,10 +36,21 @@ const Career = () => {
         <div className="section-1 main-container section-padding-4rem">
           <div className="content inner-flex inner-flex-medium">
             <div className="head">
-              <h1 className="gold-text">Explore Career Opportunities</h1>
+              <h1
+                className="gold-text"
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                Explore Career Opportunities
+              </h1>
             </div>
             <div className="body">
-              <p>
+              <p
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 At Awfficacy, we foster a dynamic work environment that thrives
                 on collaboration, creativity, and continuous learning. As part
                 of our vibrant community, you'll collaborate with talented
@@ -59,9 +70,20 @@ const Career = () => {
         <div className="section-2 main-container section-padding-4rem pt0 text-center">
           <div className="inner-flex">
             <div className="head">
-              <h1>Open Positions</h1>
+              <h1
+                data-aos="fade-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                Open Positions
+              </h1>
             </div>
-            <div className="positions">
+            <div
+              className="positions"
+              data-aos="fade-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               <div className="bag-img">
                 <img src="./images/bag.svg" alt="" />
               </div>
@@ -69,7 +91,12 @@ const Career = () => {
                 <p>No Current openings</p>
               </div>
             </div>
-            <div className="bottom_div text_div">
+            <div
+              className="bottom_div text_div"
+              data-aos="fade-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               <p>
                 If you can't find any relevant positions, write to{" "}
                 <Link
@@ -89,10 +116,20 @@ const Career = () => {
         <div className="section-3 main-container section-padding-4rem pt0 text-center">
           <div className="inner-flex">
             <div className="head">
-              <h1>Life at Awfficacy</h1>
+              <h1
+                data-aos="fade-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                Life at Awfficacy
+              </h1>
             </div>
             <div className="text_div">
-              <p>
+              <p
+                data-aos="fade-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 Our workplace thrives on a vibrant culture of collaboration,
                 creativity, and continuous learning. From coffee mixers to
                 team-building activities, there's never a dull moment at

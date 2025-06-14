@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Who-we-are.css";
+// import "../styles/Who-we-are.css";
 import { Link } from "react-router";
 
 const Who_we_are = () => {
@@ -185,13 +185,35 @@ const Who_we_are = () => {
           <div className="relative">
             <div className="awfficacy_blue_box alc j-c-sb">
               <div className="awfficacy_blue_box_heading">
-                <h1 className="font_56 white-color fw_700">
+                <h1
+                  className="font_56 white-color fw_700"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   Turning Vision into Value, <br className="hidden-xs" />
                   Challenges into Opportunities.
                 </h1>
               </div>
-              <div className="awfficacy_blue_box_img">
+              {/* <div className="awfficacy_blue_box_img">
                 <img src="./images/who-we-are/who-we-are.svg" alt="" />
+              </div> */}
+              <div className="awfficacy_blue_box_img flex_basis_40">
+                {/* <img src="./landingPage.svg" alt="" /> */}
+                <div className="blue_box_1">
+                  <div className="inner-flex g0 blue_box_img_1">
+                    <img src="images/circle.png" alt="Yellow" />
+                    <img src="images/blue_left.png" alt="blue_right" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_2">
+                    <img src="images/Yellow_box.png" alt="Circle" />
+                    <img src="images/circle.png" alt="blue" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_3">
+                    <img src="images/blue_down.png" alt="blue_left" />
+                    <img src="images/Yellow_box.png" alt="blue" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -199,10 +221,20 @@ const Who_we_are = () => {
         <div className="section-2 main-container section-padding-4rem pt0">
           <div className="blue-box inner-flex inner-flex-medium">
             <div className="head">
-              <h1>Who we are</h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                Who we are
+              </h1>
             </div>
             <div className="body">
-              <p>
+              <p
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 Awfficacy was born out of the sheer passion and purpose to
                 become an integral part of the mission to support India's dream
                 of becoming a global manufacturing hub. With a dynamic pair of
@@ -219,8 +251,21 @@ const Who_we_are = () => {
           <div className="gold-box">
             <div className="leadership">
               <div className="head">
-                <h2 className="gold-text">Leadership</h2>
-                <h2>Building a Strong Foundation</h2>
+                <h2
+                  className="gold-text"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  Leadership
+                </h2>
+                <h2
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  Building a Strong Foundation
+                </h2>
               </div>
               <div className="card-wrapper flex-row j-c-sb">
                 <div
@@ -228,6 +273,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("gautam_pai");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
                 >
                   <div className="card-image">
                     <img
@@ -274,6 +322,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("pranav_shukla");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
                 >
                   <div className="card-image">
                     <img
@@ -320,6 +371,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("nikita_talati");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
                 >
                   <div className="card-image">
                     <img
@@ -366,8 +420,21 @@ const Who_we_are = () => {
 
             <div className="advisors">
               <div className="head">
-                <h2 className="gold-text">Our Advisors</h2>
-                <h2>TRUSTED EXPERTS FOR GUIDANCE</h2>
+                <h2
+                  className="gold-text"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  Our Advisors
+                </h2>
+                <h2
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  TRUSTED EXPERTS FOR GUIDANCE
+                </h2>
               </div>
               <div className="card-wrapper flex-row j-c-sb">
                 <div
@@ -375,6 +442,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("aniket_talati");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
                 >
                   <div className="card-image">
                     <img
@@ -423,6 +493,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("sunil_talati");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
                 >
                   <div className="card-image">
                     <img
@@ -469,6 +542,9 @@ const Who_we_are = () => {
                   onClick={() => {
                     setIsPopUpOpen(true), setPopUpName("umesh_talati");
                   }}
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
                 >
                   <div className="card-image">
                     <img

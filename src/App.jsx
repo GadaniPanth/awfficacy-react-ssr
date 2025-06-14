@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,16 +8,26 @@ import Who_we_are from "./pages/Who-we-are";
 import What_we_do from "./pages/What-we-do";
 import Clientele from "./pages/Clientele";
 import Contact_us from "./pages/Contact-Us";
-import "./styles/App.css";
+// import "./styles/App.css";
 import Career from "./pages/Career";
+import AOS from "aos";
+// import "aos/dist/aos.css";
 
 if (typeof window !== "undefined") {
+  require("aos/dist/aos.css");
   require("swiper/css");
   require("swiper/css/navigation");
   require("swiper/css/pagination");
 }
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div>
       <Header />

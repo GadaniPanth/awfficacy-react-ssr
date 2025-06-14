@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/What-we-do.css";
+// import "../styles/What-we-do.css";
 
 const What_we_do = () => {
   const statePolicies = [
@@ -478,17 +478,55 @@ const What_we_do = () => {
           <div className="section-1 main-container section-padding-4rem">
             <div className="awfficacy_blue_box alc j-c-sb">
               <div className="awfficacy_blue_box_heading">
-                <h1 className="font_56 yellow-color fw_700">What We Do</h1>
+                <h1
+                  className="font_56 yellow-color fw_700"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  What We Do
+                </h1>
               </div>
-              <div className="awfficacy_blue_box_img">
+              {/* <div className="awfficacy_blue_box_img">
                 <img src="images/what_we_do/Single 01.svg" alt="single" />
+              </div> */}
+              <div className="awfficacy_blue_box_img flex_basis_40">
+                {/* <img src="./landingPage.svg" alt="" /> */}
+                <div className="blue_box_1">
+                  <div className="inner-flex g0 wblue_box_img_1">
+                    <img src="images/Yellow_box.png" alt="Yellow" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_2">
+                    <img src="images/blue_down.png" alt="blue_right" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_3">
+                    <img src="images/circle.png" alt="blue_right" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_4">
+                    <img src="images/blue.png" alt="blue_right" />
+                  </div>
+                  {/* </div>
+                  <div className="inner-flex g0 blue_box_img_2">
+                    <img src="images/circle.png" alt="Circle" />
+                    <img src="images/blue.png" alt="blue" />
+                  </div>
+                  <div className="inner-flex g0 blue_box_img_3">
+                    <img src="images/blue_left.png" alt="blue_left" />
+                    <img src="images/blue_down.png" alt="blue" /> */}
+                  {/* </div> */}
+                </div>
               </div>
             </div>
           </div>
           <div className="section-2 main-container section-padding-4rem pt0">
             <div className="grid-two">
               <div className="leftside">
-                <p className="fw_400 font_28">
+                <p
+                  className="fw_400 font_28"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   We assist corporates to unleash the best of potential from the
                   available government schemes including Production Linked
                   Incentive (PLI) schemes, other central government schemes, and
@@ -505,7 +543,12 @@ const What_we_do = () => {
             <div className="awfficacy_blue_box alc j-c-sb inner-flex gap_spacing">
               <div className="heading_img">
                 <div className="awfficacy_blue_box_heading">
-                  <h1 className="font_40 yellow-color fw_700">
+                  <h1
+                    className="font_40 yellow-color fw_700"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  >
                     Central Government incentive schemes
                   </h1>
                 </div>
@@ -514,14 +557,24 @@ const What_we_do = () => {
                 </div>
               </div>
               <div className="awfficacy_blue_paragraph inner-flex inner-flex-common">
-                <p className="white-color font_24 fw_400">
+                <p
+                  className="white-color font_24 fw_400"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   Since March 2020, the Union Cabinet, chaired by Prime Minister
                   Shri Narendra Modi announced Production Linked Incentive
                   schemes ('PLI schemes') with an expected outlay of INR 1.97
                   Lakh crores across 14 key sectors during the span of next 5
                   years.
                 </p>
-                <p className="white-color font_24 fw_400">
+                <p
+                  className="white-color font_24 fw_400"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   The PLI schemes were launched with the intention to scale up
                   domestic manufacturing facilities, accompanied by higher
                   import substitution and employment generation.
@@ -531,10 +584,20 @@ const What_we_do = () => {
           </div>
           <div className="section-4 main-container section-padding-4rem pt0 ">
             <div className="sec-4-paragraph inner-flex gap_spacing">
-              <h1 className="font_40 black-color fw_700">
+              <h1
+                className="font_40 black-color fw_700"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 Notified PLI Schemes
               </h1>
-              <p className="black-color font_24 fw_400">
+              <p
+                className="black-color font_24 fw_400"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 The PLI schemes were launched with the intention to scale up
                 domestic manufacturing facilities, accompanied by higher import
                 substitution and employment generation.
@@ -551,12 +614,22 @@ const What_we_do = () => {
                         src="images/what_we_do/medicine 1.svg"
                         alt="medicine"
                       />
-                      <h1 className="font_36 black-color fw_700">
+                      <h1
+                        className="font_36 black-color fw_700"
+                        data-aos="fade-in"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                      >
                         {tab.tab_title}
                       </h1>
                     </div>
 
-                    <p className="black-color font_24 fw_400">
+                    <p
+                      className="black-color font_24 fw_400"
+                      data-aos="fade-in"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                    >
                       {tab.tab_content_details}
                     </p>
 
@@ -567,6 +640,9 @@ const What_we_do = () => {
                           className={`grid_box_1 ${
                             index === 1 ? "border_yellow" : "border_blue"
                           }`}
+                          data-aos="fade-up"
+                          data-aos-duration="800"
+                          data-aos-delay={300 * index}
                         >
                           <div className="inner-flex inner-flex-common">
                             <h1 className="font_28 black-color border-bottom-1rem">
@@ -582,7 +658,13 @@ const What_we_do = () => {
                     </div>
 
                     {tab.tab_content_details2.map((info, idx) => (
-                      <div className="flex-row als" key={idx}>
+                      <div
+                        className="flex-row als"
+                        key={idx}
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay={300 * idx}
+                      >
                         <span className="material-symbols-outlined blue-color font_30">
                           arrow_right_alt
                         </span>
@@ -637,7 +719,12 @@ const What_we_do = () => {
 
                   <div className="rotate-section">
                     <div className="relative">
-                      <div className="pharma-vector-images1">
+                      <div
+                        className="pharma-vector-images1"
+                        data-aos="fade-in"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                      >
                         <div className="relative">
                           <div className="pharma-vector-img1">
                             <div
@@ -726,7 +813,12 @@ const What_we_do = () => {
           <div className="section-6 main-container section-padding-4rem pt0">
             <div className="awfficacy_blue_box alc j-c-sb">
               <div className="awfficacy_blue_box_heading">
-                <h1 className="font_40 yellow-color fw_700">
+                <h1
+                  className="font_40 yellow-color fw_700"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   State government incentive schemes Gujarat
                 </h1>
               </div>
@@ -745,7 +837,12 @@ const What_we_do = () => {
                   <h1 className="font_36 yellow-color fw_700">Gujarat</h1>
                   <div className="flex-row alc j-c-sb">
                     <div className="section-7-paragraph inner-flex inner-flex-medium">
-                      <p className="font_24 fw_400 black-color">
+                      <p
+                        className="font_24 fw_400 black-color"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                      >
                         Gujarat, a key economic powerhouse of India, is
                         strategically poised to become a premier hub for GCC
                         investments. Contributing 8.3% to the national economy,
@@ -759,7 +856,12 @@ const What_we_do = () => {
                         efficiency, renewable energy adoption, and IT/ITeS
                         expansion
                       </p>
-                      <p className="font_24 fw_400 black-color">
+                      <p
+                        className="font_24 fw_400 black-color"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                      >
                         With a 12% CAGR (2011-2021), surpassing the national
                         average of 10.4%, Gujarat is on track to achieve its
                         Viksit Gujarat 2047 vision, aiming to transform into a
@@ -776,12 +878,22 @@ const What_we_do = () => {
                 </div>
                 <div className="various-schemes-gujarat">
                   <div className="inner-flex inner-flex-medium">
-                    <h1 className="font_32 black-color fw_700">
+                    <h1
+                      className="font_32 black-color fw_700"
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                    >
                       The various schemes offered by the Gujarat Government are
                       as follows:
                     </h1>
                     <div className="grid-three">
-                      <div className="grid-gujarat inner-flex inner-flex-medium">
+                      <div
+                        className="grid-gujarat inner-flex inner-flex-medium"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
+                      >
                         <div className="flex-row ellipse">
                           <img
                             src="images/what_we_do/Ellipse 7.svg"
@@ -805,7 +917,12 @@ const What_we_do = () => {
                           </a>
                         </div>
                       </div>
-                      <div className="grid-gujarat inner-flex inner-flex-medium">
+                      <div
+                        className="grid-gujarat inner-flex inner-flex-medium"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                      >
                         <div className="flex-row ellipse">
                           <img
                             src="images/what_we_do/Ellipse 7.svg"
@@ -829,7 +946,12 @@ const What_we_do = () => {
                           </a>
                         </div>
                       </div>
-                      <div className="grid-gujarat inner-flex inner-flex-medium">
+                      <div
+                        className="grid-gujarat inner-flex inner-flex-medium"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="500"
+                      >
                         <div className="flex-row ellipse">
                           <img
                             src="images/what_we_do/Ellipse 7.svg"
@@ -858,7 +980,12 @@ const What_we_do = () => {
                 </div>
                 <div className="border-bottom"></div>
                 <div className="inner-flex section-padding-4rem">
-                  <h1 className="font_36 yellow-color fw_700 pb-4rem">
+                  <h1
+                    className="font_36 yellow-color fw_700 pb-4rem"
+                    data-aos="fade-in"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  >
                     Other State Policies
                   </h1>
                   <div className="inner-flex inner-flex-medium">
@@ -866,6 +993,9 @@ const What_we_do = () => {
                       <div
                         className="inner-flex section-padding-bottom other_poiticies"
                         key={index}
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="300"
                       >
                         <h1 className="font_36 black-color fw_700">
                           {state.name}
@@ -898,12 +1028,22 @@ const What_we_do = () => {
                   <div className="awfficacy_blue_box flex-row alc j-c-sb">
                     <div className="heading_para inner-flex inner-flex-medium">
                       <div className="awfficacy_blue_box_heading">
-                        <h1 className="font_40 yellow-color fw_700">
+                        <h1
+                          className="font_40 yellow-color fw_700"
+                          data-aos="fade-in"
+                          data-aos-duration="800"
+                          data-aos-delay="300"
+                        >
                           Our approach
                         </h1>
                       </div>
                       <div className="awfficacy_blue_paragraph">
-                        <p className="white-color font_24 fw_400">
+                        <p
+                          className="white-color font_24 fw_400"
+                          data-aos="fade-in"
+                          data-aos-duration="800"
+                          data-aos-delay="300"
+                        >
                           We follow a structured approach in execution , and our
                           overall process is broadly divided into three phases
                           as mentioned hereunder:
@@ -919,7 +1059,12 @@ const What_we_do = () => {
                   </div>
                 </div>
                 <div className="section-padding-4rem pt0 inner_padding border_blue">
-                  <div className="slide-card flex-row als j-c-sb">
+                  <div
+                    className="slide-card flex-row als j-c-sb"
+                    data-aos="fade-in"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  >
                     <div className="slide-header inner-flex inner-flex-common">
                       <h2 className="font_32 black-color fw_700">
                         Phase-I: Unlocking Optimal Government Incentives
@@ -968,7 +1113,12 @@ const What_we_do = () => {
                     </div>
                   </div>
                   <div className="border-bottom-mini"></div>
-                  <div className="slide-card flex-row als j-c-sb">
+                  <div
+                    className="slide-card flex-row als j-c-sb"
+                    data-aos="fade-in"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  >
                     <div className="slide-header inner-flex inner-flex-common">
                       <h2 className="font_32 black-color fw_700">
                         Phase-I: Unlocking Optimal Government Incentives
@@ -1017,7 +1167,12 @@ const What_we_do = () => {
                     </div>
                   </div>
                   <div className="border-bottom-mini"></div>
-                  <div className="slide-card flex-row als j-c-sb">
+                  <div
+                    className="slide-card flex-row als j-c-sb"
+                    data-aos="fade-in"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  >
                     <div className="slide-header inner-flex inner-flex-common">
                       <h2 className="font_32 black-color fw_700">
                         Phase-I: Unlocking Optimal Government Incentives

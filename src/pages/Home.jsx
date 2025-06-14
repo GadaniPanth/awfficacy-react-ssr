@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Landing.css";
+// import "../styles/Landing.css";
 import { Link } from "react-router";
-import "../styles/Home.css";
+// import "../styles/Home.css";
 
 // import { Navigation } from "swiper/modules";
 
@@ -69,8 +69,22 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="awfficacy_blue_box_img">
-              <img src="./landingPage.svg" alt="" />
+            <div className="awfficacy_blue_box_img flex_basis_40">
+              {/* <img src="./landingPage.svg" alt="" /> */}
+              <div className="blue_box_1">
+                <div className="inner-flex g0 blue_box_img_1">
+                  <img src="images/Yellow_box.png" alt="Yellow" />
+                  <img src="images/blue_right.png" alt="blue_right" />
+                </div>
+                <div className="inner-flex g0 blue_box_img_2">
+                  <img src="images/circle.png" alt="Circle" />
+                  <img src="images/blue.png" alt="blue" />
+                </div>
+                <div className="inner-flex g0 blue_box_img_3">
+                  <img src="images/blue_left.png" alt="blue_left" />
+                  <img src="images/blue_down.png" alt="blue" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -78,18 +92,40 @@ const Home = () => {
       <div className="section-2 main-container section-padding-4rem pt0">
         <div className="grid-c-1-1 g42">
           <div className="rightside">
-            <img src="images/home/Who_Are_we.png" alt="Who Are we?" />
+            <img
+              src="images/home/Who_Are_we.png"
+              alt="Who Are we?"
+              // data-aos="fade-in"
+              // data-aos-duration="800"
+              // data-aos-delay="300"
+            />
           </div>
           <div className="left-side">
             <div className="left-upper-div">
               <div className="heading">
-                <h1>Who Are we?</h1>
+                <h1
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
+                  Who Are we?
+                </h1>
                 <div className="arrow-svg">
-                  <img src="./images/arrow_blue.svg" alt="" />
+                  <img
+                    src="./images/arrow_blue.svg"
+                    alt="Arrow"
+                    data-aos="fade-in"
+                    data-aos-duration="800"
+                    data-aos-delay="300"
+                  />
                 </div>
               </div>
               <div className="body">
-                <p>
+                <p
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   Founded in 2021, Awfficacy began offering Make in India
                   incentive advisory services to various clientele, with a
                   particular focus on guiding them through the Production Linked
@@ -102,7 +138,12 @@ const Home = () => {
             </div>
             <div className="left-lower-div">
               <div className="grid-c3">
-                <div className="block">
+                <div
+                  className="block"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   <div className="head">
                     <h1>14+</h1>
                   </div>
@@ -111,7 +152,12 @@ const Home = () => {
                     <p>Sectors</p>
                   </div>
                 </div>
-                <div className="block">
+                <div
+                  className="block"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
                   <div className="head">
                     <h1>15000+</h1>
                   </div>
@@ -120,7 +166,12 @@ const Home = () => {
                     <p> (INR) crores investments committed by our clients</p>{" "}
                   </div>
                 </div>
-                <div className="block">
+                <div
+                  className="block"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
+                >
                   <div className="head">
                     <h1>130+</h1>
                   </div>
@@ -137,13 +188,23 @@ const Home = () => {
       <div className="section-3 main-container section-padding-4rem pt0">
         <div className="section-3-wrap blue-box relative">
           <div className="head">
-            <h1>Make in India Incentive Advisory</h1>
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              Make in India Incentive Advisory
+            </h1>
             <div className="logo">
               <img src="./images/home/pli_logo.svg" alt="PLI SCHEMES Logo" />
             </div>
           </div>
           <div className="body">
-            <p>
+            <p
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               We strive to provide end-to-end support from conceptualization to
               implementation of various benefits in the form of incentive,
               grants and subsidies provided by the Central as well State
@@ -152,14 +213,22 @@ const Home = () => {
             </p>
             <br className="hidden-xs" />
             <br className="hidden-xs" />
-            <p>
+            <p
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               We help you identify and secure the maximum potential incentives
               available to your company under various relevant government
               schemes.
             </p>
             <br className="hidden-xs" />
             <br className="hidden-xs" />
-            <p>
+            <p
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               Our team works collaboratively on behalf of clients to ensure our
               clients have full knowledge about incentives available in specific
               locations for specific activities.
@@ -203,7 +272,9 @@ const Home = () => {
       <div className="section-4 main-container section-padding-4rem pt0">
         <div className="gold-box relative inner-flex inner-flex-medium">
           <div className="head text-center gold-text">
-            <h1>Our Clientele</h1>
+            <h1 data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+              Our Clientele
+            </h1>
           </div>
           <div className="swiper_wrapper relative">
             {isClient && Swiper && SwiperSlide ? (
@@ -226,7 +297,14 @@ const Home = () => {
                     return (
                       <SwiperSlide key={i} className="box blue-box">
                         <div className="logo">
-                          <img src={img} alt="Clientele" />
+                          <img
+                            loading="lazy"
+                            src={img}
+                            alt="Clientele"
+                            data-aos="fade-in"
+                            data-aos-duration="800"
+                            data-aos-delay="300"
+                          />
                         </div>
                       </SwiperSlide>
                     );
@@ -248,17 +326,33 @@ const Home = () => {
         <div className="grid-c-1-1 g42">
           <div className="leftside hr-div">
             <div className="head">
-              <h1 className="gold-text" style={{ zIndex: 1 }}>
+              <h1
+                className="gold-text"
+                style={{ zIndex: 1 }}
+                data-aos="fade-in"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 Explore our group <br className="hidden-xs" />
                 Companies
               </h1>
               <div className="img">
-                <img src="./images/home/earth.svg" alt="" />
+                <img
+                  src="./images/home/earth.svg"
+                  alt=""
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                />
               </div>
             </div>
             <hr />
             <div className="body">
-              <p>
+              <p
+                data-aos="fade-down"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
                 We empower businesses of all sizes and industries with tailored
                 consultancy solutions, fostering innovation, efficiency, end
                 sustainable growth.
@@ -268,7 +362,12 @@ const Home = () => {
           <div className="right-side">
             <div className="grid-r-1-1 g61">
               <Link to="https://www.awfficacyglobal.com/" target="_blank">
-                <div className="right-upper-div hr-div j-c-c">
+                <div
+                  className="right-upper-div hr-div j-c-c"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   <div className="head">
                     <img
                       src="./images/home/global_logo.svg"
@@ -287,7 +386,12 @@ const Home = () => {
               <div className="right-bottom-div">
                 <div className="grid-c-1-1 g36">
                   <Link to="https://www.awfficacy.capital/" target="_blank">
-                    <div className="block hr-div j-c-c">
+                    <div
+                      className="block hr-div j-c-c"
+                      data-aos="fade-down"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                    >
                       <div className="head">
                         <img
                           src="./images/home/capital_logo.svg"
@@ -304,7 +408,12 @@ const Home = () => {
                     </div>
                   </Link>
                   <Link to="https://www.scaleax.com/v" target="_blank">
-                    <div className="block hr-div j-c-c">
+                    <div
+                      className="block hr-div j-c-c"
+                      data-aos="fade-down"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                    >
                       <div className="head">
                         <img
                           src="./images/home/scaleax_logo.svg"
@@ -329,10 +438,12 @@ const Home = () => {
       <div className="section-6 main-container section-padding-4rem pt0">
         <div className="hr-div text-center blue-box relative">
           <div className="head">
-            <h1>Get in Touch</h1>
+            <h1 data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+              Get in Touch
+            </h1>
           </div>
           <div className="body">
-            <p>
+            <p data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
               Steered by a balanced set comprising thinkers, doers, and experts
               Awfficacy relies on these three leaders for its own growth,
               expansion, and development.

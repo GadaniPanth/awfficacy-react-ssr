@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Landing.css";
+// import "../styles/Landing.css";
 import { Link } from "react-router";
 
 const Landing = () => {
@@ -10,7 +10,12 @@ const Landing = () => {
           <div className="relative">
             <div className="awfficacy_blue_box alc j-c-sb">
               <div className="awfficacy_blue_box_heading">
-                <h1 className="font_56 white-color fw_700">
+                <h1
+                  className="font_56 white-color fw_700"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                >
                   Building awesome office <br className="hidden-xs" />
                   with efficacy
                 </h1>
@@ -37,7 +42,12 @@ const Landing = () => {
         </div>
         <div className="section-2 main-container section-padding-4rem pt0">
           <div className="grid-two">
-            <div className="section-2-left cursor_pointer">
+            <div
+              className="section-2-left cursor_pointer"
+              data-aos="fade-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               <div className="inner-flex gap_spacing">
                 <div className="section-2-img-details flex-row j-c-sb alc">
                   <img
@@ -80,7 +90,12 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="section-2-right cursor_pointer">
+            <div
+              className="section-2-right cursor_pointer"
+              data-aos="fade-in"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
               <div className="inner-flex gap_spacing">
                 <div className="section-2-img-details flex-row j-c-sb alc">
                   <img src="./global.svg" alt="global" />
@@ -116,7 +131,13 @@ const Landing = () => {
           <div className="section-2-left">
             <div className="inner-flex gap_spacing">
               <div className="section-2-img-details flex-row j-c-sb alc">
-                <img src="./images/AWF cap.svg" alt="Awfficacy Logo" />
+                <img
+                  src="./images/AWF cap.svg"
+                  alt="Awfficacy Logo"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                  data-aos-delay="300"
+                />
                 <div className="btn-know_icon">
                   <Link to="https://www.awfficacy.capital/">
                     <div className="btn-know flex-row alc underline hover">
@@ -134,7 +155,12 @@ const Landing = () => {
                 <h2 className="font_32 fw_700">Investment Banking</h2>
                 <div className="grid-three">
                   <div className="inner-flex">
-                    <div className="inner-flex">
+                    <div
+                      className="inner-flex"
+                      data-aos="fade-down"
+                      data-aos-duration="800"
+                      data-aos-delay="300"
+                    >
                       <p className="fw_bold font_24">
                         a. Corporate Finance Advisory
                       </p>
@@ -146,7 +172,12 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="inner-flex">
-                    <div className="state_paragraph inner-flex">
+                    <div
+                      className="state_paragraph inner-flex"
+                      data-aos="fade-down"
+                      data-aos-duration="800"
+                      data-aos-delay="400"
+                    >
                       <p className="fw_bold font_24">b. Deal Management</p>
                       <p className="fw_400 font_24">
                         (i) Fundraising advisory{" "}
@@ -156,7 +187,14 @@ const Landing = () => {
                       </p>
                     </div>
                   </div>
-                  <p className="fw_bold font_24">c. Mutual Fund advisory</p>
+                  <p
+                    className="fw_bold font_24"
+                    data-aos="fade-down"
+                    data-aos-duration="800"
+                    data-aos-delay="500"
+                  >
+                    c. Mutual Fund advisory
+                  </p>
                 </div>
               </div>
             </div>

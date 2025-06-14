@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Contact-us.css";
+// import "../styles/Contact-us.css";
 import { Link } from "react-router";
 
 const Contact_us = () => {

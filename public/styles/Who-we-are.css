@@ -229,6 +229,10 @@
   font-size: 1.25rem !important;
 }
 
+.whoWeAre-wrapper .blue_box_1 .blue_box_img_3 img:first-of-type {
+  transform: rotateZ(-90deg);
+}
+
 @media only screen and (max-width: 1600px) {
   .popup-wrapper {
     width: 80%;

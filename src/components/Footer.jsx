@@ -1,13 +1,21 @@
 import React from "react";
-import "../styles/Footer.css";
+// import "../styles/Footer.css";
 import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="main-container relative">
-          <div className="footer">
+        <div
+          className="main-container section-padding-4rem pt0 relative"
+          style={{ paddingBottom: 0 }}
+        >
+          <div
+            className="footer"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
             <div className="bg-img">
               <img src="./images/footer_bg.svg" alt="Footer BG" />
             </div>

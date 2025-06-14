@@ -513,6 +513,18 @@
   font-size: 20px;
 }
 
+.what_we_do_wrapper .blue_box_1 .wblue_box_img_1 img {
+  transform: rotateZ(-90deg);
+}
+
+.what_we_do_wrapper .blue_box_1:hover .wblue_box_img_1 img {
+  transform: rotateZ(0deg);
+}
+
+.what_we_do_wrapper .blue_box_1 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @media only screen and (max-width: 1680px) {
   .grid-gujarat {
     border: 1px solid #00338c;

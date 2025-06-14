@@ -107,8 +107,8 @@ a {
 
 @font-face {
   font-family: "Lato-Black";
-  src: url("../../public/Lato/Lato-Black.woff2") format("woff2"),
-    url("../../public/Lato/Lato-Black.woff") format("woff");
+  src: url("..//Lato/Lato-Black.woff2") format("woff2"),
+    url("..//Lato/Lato-Black.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -116,8 +116,8 @@ a {
 
 /* @font-face {
   font-family: "Poppins-Black";
-  src: url(".../../public/Lato/poppins/Poppins-Black.woff2") format("woff2"),
-    url(".../../public/Lato/poppins/Poppins-Black.woff") format("woff");
+  src: url("...//Lato/poppins/Poppins-Black.woff2") format("woff2"),
+    url("...//Lato/poppins/Poppins-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -125,8 +125,8 @@ a {
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("../../public/Lato/Lato-Bold.woff2") format("woff2"),
-    url("../../public/Lato/Lato-Bold.woff") format("woff");
+  src: url("..//Lato/Lato-Bold.woff2") format("woff2"),
+    url("..//Lato/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -134,8 +134,8 @@ a {
 
 @font-face {
   font-family: "Lato-Light";
-  src: url("../../public/Lato/Lato-Light.woff2") format("woff2"),
-    url("../../public/Lato/Lato-Light.woff") format("woff");
+  src: url("..//Lato/Lato-Light.woff2") format("woff2"),
+    url("..//Lato/Lato-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -143,8 +143,8 @@ a {
 
 /* @font-face {
   font-family: "Poppins-Medium";
-  src: url(".../../public/Lato/poppins/Poppins-Medium.woff2") format("woff2"),
-    url(".../../public/Lato/poppins/Poppins-Medium.woff") format("woff");
+  src: url("...//Lato/poppins/Poppins-Medium.woff2") format("woff2"),
+    url("...//Lato/poppins/Poppins-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -152,8 +152,8 @@ a {
 
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../../public/Lato/Lato-Regular.woff2") format("woff2"),
-    url("../../public/Lato/Lato-Regular.woff") format("woff");
+  src: url("..//Lato/Lato-Regular.woff2") format("woff2"),
+    url("..//Lato/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1262,6 +1262,43 @@ button:focus-visible {
 
 .blue-text {
   color: #00338c !important;
+}
+
+.blue_box_1:hover .blue_box_img_1 img:first-child {
+  transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_1 img:last-child {
+  transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_2 img:first-child {
+  transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .blue_box_img_2 img:last-child {
+  transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .blue_box_img_3 img:first-child {
+  transform: rotate(90deg);
+}
+
+.blue_box_1:hover .blue_box_img_3 img:last-child {
+  transform: rotate(-90deg);
+}
+
+.blue_box_1:hover .unit_flex_sec .child_seven {
+  transform: rotate(180deg);
+}
+
+.blue_box_1:hover .unit_flex_sec .child_eight {
+  transform: translateX(-200%);
+}
+
+.blue_box_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 1440px) {
