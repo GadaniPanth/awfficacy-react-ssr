@@ -73,12 +73,13 @@
   width: 100%;
 }
 
-.whoWeAre-wrapper .section-3 .card-body .name {
+.whoWeAre-wrapper .name_text {
   font-size: var(--section-subtitle-font-size);
   margin-bottom: 8px;
 }
 
-.whoWeAre-wrapper .section-3 .card-body .designation {
+.whoWeAre-wrapper .p_text,
+.whoWeAre-wrapper .p_text p {
   font-size: var(--paragraph-font-size);
   color: #5b5b5b;
 }
@@ -92,13 +93,83 @@
   color: #00338c;
 }
 
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  background: #00000099;
+  z-index: 9998;
+}
+
+.popup-wrapper {
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 36px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 68%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.popup-wrapper .close_btn {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  width: 24px;
+  cursor: pointer;
+  transition: var(--commer-transition);
+}
+
+.popup-wrapper .close_btn:hover {
+  filter: brightness(20%);
+}
+
+.popup-wrapper .close_btn .material-symbols-outlined {
+  font-size: 54px !important;
+  color: #ababab;
+}
+
+.popup-wrapper .popup-header .image {
+  width: 38%;
+}
+
+.popup-wrapper .popup-header .text {
+  width: 58%;
+  /* padding-top: 55px 64px; */
+  gap: 32px;
+}
+
+.popup-wrapper .popup-header .name_text {
+  font-weight: 700;
+}
+
+.popup-wrapper .popup-header .text .connections h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.popup-wrapper .popup-header .logos a {
+  width: 32px;
+}
+
+.popup-wrapper .popup-header .body h2 {
+  font-size: var(--paragraph-font-size);
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 1440px) {
-  .whoWeAre-wrapper .section-3 .card-body .name {
+  .whoWeAre-wrapper .name_text {
     font-size: calc(var(--section-subtitle-font-size) - 0.5rem);
   }
 
-  .whoWeAre-wrapper .section-3 .card-body .designation,
-  .whoWeAre-wrapper .section-3 .card-body .know-more p {
+  .whoWeAre-wrapper .p_text,
+  .whoWeAre-wrapper .p_text p {
     font-size: calc(var(--paragraph-font-size) - 0.2rem);
   }
 
@@ -108,12 +179,12 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  .whoWeAre-wrapper .section-3 .card-body .designation,
-  .whoWeAre-wrapper .section-3 .card-body .know-more p {
+  .whoWeAre-wrapper .p_text,
+  .whoWeAre-wrapper .p_text p {
     font-size: calc(var(--paragraph-font-size) - 0.3rem);
   }
 
-  .whoWeAre-wrapper .section-3 .card-body .name {
+  .whoWeAre-wrapper .name_text {
     font-size: calc(var(--section-subtitle-font-size) - 0.9rem);
   }
 
@@ -122,5 +193,159 @@
   }
   .whoWeAre-wrapper .section-3 .gold-box {
     padding: 64px 42px;
+  }
+
+  .whoWeAre-wrapper .section-3 .head h2:first-of-type {
+    font-size: var(--section-title-font-size);
+    margin-bottom: 8px;
+  }
+
+  .whoWeAre-wrapper .section-3 .head {
+    margin-bottom: 40px;
+  }
+
+  .whoWeAre-wrapper .section-3 .leadership {
+    margin-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 1152px) {
+  /* .whoWeAre-wrapper .section-3 .card-body .connection a {
+    width: 28px;
+  } */
+
+  .whoWeAre-wrapper .section-3 .gold-box {
+    padding: 64px 32px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card {
+    min-width: 250px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body {
+    padding: 32px 20px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body .flex-row.inner-flex-small {
+    gap: 0.8rem;
+  }
+
+  .popup-wrapper .popup-header .body h2 {
+    font-size: 1rem;
+  }
+
+  .popup-wrapper .popup-header .text .connections h2 {
+    font-size: 0.95rem;
+  }
+
+  .logos.g18 {
+    gap: var(--gap-18-size) !important;
+  }
+
+  .connections.flex-row.inner-flex-small {
+    gap: var(--small-gap-size);
+  }
+}
+
+@media only screen and (max-width: 1152px) {
+  .popup-wrapper {
+    width: 76%;
+  }
+
+  .popup-wrapper .popup-header .text {
+    gap: 23px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .whoWeAre-wrapper .name_text {
+    font-size: calc(var(--section-subtitle-font-size) - 0.5rem);
+  }
+  .whoWeAre-wrapper .section-3 .card:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .whoWeAre-wrapper .section-3 .gold-box {
+    padding: 38px 32px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .whoWeAre-wrapper .section-3 .card-wrapper.flex-row.j-c-sb {
+    justify-content: unset;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body {
+    padding: 32px 15px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card {
+    min-width: 246px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body .flex-row.inner-flex-small {
+    gap: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* .whoWeAre-wrapper .section-3 .card-wrapper.flex-row.j-c-sb {
+    justify-content: unset;
+  } */
+
+  .whoWeAre-wrapper .section-3 .card-body .connection a {
+    width: 27px;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body .flex-row.inner-flex-small {
+    gap: 7px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .whoWeAre-wrapper .section-3 .card:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .whoWeAre-wrapper .section-3 .card {
+    /* min-width: 240px; */
+  }
+  .whoWeAre-wrapper .section-3 .gold-box {
+    padding: 38px 18px;
+  }
+  .whoWeAre-wrapper .blue-box {
+    padding: 38px 18px;
+  }
+
+  .whoWeAre-wrapper .section-2 .inner-flex.inner-flex-medium {
+    gap: 1.7rem !important;
+  }
+
+  .whoWeAre-wrapper .section-2 .head h1 {
+    font-size: calc(var(--section-title-font-size) + 0.3rem);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .whoWeAre-wrapper .section-3 .card {
+    min-width: 100%;
+  }
+
+  .whoWeAre-wrapper .section-3 .card-wrapper.flex-row.j-c-sb {
+    gap: 1.1rem;
+  }
+
+  .whoWeAre-wrapper .p_text,
+  .whoWeAre-wrapper .p_text p {
+    font-size: 1.2rem;
+  }
+
+  .whoWeAre-wrapper .name_text {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .whoWeAre-wrapper .section-3 .gold-box,
+  .whoWeAre-wrapper .blue-box {
+    padding: 38px 14px;
   }
 }

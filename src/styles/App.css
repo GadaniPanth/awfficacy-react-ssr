@@ -757,6 +757,7 @@ button:focus-visible {
 
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined" !important;
+  color: inherit;
 }
 
 .banner-title h1,
@@ -1370,6 +1371,8 @@ button:focus-visible {
 @media only screen and (max-width: 486px) {
   :root {
     --paragraph-font-size: 1.15rem;
+    --link-font-size: 0.85rem;
+    --section-subtitle-font-size: 1.6rem;
   }
 
   /* .main-container {
