@@ -73,11 +73,11 @@ select {
 
 @media only screen and (max-width: 1000px) {
 
-    .inner-flex>div:last-child>div {
+    /* .inner-flex>div:last-child>div {
         width: 270px;
         height: 270px;
         padding: 1.5rem 0.5rem;
-    }
+    } */
 
     select {
         padding: 1.25rem 2rem;
@@ -118,4 +118,7 @@ select {
 
 @media only screen and (max-width: 425px) {}
 
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+
+
+}

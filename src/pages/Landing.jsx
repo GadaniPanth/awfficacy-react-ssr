@@ -36,13 +36,13 @@ const Landing = () => {
       </div>
       <div className="section-2 main-container section-padding-4rem pt0">
         <div className="grid-two">
-          <div className="section-2-left">
+          <div className="section-2-left cursor_pointer">
             <div className="inner-flex gap_spacing">
               <div className="section-2-img-details flex-row j-c-sb alc">
                 <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
                 <div className="btn-know_icon">
                   <Link to="/">
-                    <div className="btn-know flex-row alc">
+                    <div className="btn-know flex-row alc underline hover">
                       <p className="font_24 fw_bold"> Know More</p>
                       <div className="arrow-svg">
                         <span className="material-symbols-outlined">
@@ -76,13 +76,13 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="section-2-right">
+          <div className="section-2-right cursor_pointer">
             <div className="inner-flex gap_spacing">
               <div className="section-2-img-details flex-row j-c-sb alc">
                 <img src="./global.svg" alt="global" />
                 <div className="btn-know_icon">
-                  <Link to="/">
-                    <div className="btn-know flex-row alc">
+                  <Link to="https://www.awfficacyglobal.com/">
+                    <div className="btn-know flex-row alc underline hover">
                       <p className="font_24 fw_bold"> Know More</p>
                       <div className="arrow-svg">
                         <span className="material-symbols-outlined">
@@ -108,14 +108,14 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="section-3 main-container section-padding-4rem pt0">
+      <div className="section-3 main-container section-padding-4rem pt0 ">
         <div className="section-2-left">
           <div className="inner-flex gap_spacing">
             <div className="section-2-img-details flex-row j-c-sb alc">
               <img src="./images/AWF cap.svg" alt="Awfficacy Logo" />
               <div className="btn-know_icon">
-                <Link to="/">
-                  <div className="btn-know flex-row alc">
+                <Link to="https://www.awfficacy.capital/">
+                  <div className="btn-know flex-row alc underline hover">
                     <p className="font_24 fw_bold"> Know More</p>
                     <div className="arrow-svg">
                       <span className="material-symbols-outlined">near_me</span>
