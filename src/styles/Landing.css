@@ -195,6 +195,10 @@ h2 {
         gap: 1.8rem !important;
     }
 
+    .section-1 .relative .alc {
+        align-items: center;
+    }
+
     .section-1 {
         margin-top: 6rem !important;
     }
@@ -243,6 +247,9 @@ h2 {
         padding-bottom: 1.25rem;
     }
 
+    .section-2-img-details {
+        flex-direction: column;
+    }
 
 
 }

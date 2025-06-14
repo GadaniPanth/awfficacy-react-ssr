@@ -97,6 +97,7 @@ const Clientele = () => {
       { name: "meghmahi", img: "clientele/65.png" },
       { name: "sanstar", img: "clientele/66.png" },
       { name: "sayaji", img: "clientele/67.png" },
+      { name: "state industriel policy", img: "clientele/68.png" },
     ],
     manufacturing: [
       { name: "pricol", img: "clientele/69.png" },

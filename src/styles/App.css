@@ -574,6 +574,14 @@ button:focus-visible {
   gap: 0.5rem;
 }
 
+.flex_basis_40 {
+  flex-basis: 40%;
+}
+
+.flex_basis_50 {
+  flex-basis: 50%;
+}
+
 .cursor_pointer {
   cursor: pointer;
 }
