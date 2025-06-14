@@ -1,0 +1,35 @@
+.form-control {
+    border: 1px solid #D9D9D9;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    height: 70px;
+    width: 100%;
+}
+
+
+.form_group {
+    flex-basis: 50%;
+}
+
+textarea {
+    /* font-family: var(--light-font-family); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-message {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.btn-2 {
+    background: transparent;
+    border: none;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}

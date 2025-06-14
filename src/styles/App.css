@@ -608,6 +608,10 @@ button:focus-visible {
   gap: var(--small-gap-size);
 }
 
+.flex-row.inner-flex-small {
+  gap: var(--small-gap-size);
+}
+
 .inner-flex.inner-flex-smallest {
   gap: 0.25rem;
 }
@@ -647,7 +651,8 @@ button:focus-visible {
 .flex-row.inner-flex-common {
   gap: var(--common-gap-size) !important;
 }
-.g0{
+
+.g0 {
   gap: 0px !important;
 }
 
@@ -1256,6 +1261,7 @@ button:focus-visible {
   :root {
     --paragraph-font-size: 1.15rem;
   }
+
   .hr-div {
     gap: 1.675rem;
   }
@@ -1270,6 +1276,7 @@ button:focus-visible {
   header hr {
     display: none;
   }
+
   .section-1 {
     padding-top: 2rem !important;
   }
@@ -1366,6 +1373,7 @@ button:focus-visible {
     width: 95%;
     /* margin: 0; */
   }
+
   .section-padding-4rem {
     padding: 2.5rem 0;
   }
