@@ -1269,7 +1269,6 @@ button:focus-visible {
     --link-font-size: 0.9rem;
     --paragraph-font-size: 1.3rem;
   }
-
 }
 
 @media only screen and (max-width: 1152px) {
@@ -1293,7 +1292,7 @@ button:focus-visible {
   }
 
   .section-1 {
-    padding-top: 2rem !important;
+    padding-top: 0rem !important;
   }
 }
 

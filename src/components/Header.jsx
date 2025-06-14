@@ -272,7 +272,9 @@ const Header = () => {
                 >
                   <p>Group Companies</p>
                   <span className="material-symbols-outlined">
-                    keyboard_arrow_down
+                    {isDropdownOpen
+                      ? "keyboard_arrow_up"
+                      : "keyboard_arrow_down"}
                   </span>
                 </div>
                 <div
