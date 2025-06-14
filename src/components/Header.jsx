@@ -340,7 +340,14 @@ const Header = () => {
               height: "0.01rem",
             }}
           />
-          {isMobNavOpen ? <div className="navbar-overlay"></div> : <></>}
+          {isMobNavOpen ? (
+            <div
+              className="navbar-overlay"
+              onClick={() => setIsMobNavOpen(false)}
+            ></div>
+          ) : (
+            <></>
+          )}
         </div>
       </header>
     </>
