@@ -14,7 +14,7 @@ const Landing = () => {
                 with efficacy
               </h1>
             </div>
-            <div className="awfficacy_blue_box_img">
+            <div className="awfficacy_blue_box_img flex_basis_40">
               {/* <img src="./landingPage.svg" alt="" /> */}
               <div className="blue_box_1">
                 <div className="inner-flex g0 blue_box_img_1">

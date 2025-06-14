@@ -100,7 +100,7 @@ const Clientele = () => {
             { name: "sayaji", img: "clientele/67.png" },
             { name: "state industriel policy", img: "clientele/68.png" },
         ],
-        manufacturing :[
+        manufacturing: [
             { name: "pricol", img: "clientele/69.png" },
             { name: "monk", img: "clientele/70.png" },
             { name: "liebherr", img: "clientele/71.png" },
@@ -134,11 +134,11 @@ const Clientele = () => {
                     </div>
                 </div>
                 <div className="section-2 main-container section-padding-4rem pt0">
-                    <div className="inner-flex inner-flex-medium">
+                    <div className="inner-flex inner-flex-medium our_clientele_flex">
                         <div className="our_clientele flex-row j-c-sb alc">
                             <h1 className="font_40 black-color fw_700">Our Clientele</h1>
-                            <div className="select">
-                                <select value={selectedIndustry} onChange={handleChange}>
+                            <div className="select relative">
+                                <select value={selectedIndustry} onChange={handleChange} >
                                     <option value="automobile">Automobile</option>
                                     <option value="pharmaceuticals">Pharmaceuticals</option>
                                     <option value="white_goods">White Goods</option>
@@ -149,6 +149,9 @@ const Clientele = () => {
                                     <option value="manufacturing">Manufacturing of Electronic Components
                                         and Semiconductors</option>
                                 </select>
+                                <span className="material-symbols-outlined down_arrow">
+                                    keyboard_arrow_down
+                                </span>
                             </div>
                         </div>
                         <div className="grid_five">

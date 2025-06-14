@@ -2,13 +2,14 @@ select {
     border: 1px solid #00338C;
     padding: 1.25rem 2rem;
     width: 500px;
-    display: f;
     color: #00338C;
+    appearance: none;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-
-/* Client Card */
-.inner-flex>div:last-child>div {
+.our_clientele_flex>div:last-child>div {
     width: 300px;
     height: 300px;
     text-align: center;
@@ -19,10 +20,21 @@ select {
     transition: box-shadow 0.3s ease;
 }
 
-.inner-flex>div:last-child>div:hover {
+.our_clientele_flex>div:last-child>div:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.down_arrow {
+    position: absolute;
+    z-index: 999;
+    right: 31px;
+    top: 30%;
+    color: #00338C;
+}
+
+.client_img {
+    cursor: pointer;
+}
 
 .grid_five {
     display: grid;
@@ -87,7 +99,20 @@ select {
 
     select {
         padding: 1.25rem 2rem;
-        width: 250px;
+        width: 230px;
+    }
+
+    .clientele-wrapper .grid_five {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .clientele-wrapper .down_arrow {
+        position: absolute;
+        z-index: 999;
+        right: 15px;
+        top: 20%;
+        color: #00338C;
     }
 }
 
