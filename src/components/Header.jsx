@@ -10,6 +10,11 @@ const Header = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
   // console.log(isActive("/home"));
+
+  useEffect(() => {
+    document.body.style.overflow = isMobNavOpen ? "hidden" : "auto";
+  }, [isMobNavOpen]);
+
   return (
     <>
       <header>
@@ -335,6 +340,7 @@ const Header = () => {
               height: "0.01rem",
             }}
           />
+          {isMobNavOpen ? <div className="navbar-overlay"></div> : <></>}
         </div>
       </header>
     </>

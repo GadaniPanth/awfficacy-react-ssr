@@ -113,7 +113,9 @@
   transform: translate(-50%, -50%);
   z-index: 9999;
   width: 68%;
-  height: 95%;
+  /* height: 95%; */
+  height: fit-content;
+  max-height: 95%;
   overflow-y: scroll;
 }
 
@@ -135,13 +137,15 @@
   color: #ababab;
 }
 
-.popup-wrapper .popup-header .image {
-  width: 30%;
+.popup-wrapper .popup-header .image
+/* .popup-wrapper .fav-book { */ {
+  /* width: 30%; */
 }
 
-.popup-wrapper .popup-header .text {
-  width: 58%;
-  /* padding-top: 55px 64px; */
+.popup-wrapper .popup-header .text
+/* .popup-wrapper .tought { */ {
+  /* width: 58%; */
+  padding-top: 55px 64px;
   gap: 32px;
 }
 
@@ -181,6 +185,56 @@
   font-size: var(--paragraph-font-size);
 }
 
+.popup-wrapper .pBox.blue-box,
+.popup-wrapper .pBox.gold-box {
+  padding: 36px 56px;
+  border-radius: 24px;
+  border-width: 1px;
+}
+
+.popup-wrapper .blue-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.popup-wrapper .pBox .p_text {
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.popup-wrapper .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  gap: 1.25rem;
+}
+
+.popup-wrapper .grid.grid-inv {
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.popup-wrapper .fav-book .book_svg {
+  width: 42px;
+}
+
+.popup-wrapper .book_name {
+  font-size: 1.5rem;
+}
+
+.popup-wrapper .popup-header .name_text {
+  font-size: 2rem !important;
+}
+
+.popup-wrapper .popup-header .p_text {
+  font-size: 1.25rem !important;
+}
+
+@media only screen and (max-width: 1600px) {
+  .popup-wrapper {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .whoWeAre-wrapper .name_text {
     font-size: calc(var(--section-subtitle-font-size) - 0.5rem);
@@ -193,6 +247,13 @@
 
   .whoWeAre-wrapper .section-3 .card-body .connection a {
     width: 30px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .popup-wrapper .pBox.blue-box,
+  .popup-wrapper .pBox.gold-box {
+    padding: 36px 40px;
   }
 }
 
@@ -250,29 +311,40 @@
 
   .popup-wrapper .popup-header .body h2,
   .popup-wrapper .list .list_text {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    align-items: anchor-center;
   }
 
   .popup-wrapper .popup-header .text .connections h2 {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 
   .logos.g18 {
-    gap: var(--gap-18-size) !important;
+    gap: 0.325rem !important;
   }
 
   .connections.flex-row.inner-flex-small {
     gap: var(--small-gap-size);
   }
-}
 
-@media only screen and (max-width: 1152px) {
   .popup-wrapper {
-    width: 76%;
+    width: 90%;
   }
 
+  .popup-wrapper .pBox .p_text {
+    font-size: 1.15rem;
+    color: #000000;
+  }
   .popup-wrapper .popup-header .text {
     gap: 23px;
+  }
+
+  .whoWeAre-wrapper .popup-wrapper .pBox .p_text {
+    font-size: 1.05rem;
+  }
+
+  .whoWeAre-wrapper .popup-wrapper .book_name {
+    font-size: 1.3rem;
   }
 }
 
@@ -285,6 +357,11 @@
   }
   .whoWeAre-wrapper .section-3 .gold-box {
     padding: 38px 32px;
+  }
+  .whoWeAre-wrapper .popup-wrapper .pBox.blue-box,
+  .popup-wrapper .pBox.gold-box {
+    padding: 32px 25px;
+    gap: 2.025rem !important;
   }
 }
 
@@ -304,6 +381,14 @@
   .whoWeAre-wrapper .section-3 .card-body .flex-row.inner-flex-small {
     gap: 0.4rem;
   }
+
+  .popup-wrapper .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-wrapper .fav-book .list .inner-flex {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -317,6 +402,29 @@
 
   .whoWeAre-wrapper .section-3 .card-body .flex-row.inner-flex-small {
     gap: 7px;
+  }
+
+  .popup-wrapper .grid.grid-inv {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-wrapper .popup-header .image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .popup-wrapper .popup-header .name_text {
+    font-size: 1.9rem !important;
+  }
+
+  .popup-wrapper .popup-header .p_text {
+    font-size: 1.15rem !important;
+  }
+
+  .popup-wrapper .popup-header .body h2,
+  .popup-wrapper .list .list_text {
+    font-size: 1.15rem;
+    align-items: unset;
   }
 }
 
@@ -343,7 +451,7 @@
   }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
   .whoWeAre-wrapper .section-3 .card {
     min-width: 100%;
   }
@@ -359,6 +467,51 @@
 
   .whoWeAre-wrapper .name_text {
     font-size: 1.7rem;
+  }
+  .popup-wrapper .grid.grid-inv {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-wrapper .popup-header .image {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .popup-wrapper .popup-header .name_text {
+    font-size: 1.9rem !important;
+  }
+
+  .popup-wrapper .popup-header .p_text {
+    font-size: 1.15rem !important;
+  }
+
+  .popup-wrapper .fav-book .list .inner-flex {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .popup-wrapper {
+    padding: 18px;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .popup-wrapper .list .g36 {
+    gap: 1.25rem !important;
+  }
+
+  .popup-wrapper .close_btn {
+    width: 18px;
+  }
+
+  .popup-wrapper .popup-header .image {
+    width: 100%;
+  }
+
+  .whoWeAre-wrapper .popup-wrapper .pBox.blue-box,
+  .popup-wrapper .pBox.gold-box {
+    gap: 1.425rem !important;
   }
 }
 

@@ -527,7 +527,8 @@ const Who_we_are = () => {
               </div>
               <div className="inner-flex inner-flex-small">
                 <div className="popup-header">
-                  <div className="flex-row inner-flex-small j-c-sb alc">
+                  {/* <div className="flex-row inner-flex-small j-c-sb alc"> */}
+                  <div className="grid grid-inv j-c-sb alc">
                     <div className="image">
                       {/* {console.log(popup_list[popUpName])} */}
                       <img
@@ -596,8 +597,9 @@ const Who_we_are = () => {
                     )}
                   </ul>
                 </div>
-                <div className="flex-row inner-flex-small j-c-sb alc">
-                  <div className="tought blue-box">
+                {/* <div className="flex-row inner-flex-small j-c-sb alc"> */}
+                <div className="grid j-c-sb">
+                  <div className="tought pBox inner-flex g42 gold-box">
                     <div className="head">
                       <h2 className="blue-text">Food for Thought</h2>
                     </div>
@@ -606,9 +608,36 @@ const Who_we_are = () => {
                     </div>
                   </div>
 
-                  <div className="fav-book gold-box">
+                  <div className="fav-book pBox inner-flex g42 blue-box">
                     <div className="head">
                       <h2 className="blue-text">Two Favorite Books</h2>
+                    </div>
+                    <div className="list">
+                      <ul className="inner-flex g36">
+                        {popup_list[popUpName] &&
+                        popup_list[popUpName].body_text.length > 0 ? (
+                          popup_list[popUpName].two_favorite_books.map(
+                            (book, i) => {
+                              return (
+                                <li
+                                  key={i}
+                                  className="list_text flex-row inner-flex-small"
+                                >
+                                  <div className="book_svg">
+                                    <img src="./images/book.svg" alt="⚫" />
+                                  </div>
+                                  <div className="txt">
+                                    <h2 className="book_name">{book.name}</h2>
+                                    <h2 className="p_text">{book.author}</h2>
+                                  </div>
+                                </li>
+                              );
+                            }
+                          )
+                        ) : (
+                          <></>
+                        )}
+                      </ul>
                     </div>
                   </div>
                 </div>
