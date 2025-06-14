@@ -321,6 +321,7 @@
 .tab_main_div:nth-child(1) .tabs_text {
     width: fit-content;
     transform: translate(-50%, -50%) rotateZ(-5deg);
+    transform: translate(-50%, -50%) rotateZ(-5deg);
     position: absolute;
     top: 44%;
     left: 36%;
@@ -670,9 +671,7 @@
         transform: translate(47%, 62%);
     }
 
-    .font_28 {
-        font-size: 26px;
-    }
+
 
     .ellipse img {
         width: 40px;
@@ -693,6 +692,104 @@
     .border-bottom-mini {
         padding: 0;
     }
+
+    .tab_main_div:nth-child(4) {
+        top: 19%;
+        left: 39%;
+        transform: translate(-11%, -55%) rotateZ(120deg);
+    }
+
+    .shape-vectore,
+    .border-vector-img,
+    .active_img_tab {
+        width: 78%;
+    }
+
+    .tab_main_div:nth-child(1) {
+        transform: translate(-17%, -24%) rotateZ(-3deg);
+    }
+
+    .tab_main_div:nth-child(2) {
+        top: 20%;
+        left: -18%;
+        transform: translate(-10%, -26%) rotateZ(44deg);
+    }
+
+    .tab_main_div:nth-child(3) {
+        transform: translate(-48%, 4%) rotateZ(86deg);
+    }
+
+    .button_tabs {
+        gap: 0.2rem;
+    }
+
+    .tabs-title-text h3 {
+        font-size: 14px;
+    }
+
+    .tab_main_div:nth-child(5) {
+        top: 23%;
+        right: -21%;
+        transform: translate(9%, 0%) rotateZ(169deg);
+    }
+
+    .tab_main_div:nth-child(6) {
+        top: 47%;
+        right: 17%;
+        transform: translate(63%, 22%) rotateZ(213deg);
+    }
+
+    .tab_main_div:nth-child(7) {
+        top: 65%;
+        right: -2%;
+        transform: translate(11%, 28%) rotateZ(249deg);
+    }
+
+    .tab_main_div:nth-child(8) {
+        bottom: -5%;
+        right: 35%;
+        transform: translate(18%, -14%) rotateZ(289deg);
+    }
+
+    .tab_main_div:nth-child(9) {
+        bottom: 20%;
+        right: 38%;
+        transform: translate(-13%, 40%) rotateZ(329deg);
+    }
+
+    .what_we_do_wrapper .section-2 .grid-two .leftside {
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+    }
+
+    .what_we_do_wrapper .section-1 .awfficacy_blue_box {
+        align-items: center;
+    }
+
+    .section-3 .awfficacy_blue_box {
+        padding: 2rem 2rem;
+    }
+
+    .section-5 .inner_padding,
+    .section-7 .inner_padding {
+        padding: 2rem 2rem;
+    }
+
+    .various-schemes-gujarat {
+        padding: 2rem 2rem;
+    }
+
+    .slide-card {
+        padding: 2rem 2rem;
+    }
+
+    .section-4 .sec-4-paragraph {
+        padding: 2rem 2rem;
+    }
+
+    .what_we_do_wrapper .pb-4rem {
+        padding-bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -704,6 +801,30 @@
     .awfficacy_blue_box {
         padding: 2rem 32px 2.5rem;
     }
+
+ .flex-colum {
+        flex-direction: column !important;
+    }
+
+    .what_we_do_wrapper .grid-gujarat .btn-2 {
+        margin-bottom: 1rem;
+    }
+
+    .section-5 .border_blue .grid_60_40 {
+        grid-template-columns: 100%;
+    }
+
+    .what_we_do_wrapper .grid_60_40 .rotate-section {
+        position: relative;
+        right: -3.5%;
+        top: 0;
+        width: 53%;
+        transform: translate(66%, -18%);
+        z-index: 9;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 767px) {}

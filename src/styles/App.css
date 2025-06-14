@@ -1277,6 +1277,7 @@ button:focus-visible {
     --paragraph-font-size: 1.15rem;
   }
 
+
   .hr-div {
     gap: 1.675rem;
   }
@@ -1286,6 +1287,9 @@ button:focus-visible {
   :root {
     --link-font-size: 0.85rem;
     --section-subtitle-font-size: 1.7rem;
+    --paragraph-font-size_1_75: 1.35rem;
+    --section-title-font-size: 2.2rem;
+    --section-subtitle-font-size_2_25: 1.85rem;
   }
 
   header hr {
@@ -1311,6 +1315,7 @@ button:focus-visible {
     --link-font-size: 1.1rem;
     --paragraph-font-size: 1.35rem;
     --section-title-font-size: 2.2rem;
+
   }
 
   .grid-c-1-1 {

@@ -680,7 +680,7 @@ const What_we_do = () => {
                             <div className="section-gujarat">
                                 <div className="inner-flex gap_spacing section-padding-bottom">
                                     <h1 className="font_36 yellow-color fw_700">Gujarat</h1>
-                                    <div className="flex-row alc j-c-sb">
+                                    <div className="flex-row alc j-c-sb flex-colum">
                                         <div className="section-7-paragraph inner-flex inner-flex-medium">
                                             <p className="font_24 fw_400 black-color">
                                                 Gujarat, a key economic powerhouse of India, is
