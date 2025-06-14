@@ -247,11 +247,36 @@ h2 {
         padding-bottom: 1.25rem;
     }
 
-    .section-2-img-details {
+    .section-2-right .section-2-img-details,
+    .section-2-left .section-2-img-details {
         flex-direction: column;
     }
 
+    .font_32 {
+        font-size: 20px !important;
+    }
 
+    .font_56 {
+        font-size: 24px !important;
+    }
+
+    .grid-three {
+        gap: 1rem;
+    }
+
+    .landing_wrapper .main-container {
+        width: 95%;
+    }
+
+    .landing_wrapper .section-2-left,
+    .section-2-right {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .landing_wrapper .awfficacy_blue_box {
+        padding: 1rem 1.5rem !important;
+        gap: 1rem;
+    }
 }
 
 @media only screen and (max-width: 325px) {}

@@ -173,9 +173,14 @@ a {
   --gold-color: #febf00;
   /* font-sizes */
   --banner-title-font-size: 4.5rem;
+  --banner-title-font-size_5: 5rem;
   --section-title-font-size: 2.5rem;
   --section-subtitle-font-size: 2rem;
+  --section-subtitle-font-size_2_25: 2.25rem;
+  --section-subtitle-font-size_3_5: 3.5rem;
   --paragraph-font-size: 1.5rem;
+  --paragraph-font-size_1_75: 1.75rem;
+  --paragraph-font-size_1_875: 1.875rem;
   --content-font-size: 1.15rem;
   --link-font-size: 1.125rem;
   --rem-font-size: 1rem;
@@ -700,39 +705,39 @@ button:focus-visible {
 }
 
 .font_16 {
-  font-size: 16px;
+  font-size: var(----rem-font-size);
 }
 
 .font_24 {
-  font-size: 24px;
+  font-size: var(--paragraph-font-size);
 }
 
 .font_28 {
-  font-size: 28px;
+  font-size: var(--paragraph-font-size_1_75);
 }
 
 .font_30 {
-  font-size: 30px;
+  font-size: var(--paragraph-font-size_1_875);
 }
 
 .font_32 {
-  font-size: 32px;
+  font-size: var(--section-subtitle-font-size);
 }
 
 .font_36 {
-  font-size: 36px;
+  font-size: var(--section-subtitle-font-size_2_25);
 }
 
 .font_40 {
-  font-size: 40px;
+  font-size: var(--section-title-font-size);
 }
 
 .font_56 {
-  font-size: 56px;
+  font-size: var(--section-subtitle-font-size_3_5);
 }
 
 .font_80 {
-  font-size: 80px;
+  font-size: var(--banner-title-font-size_5);
 }
 
 .fw_bold {
@@ -1264,6 +1269,7 @@ button:focus-visible {
     --link-font-size: 0.9rem;
     --paragraph-font-size: 1.3rem;
   }
+
 }
 
 @media only screen and (max-width: 1152px) {

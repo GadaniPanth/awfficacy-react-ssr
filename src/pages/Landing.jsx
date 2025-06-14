@@ -5,157 +5,165 @@ import { Link } from "react-router";
 const Landing = () => {
   return (
     <div className="awfficacy_wrapper">
-      <div className="section-1 main-container section-padding-4rem">
-        <div className="relative">
-          <div className="awfficacy_blue_box alc j-c-sb">
-            <div className="awfficacy_blue_box_heading">
-              <h1 className="font_56 white-color fw_700">
-                Building awesome office <br className="hidden-xs" />
-                with efficacy
-              </h1>
-            </div>
-            <div className="awfficacy_blue_box_img flex_basis_40">
-              {/* <img src="./landingPage.svg" alt="" /> */}
-              <div className="blue_box_1">
-                <div className="inner-flex g0 blue_box_img_1">
-                  <img src="images/Yellow_box.png" alt="Yellow" />
-                  <img src="images/blue_right.png" alt="blue_right" />
-                </div>
-                <div className="inner-flex g0 blue_box_img_2">
-                  <img src="images/circle.png" alt="Circle" />
-                  <img src="images/blue.png" alt="blue" />
-                </div>
-                <div className="inner-flex g0 blue_box_img_3">
-                  <img src="images/blue_left.png" alt="blue_left" />
-                  <img src="images/blue_down.png" alt="blue" />
-                </div>
+      <div className="landing_wrapper">
+        <div className="section-1 main-container section-padding-4rem">
+          <div className="relative">
+            <div className="awfficacy_blue_box alc j-c-sb">
+              <div className="awfficacy_blue_box_heading">
+                <h1 className="font_56 white-color fw_700">
+                  Building awesome office <br className="hidden-xs" />
+                  with efficacy
+                </h1>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section-2 main-container section-padding-4rem pt0">
-        <div className="grid-two">
-          <div className="section-2-left cursor_pointer">
-            <div className="inner-flex gap_spacing">
-              <div className="section-2-img-details flex-row j-c-sb alc">
-                <img src="./images/Awfficacy Logo 1.svg" alt="Awfficacy Logo" />
-                <div className="btn-know_icon">
-                  <Link to="/">
-                    <div className="btn-know flex-row alc underline hover">
-                      <p className="font_24 fw_bold"> Know More</p>
-                      <div className="arrow-svg">
-                        <span className="material-symbols-outlined">
-                          near_me
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="section-2-heading_list inner-flex gap_spacing">
-                <h2 className="font_32 fw_700">Make In India Advisory</h2>
-                <div className="inner-flex gap_spacing">
-                  <div className="inner-flex">
-                    <p className="fw_bold font_24">
-                      a. Central government schemes
-                    </p>
-                    <p className="fw_400 font_24">
-                      (i) Production Linked Incentive (PLI) schemes
-                    </p>
-                    <p className="fw_400 font_24">
-                      (ii) Other Central government schemes
-                    </p>
+              <div className="awfficacy_blue_box_img flex_basis_40">
+                {/* <img src="./landingPage.svg" alt="" /> */}
+                <div className="blue_box_1">
+                  <div className="inner-flex g0 blue_box_img_1">
+                    <img src="images/Yellow_box.png" alt="Yellow" />
+                    <img src="images/blue_right.png" alt="blue_right" />
                   </div>
-                  <div className="state_paragraph">
-                    <p className="fw_bold font_24">
-                      b. State government schemes
-                    </p>
+                  <div className="inner-flex g0 blue_box_img_2">
+                    <img src="images/circle.png" alt="Circle" />
+                    <img src="images/blue.png" alt="blue" />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="section-2-right cursor_pointer">
-            <div className="inner-flex gap_spacing">
-              <div className="section-2-img-details flex-row j-c-sb alc">
-                <img src="./global.svg" alt="global" />
-                <div className="btn-know_icon">
-                  <Link to="https://www.awfficacyglobal.com/">
-                    <div className="btn-know flex-row alc underline hover">
-                      <p className="font_24 fw_bold"> Know More</p>
-                      <div className="arrow-svg">
-                        <span className="material-symbols-outlined">
-                          near_me
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="section-2-heading_list inner-flex gap_spacing">
-                <h2 className="font_32 fw_700">Global Outsourcing</h2>
-                <div className="inner-flex gap_spacing">
-                  <div className="inner-flex">
-                    <p className="fw_bold font_24">a. Countries</p>
-                    <p className="fw_400 font_24">(i) Australia</p>
-                    <p className="fw_400 font_24">(ii) United Kingdom</p>
+                  <div className="inner-flex g0 blue_box_img_3">
+                    <img src="images/blue_left.png" alt="blue_left" />
+                    <img src="images/blue_down.png" alt="blue" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div className="section-2 main-container section-padding-4rem pt0">
+          <div className="grid-two">
+            <div className="section-2-left cursor_pointer">
+              <div className="inner-flex gap_spacing">
+                <div className="section-2-img-details flex-row j-c-sb alc">
+                  <img
+                    src="./images/Awfficacy Logo 1.svg"
+                    alt="Awfficacy Logo"
+                  />
+                  <div className="btn-know_icon">
+                    <Link to="/">
+                      <div className="btn-know flex-row alc underline hover">
+                        <p className="font_24 fw_bold"> Know More</p>
+                        <div className="arrow-svg">
+                          <span className="material-symbols-outlined">
+                            near_me
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+                <div className="section-2-heading_list inner-flex gap_spacing">
+                  <h2 className="font_32 fw_700">Make In India Advisory</h2>
+                  <div className="inner-flex gap_spacing">
+                    <div className="inner-flex">
+                      <p className="fw_bold font_24">
+                        a. Central government schemes
+                      </p>
+                      <p className="fw_400 font_24">
+                        (i) Production Linked Incentive (PLI) schemes
+                      </p>
+                      <p className="fw_400 font_24">
+                        (ii) Other Central government schemes
+                      </p>
+                    </div>
+                    <div className="state_paragraph">
+                      <p className="fw_bold font_24">
+                        b. State government schemes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="section-2-right cursor_pointer">
+              <div className="inner-flex gap_spacing">
+                <div className="section-2-img-details flex-row j-c-sb alc">
+                  <img src="./global.svg" alt="global" />
+                  <div className="btn-know_icon">
+                    <Link to="https://www.awfficacyglobal.com/">
+                      <div className="btn-know flex-row alc underline hover">
+                        <p className="font_24 fw_bold"> Know More</p>
+                        <div className="arrow-svg">
+                          <span className="material-symbols-outlined">
+                            near_me
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+                <div className="section-2-heading_list inner-flex gap_spacing">
+                  <h2 className="font_32 fw_700">Global Outsourcing</h2>
+                  <div className="inner-flex gap_spacing">
+                    <div className="inner-flex">
+                      <p className="fw_bold font_24">a. Countries</p>
+                      <p className="fw_400 font_24">(i) Australia</p>
+                      <p className="fw_400 font_24">(ii) United Kingdom</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div className="section-3 main-container section-padding-4rem pt0 ">
-        <div className="section-2-left">
-          <div className="inner-flex gap_spacing">
-            <div className="section-2-img-details flex-row j-c-sb alc">
-              <img src="./images/AWF cap.svg" alt="Awfficacy Logo" />
-              <div className="btn-know_icon">
-                <Link to="https://www.awfficacy.capital/">
-                  <div className="btn-know flex-row alc underline hover">
-                    <p className="font_24 fw_bold"> Know More</p>
-                    <div className="arrow-svg">
-                      <span className="material-symbols-outlined">near_me</span>
+        <div className="section-3 main-container section-padding-4rem pt0 ">
+          <div className="section-2-left">
+            <div className="inner-flex gap_spacing">
+              <div className="section-2-img-details flex-row j-c-sb alc">
+                <img src="./images/AWF cap.svg" alt="Awfficacy Logo" />
+                <div className="btn-know_icon">
+                  <Link to="https://www.awfficacy.capital/">
+                    <div className="btn-know flex-row alc underline hover">
+                      <p className="font_24 fw_bold"> Know More</p>
+                      <div className="arrow-svg">
+                        <span className="material-symbols-outlined">
+                          near_me
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="section-2-heading_list inner-flex gap_spacing">
+                <h2 className="font_32 fw_700">Investment Banking</h2>
+                <div className="grid-three">
+                  <div className="inner-flex">
+                    <div className="inner-flex">
+                      <p className="fw_bold font_24">
+                        a. Corporate Finance Advisory
+                      </p>
+                      <p className="fw_400 font_24">(i) Due diligence</p>
+                      <p className="fw_400 font_24">
+                        (ii) Financial modelling & valuations
+                      </p>
+                      <p className="fw_400 font_24">(iii) IPO readiness</p>
                     </div>
                   </div>
-                </Link>
-              </div>
-            </div>
-            <div className="section-2-heading_list inner-flex gap_spacing">
-              <h2 className="font_32 fw_700">Investment Banking</h2>
-              <div className="grid-three">
-                <div className="inner-flex">
                   <div className="inner-flex">
-                    <p className="fw_bold font_24">
-                      a. Corporate Finance Advisory
-                    </p>
-                    <p className="fw_400 font_24">(i) Due diligence</p>
-                    <p className="fw_400 font_24">
-                      (ii) Financial modelling & valuations
-                    </p>
-                    <p className="fw_400 font_24">(iii) IPO readiness</p>
+                    <div className="state_paragraph inner-flex">
+                      <p className="fw_bold font_24">b. Deal Management</p>
+                      <p className="fw_400 font_24">
+                        (i) Fundraising advisory{" "}
+                      </p>
+                      <p className="fw_400 font_24">
+                        (ii) Transactional advisory
+                      </p>
+                    </div>
                   </div>
+                  <p className="fw_bold font_24">c. Mutual Fund advisory</p>
                 </div>
-                <div className="inner-flex">
-                  <div className="state_paragraph inner-flex">
-                    <p className="fw_bold font_24">b. Deal Management</p>
-                    <p className="fw_400 font_24">(i) Fundraising advisory </p>
-                    <p className="fw_400 font_24">
-                      (ii) Transactional advisory
-                    </p>
-                  </div>
-                </div>
-                <p className="fw_bold font_24">c. Mutual Fund advisory</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   );
 };
 
