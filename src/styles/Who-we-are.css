@@ -49,6 +49,7 @@
   border-radius: 16px;
   border: solid 1px #00338c;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .whoWeAre-wrapper .section-3 .card .card-image {
@@ -103,5 +104,23 @@
 
   .whoWeAre-wrapper .section-3 .card-body .connection a {
     width: 30px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .whoWeAre-wrapper .section-3 .card-body .designation,
+  .whoWeAre-wrapper .section-3 .card-body .know-more p {
+    font-size: calc(var(--paragraph-font-size) - 0.3rem);
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body .name {
+    font-size: calc(var(--section-subtitle-font-size) - 0.9rem);
+  }
+
+  .whoWeAre-wrapper .section-3 .card-body .hr-div {
+    gap: 23px;
+  }
+  .whoWeAre-wrapper .section-3 .gold-box {
+    padding: 64px 42px;
   }
 }
