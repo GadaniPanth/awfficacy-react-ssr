@@ -63,9 +63,11 @@
     border-radius: 1rem;
 }
 
-.section-7 {
+.what_we_do_wrapper .section-7 {
     border: 1px solid #00338C;
     border-radius: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 4rem;
 }
 
 .section-7-paragraph {
@@ -107,6 +109,71 @@
     transition: var(--common-transition);
 }
 
+.arrow-svg {
+    color: #00338C;
+    /* default color */
+    transition: color 0.3s ease;
+}
+
+.arrow-svg:hover {
+    color: #FFFFFF;
+    /* color on hover */
+}
+
+.what_we_do_wrapper .btn-2 {
+    background: transparent;
+    border: none;
+    justify-content: start;
+    display: flex;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.button {
+    width: fit-content;
+    /* 
+  width: 156px;
+  height: 45px; */
+    padding: 12px 24px;
+    border-radius: 8px;
+    /* border: solid 1px #000000; */
+    /* background-color: #000000; */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.know_more-button * {
+    color: #ffffff;
+}
+
+.know_more-button {
+    width: fit-content;
+    /* width: 156px;
+  height: 45px; */
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: solid 1px #00338C;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    transition: var(--common-transition);
+}
+
+.know_more-button:hover {
+    background-color: #00338C;
+    color: white;
+}
+
+.know_more-button:hover * {
+    color: white;
+}
+
+
 /* .know_more_btn:hover {
     border: solid 1px black;
     background-color: #00338C;
@@ -136,7 +203,7 @@
 
 .border-bottom-mini {
     border-bottom: 1px solid #CBCBCB;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     width: 90%;
     margin: 0 auto;
 }
@@ -384,7 +451,6 @@
 .tab_main_div:nth-child(9) {
     position: absolute;
     bottom: 13%;
-
     right: 53%;
     width: fit-content;
     z-index: 2;
