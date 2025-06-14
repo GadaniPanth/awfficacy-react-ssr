@@ -525,46 +525,119 @@ const Who_we_are = () => {
                 {/* <span className="material-symbols-outlined">close</span> */}
                 <img src="./images/cross.svg" alt="close" />
               </div>
-              <div className="popup-header">
-                <div className="flex-row inner-flex-small j-c-sb alc">
-                  <div className="image">
-                    {/* {console.log(popup_list[popUpName])} */}
-                    <img
-                      src={popup_list[popUpName].img}
-                      alt={popup_list[popUpName].name}
-                    />
-                  </div>
-                  <div className="text inner-flex">
-                    <div className="head">
-                      <h2 className="name name_text">
-                        {popup_list[popUpName].name}
-                      </h2>
-                      <h2 className="designation p_text">
-                        {popup_list[popUpName].designation}
-                      </h2>
+              <div className="inner-flex inner-flex-small">
+                <div className="popup-header">
+                  {/* <div className="flex-row inner-flex-small j-c-sb alc"> */}
+                  <div className="grid grid-inv j-c-sb alc">
+                    <div className="image">
+                      {/* {console.log(popup_list[popUpName])} */}
+                      <img
+                        src={popup_list[popUpName].img}
+                        alt={popup_list[popUpName].name}
+                      />
                     </div>
-                    <div className="connections flex-row inner-flex-small alc">
-                      <h2>Reach out </h2>
-                      <div className="logos flex-row g18 alc">
-                        <Link to={popup_list[popUpName].linkdin}>
-                          <img
-                            src="./images/who-we-are/linkdin_blue.svg"
-                            alt="linkdin"
-                          />
-                        </Link>
-                        <Link to={popup_list[popUpName].X}>
-                          <img src="./images/who-we-are/X_blue.svg" alt="X" />
-                        </Link>
-                        <Link to={popup_list[popUpName].email}>
-                          <img
-                            src="./images/who-we-are/email_blue.svg"
-                            alt="email"
-                          />
-                        </Link>
+                    <div className="text inner-flex">
+                      <div className="head">
+                        <h2 className="name name_text">
+                          {popup_list[popUpName].name}
+                        </h2>
+                        <h2 className="designation p_text">
+                          {popup_list[popUpName].designation}
+                        </h2>
+                      </div>
+                      <div className="connections flex-row inner-flex-small alc">
+                        <h2>Reach out </h2>
+                        <div className="logos flex-row g18 alc">
+                          <Link to={popup_list[popUpName].linkdin}>
+                            <img
+                              src="./images/who-we-are/linkdin_blue.svg"
+                              alt="linkdin"
+                            />
+                          </Link>
+                          <Link to={popup_list[popUpName].X}>
+                            <img src="./images/who-we-are/X_blue.svg" alt="X" />
+                          </Link>
+                          <Link to={popup_list[popUpName].email}>
+                            <img
+                              src="./images/who-we-are/email_blue.svg"
+                              alt="email"
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="body">
+                        <h2>{popup_list[popUpName].head_text}</h2>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="list">
+                  <ul className="inner-flex g36">
+                    {popup_list[popUpName] &&
+                    popup_list[popUpName].body_text.length > 0 ? (
+                      popup_list[popUpName].body_text.map((txt, i) => {
+                        return (
+                          <li
+                            key={i}
+                            className="list_text flex-row inner-flex-small"
+                          >
+                            <div className="arrow_svg">
+                              <img
+                                src="./images/arrow_blue_right.svg"
+                                alt="⚫"
+                              />
+                            </div>
+                            <p>{txt}</p>
+                          </li>
+                        );
+                      })
+                    ) : (
+                      <></>
+                    )}
+                  </ul>
+                </div>
+                {/* <div className="flex-row inner-flex-small j-c-sb alc"> */}
+                <div className="grid j-c-sb">
+                  <div className="tought pBox inner-flex g42 gold-box">
+                    <div className="head">
+                      <h2 className="blue-text">Food for Thought</h2>
+                    </div>
                     <div className="body">
-                      <h2>{popup_list[popUpName].head_text}</h2>
+                      <p className="p_text">{popup_list[popUpName].thought}</p>
+                    </div>
+                  </div>
+
+                  <div className="fav-book pBox inner-flex g42 blue-box">
+                    <div className="head">
+                      <h2 className="blue-text">Two Favorite Books</h2>
+                    </div>
+                    <div className="list">
+                      <ul className="inner-flex g36">
+                        {popup_list[popUpName] &&
+                        popup_list[popUpName].body_text.length > 0 ? (
+                          popup_list[popUpName].two_favorite_books.map(
+                            (book, i) => {
+                              return (
+                                <li
+                                  key={i}
+                                  className="list_text flex-row inner-flex-small"
+                                >
+                                  <div className="book_svg">
+                                    <img src="./images/book.svg" alt="⚫" />
+                                  </div>
+                                  <div className="txt">
+                                    <h2 className="book_name">{book.name}</h2>
+                                    <h2 className="p_text">{book.author}</h2>
+                                  </div>
+                                </li>
+                              );
+                            }
+                          )
+                        ) : (
+                          <></>
+                        )}
+                      </ul>
                     </div>
                   </div>
                 </div>

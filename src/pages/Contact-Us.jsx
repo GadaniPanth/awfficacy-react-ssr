@@ -73,67 +73,67 @@ const Contact_us = () => {
 
         const changeCountry(changeCountry)
 
-        const validate = () => {
-            const newErrors = {};
+    const validate = () => {
+      const newErrors = {};
 
-            if (!formData.firstname.trim())
-                newErrors.firstname = "First name is required.";
-            if (!formData.lastname.trim())
-                newErrors.lastname = "Last name is required.";
-            if (!formData.email.trim()) {
-                newErrors.email = "E-mail is required.";
-            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-                newErrors.email = "Invalid email format.";
-            }
-            if (!formData.phone.trim()) {
-                newErrors.phone = "Phone number is required.";
-            } else if (!/^[0-9]+$/.test(formData.phone)) {
-                newErrors.phone = "Please enter a valid phone number.";
-            }
-            if (!formData.companyname.trim())
-                newErrors.companyname = "Company name is required.";
-            if (!formData.message.trim()) newErrors.message = "Message is required.";
+      if (!formData.firstname.trim())
+        newErrors.firstname = "First name is required.";
+      if (!formData.lastname.trim())
+        newErrors.lastname = "Last name is required.";
+      if (!formData.email.trim()) {
+        newErrors.email = "E-mail is required.";
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+        newErrors.email = "Invalid email format.";
+      }
+      if (!formData.phone.trim()) {
+        newErrors.phone = "Phone number is required.";
+      } else if (!/^[0-9]+$/.test(formData.phone)) {
+        newErrors.phone = "Please enter a valid phone number.";
+      }
+      if (!formData.companyname.trim())
+        newErrors.companyname = "Company name is required.";
+      if (!formData.message.trim()) newErrors.message = "Message is required.";
 
-            return newErrors;
-        };
+      return newErrors;
+    };
 
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            setSubmitted(true);
-            const newErrors = validate();
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setSubmitted(true);
+      const newErrors = validate();
 
-            if (Object.keys(newErrors).length === 0) {
-                console.log("Form Submitted successfully!", formData);
-                setFormData({
-                    firstname: "",
-                    lastname: "",
-                    email: "",
-                    phone: "",
-                    countryCode: "+91",
-                    companyname: "",
-                    message: "",
-                });
-                setErrors({});
-                setSubmitted(false);
-            } else {
-                setErrors(newErrors);
-            }
-        };
+      if (Object.keys(newErrors).length === 0) {
+        console.log("Form Submitted successfully!", formData);
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          countryCode: "+91",
+          companyname: "",
+          message: "",
+        });
+        setErrors({});
+        setSubmitted(false);
+      } else {
+        setErrors(newErrors);
+      }
+    };
 
-        return (
-            <>
-                <div className="awfficacy_wrapper">
-                    <div className="contact_us_wrapper">
-                        <div className="section-1 main-container section-padding-4rem">
-                            <div className="awfficacy_blue_box alc j-c-sb">
-                                <div className="awfficacy_blue_box_heading">
-                                    <h1 className="font_56 white-color fw_700">Let's Connect</h1>
-                                </div>
-                                <div className="contact_us-img">
-                                    <img src="images/contact_us.svg" alt="contact_us" />
-                                </div>
-                            </div>
-                        </div>
+    return (
+      <>
+        <div className="awfficacy_wrapper">
+          <div className="contact_us_wrapper">
+            <div className="section-1 main-container section-padding-4rem">
+              <div className="awfficacy_blue_box alc j-c-sb">
+                <div className="awfficacy_blue_box_heading">
+                  <h1 className="font_56 white-color fw_700">Let's Connect</h1>
+                </div>
+                <div className="contact_us-img">
+                  <img src="images/contact_us.svg" alt="contact_us" />
+                </div>
+              </div>
+            </div>
 
                         <div className="section-2 mini-container">
                             <div className="contact_form">
@@ -354,7 +354,7 @@ const Contact_us = () => {
         );
     };
 
-    return <MyForm />;
+  return <MyForm />;
 };
 
 export default Contact_us;
