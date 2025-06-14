@@ -121,7 +121,7 @@
   gap: 3.375rem;
 }
 
-.section-3 .head {
+.home_wrapper .section-3 .head {
   display: flex;
   justify-content: space-between;
   align-items: center;

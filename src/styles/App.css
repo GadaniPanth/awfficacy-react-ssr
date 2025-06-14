@@ -1147,6 +1147,10 @@ button:focus-visible {
   grid-template-columns: 1fr 1fr;
 }
 
+.card-hover .underline a p,
+.card-hover .underline p,
+.underline a p,
+.underline p,
 .footer a p,
 .home_wrapper .section-5 .link-font-size p,
 .navbar .link-font-size p,
@@ -1155,11 +1159,19 @@ button:focus-visible {
   display: inline-block;
 }
 
+.card-hover .underline a p::after,
+.card-hover .underline p::after,
+.underline a p::after,
+.underline p::after,
 .home_wrapper .section-5 .link-font-size p::after,
 .navbar .link-font-size p::after {
   background: #000000;
 }
 
+.card-hover .underline a p::after,
+.card-hover .underline p::after,
+.underline a p::after,
+.underline p::after,
 .footer a p::after,
 .home_wrapper .section-5 .link-font-size p::after,
 .navbar .link-font-size p::after,
@@ -1175,13 +1187,26 @@ button:focus-visible {
   transition: var(--common-transition);
 }
 
-.footer a p::after {
-  background: #ffffff;
-}
+.card-hover .underline.white a p::after,
+.card-hover .underline.white p::after,
+.underline.white a p::after,
+.underline.white p::after,
+.footer a p::after,
 .head_div .learn_more p::after {
   background: #ffffff;
 }
 
+.card-hover .underline.blue a p::after,
+.card-hover .underline.blue p::after,
+.underline.blue a p::after,
+.underline.blue p::after {
+  background: #00338c;
+}
+
+.card-hover .underline.left a p::after,
+.card-hover .underline.left p::after,
+.underline.left a p::after,
+.underline.left p::after,
 .home_wrapper .section-5 .link-font-size p::after,
 .head_div .learn_more p::after {
   height: 1px;
@@ -1193,6 +1218,11 @@ button:focus-visible {
   border: none;
 }
 
+.card-hover:hover .underline a p::after,
+.card-hover:hover .underline p::after,
+.underline a:hover p::after,
+.underline p:hover::after,
+.underline.hover:hover p::after,
 .footer a p:hover::after,
 .home_wrapper .section-5 a:hover p::after,
 .navbar .link-font-size p:hover::after,
@@ -1206,6 +1236,10 @@ button:focus-visible {
 
 .section-1 {
   margin-top: 12rem !important;
+}
+
+.blue-text {
+  color: #00338c !important;
 }
 
 @media only screen and (max-width: 1440px) {
